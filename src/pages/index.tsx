@@ -1,12 +1,40 @@
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
-import { Meta } from '@/layouts/Meta';
-import { Main } from '@/templates/Main';
+// import { Meta } from '@/layouts/Meta';
+// import { Main } from '@/components/Main';
+
+import Image from 'next/image';
+import image from 'src/assets/imagebg.jpg';
+
+import { Navbar } from '@/templates/Navbar';
 
 const Index = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
+    <>
+      <Navbar />
+
+      <Image
+        src={image}
+        alt="image"
+        // width={500}
+        // height={500}
+      />
+      <div className="container h-96 w-full bg-blue-600"></div>
+
+      <div className="container h-96 w-full bg-white"></div>
+
+      <div className="container h-96 w-full bg-zinc-50"></div>
+    </>
+  );
+};
+
+export default Index;
+
+/*
+
+return (
     <Main
       meta={
         <Meta
@@ -15,6 +43,9 @@ const Index = () => {
         />
       }
     >
+
+      <Header />
+
       <a href="https://github.com/ixartz/Next-js-Boilerplate">
         <img
           src={`${router.basePath}/assets/images/nextjs-starter-banner.png`}
@@ -180,7 +211,5 @@ const Index = () => {
         on our website to support this project.
       </p>
     </Main>
-  );
-};
 
-export default Index;
+    */
