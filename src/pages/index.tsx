@@ -5,6 +5,10 @@
 
 import Image from 'next/image';
 import image1 from 'src/assets/image1.jpg';
+import image2 from 'src/assets/image2.jpg';
+import image3 from 'src/assets/image3.jpg';
+import image4 from 'src/assets/image4.jpg';
+import image5 from 'src/assets/image5.jpg';
 import image from 'src/assets/imagebg.jpg';
 
 import { Navbar } from '@/templates/Navbar';
@@ -63,7 +67,7 @@ const Index = () => {
           </div>
 
           <div className="flex items-center justify-center p-24">
-            <Image src={image1} alt="image" width={540} height={764} />
+            <Image src={image1} alt="image1" width={540} height={764} />
           </div>
         </div>
       </div>
@@ -71,7 +75,7 @@ const Index = () => {
       <div className="h-auto w-full bg-zinc-50 md:flex md:items-center md:justify-center">
         <div className="container md:flex  md:items-center md:justify-center md:space-x-8">
           <div className="flex items-center justify-center p-24">
-            <Image src={image1} alt="image" width={540} height={764} />
+            <Image src={image2} alt="image2" width={540} height={764} />
           </div>
 
           <div className="px-24 pt-12 md:w-5/12 md:p-7">
@@ -88,6 +92,81 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      <Image
+        src={image3}
+        alt="image"
+        // width={500}
+        // height={500}
+      />
+
+      <div className="h-auto w-full bg-zinc-50 md:flex md:items-center md:justify-center">
+        <div className="container md:flex  md:items-center md:justify-center md:space-x-8">
+          <div className="px-24 pt-12 md:w-5/12 md:p-7">
+            <p className="text-3xl font-semibold text-black">
+              A different perspective
+            </p>
+            <p className="mt-2 text-justify text-lg leading-snug text-black/70">
+              Hotel Bozikovina is a family-run, award-winning design hotel with
+              sustainability at its foundation. You will find us at a
+              comfortable distance from the noise and rush of the old city
+              centre. Close enough to discover the rich cultural heritage and
+              its nearby natural amenities. A carefree retreat with a priceless
+              view of the Adriatic Sea, just a few steps from a pebble beach.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center p-24">
+            <Image src={image4} alt="image4" width={540} height={764} />
+          </div>
+        </div>
+      </div>
+
+      <div className="h-auto w-full bg-white md:flex md:items-center md:justify-center">
+        <div className="container md:flex  md:items-center md:justify-center md:space-x-8">
+          <div className="flex items-center justify-center p-24">
+            <Image src={image5} alt="image5" width={540} height={764} />
+          </div>
+
+          <div className="px-24 pt-12 md:w-5/12 md:p-7">
+            <p className="text-3xl font-semibold text-black">
+              Workplace and beyond
+            </p>
+            <p className="mt-2 text-justify text-lg leading-snug text-black/70">
+              Meaningful gatherings can only be held in an equally significant
+              space. Following the same line and concept, we host an array of
+              events, from private celebrations to business meetings. As in
+              every supportive home, our professional staff is fully committed
+              to your desired results, whatever the context.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-auto w-full bg-white md:flex md:items-center md:justify-center">
+        <div className="px-24 pt-12 text-center md:w-5/12 md:p-7">
+          <p className="text-3xl font-semibold text-black">
+            Your unforgettable adventure awaits
+          </p>
+          <p className="mt-2 text-lg leading-snug text-black/70">
+            Luxury Hotel Božikovina is warm and friendly hotel located in
+            Podstrana just 7km from city of Split. This is a modern, relaxed
+            luxury - Dalmatian style hotel, built in 2002 and at the highest
+            European standards renovated in 2022. Thanks to its enchanting
+            heritage, Podstrana is evolving into an elite cultural site, and its
+            main attractions are a beautiful location with crystal clear sea,
+            mild climate and beautiful pebble beaches.
+          </p>
+          <a
+            href="#"
+            className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+          >
+            LEARN MORE
+          </a>
+        </div>
+      </div>
+
+      <div className="bg-primary h-auto w-full md:flex md:items-center md:justify-center"></div>
     </>
   );
 };

@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import logo from 'src/assets/logowhite.png';
+
 const Header = () => (
   <>
     <div className="relative bg-white">
@@ -6,11 +9,12 @@ const Header = () => (
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image src={logo} alt="logo" />
+              {/* <img
                 className="h-8 w-auto sm:h-10"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
-              />
+/> */}
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">

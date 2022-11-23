@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import logo from 'src/assets/logowhite.png';
+
 const Navbar = () => (
   <>
     <div className="bg-primary relative">
@@ -6,11 +9,13 @@ const Navbar = () => (
           <div className="flex justify-start md:w-0 md:flex-1 lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Your Company</span>
+              <Image className="h-12 w-auto sm:h-20" src={logo} alt="logo" />
+              {/*
               <img
                 className="h-8 w-auto sm:h-10"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
-              />
+/> */}
             </a>
           </div>
 
