@@ -4,6 +4,7 @@ const Rooms = () => {
   return (
     <>
       <Navbar />
+      <p>aaaaaa</p>
     </>
   );
 };

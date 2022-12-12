@@ -2,8 +2,8 @@
 
 // import { Meta } from '@/layouts/Meta';
 // import { Main } from '@/components/Main';
-
 import Image from 'next/image';
+import Link from 'next/link';
 import image1 from 'src/assets/image1.jpg';
 import image2 from 'src/assets/image2.jpg';
 import image3 from 'src/assets/image3.jpg';
@@ -24,7 +24,7 @@ const Index = () => {
         // height={500}
       />
 
-      <div className="bg-primary flex h-auto w-full items-center justify-center py-20 xl:px-20">
+      <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">
         <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
           <p className="text-xl font-semibold text-white sm:text-3xl">
             Welcome to Luxury Hotel Božikovina
@@ -145,7 +145,7 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="flex h-auto w-full items-center justify-center bg-white py-20 xl:px-20">
+      <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
         <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
           <p className="text-xl font-semibold text-black sm:text-3xl">
             Your unforgettable adventure awaits
@@ -171,7 +171,7 @@ const Index = () => {
 
       <div className="bg-primary h-auto w-full md:flex md:items-center md:justify-center"></div>
 
-      {/* <Link href="/rooms">Rooms</Link> */}
+      <Link href="/rooms"></Link>
     </>
   );
 };
