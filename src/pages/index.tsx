@@ -4,12 +4,9 @@
 // import { Main } from '@/components/Main';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import image1 from 'src/assets/image1.jpg';
 import image2 from 'src/assets/image2.jpg';
 import image3 from 'src/assets/image3.jpg';
-import image4 from 'src/assets/image4.jpg';
-import image5 from 'src/assets/image5.jpg';
 import image from 'src/assets/imagebg.jpg';
 
 import { Navbar } from '@/templates/Navbar';
@@ -27,12 +24,12 @@ const Index = () => {
         // height={500}
       />
 
-      <div className="bg-primary flex h-auto w-full items-center justify-center p-20">
-        <div className="container w-1/3 text-center">
-          <p className="text-3xl font-semibold text-white">
+      <div className="bg-primary flex h-auto w-full items-center justify-center py-20 xl:px-20">
+        <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
+          <p className="text-xl font-semibold text-white sm:text-3xl">
             Welcome to Luxury Hotel Božikovina
           </p>
-          <p className="mt-2 text-lg leading-snug text-white/70">
+          <p className="mt-2 text-justify text-sm leading-snug text-white/70 sm:text-lg">
             Luxury Hotel Božikovina is warm and friendly hotel located in
             Podstrana just 7km from city of Split. This is a modern, relaxed
             luxury - Dalmatian style hotel, built in 2002 and at the highest
@@ -51,13 +48,14 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="h-auto w-full bg-white md:flex md:items-center md:justify-center">
-        <div className="container md:flex  md:items-center md:justify-center md:space-x-8">
-          <div className="px-24 pt-12 md:w-5/12 md:p-7">
-            <p className="text-3xl font-semibold text-black">
+      <div className="align-center flex h-auto w-full items-center justify-center bg-white">
+        <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
+          <div className="px-24 pt-12 sm:px-24 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
+            <p className="text-xl font-semibold text-black sm:text-3xl">
               A different perspective
             </p>
-            <p className="mt-2 text-justify text-lg leading-snug text-black/70">
+
+            <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
               Hotel Bozikovina is a family-run, award-winning design hotel with
               sustainability at its foundation. You will find us at a
               comfortable distance from the noise and rush of the old city
@@ -67,23 +65,24 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="flex items-center justify-center p-24">
+          <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pr-12">
             <Image src={image1} alt="image1" width={540} height={764} />
           </div>
         </div>
       </div>
 
-      <div className="h-auto w-full bg-zinc-50 md:flex md:items-center md:justify-center">
-        <div className="container md:flex  md:items-center md:justify-center md:space-x-8">
-          <div className="flex items-center justify-center p-24">
+      <div className="align-center flex h-auto w-full items-center justify-center bg-zinc-50">
+        <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
+          <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pl-12">
             <Image src={image2} alt="image2" width={540} height={764} />
           </div>
 
-          <div className="px-24 pt-12 md:w-5/12 md:p-7">
-            <p className="text-3xl font-semibold text-black">
+          <div className="px-24 pb-12 sm:px-24 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
+            <p className="text-xl font-semibold text-black sm:text-3xl">
               Workplace and beyond
             </p>
-            <p className="mt-2 text-justify text-lg leading-snug text-black/70">
+
+            <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
               Meaningful gatherings can only be held in an equally significant
               space. Following the same line and concept, we host an array of
               events, from private celebrations to business meetings. As in
@@ -96,18 +95,19 @@ const Index = () => {
 
       <Image
         src={image3}
-        alt="image"
+        alt="image3"
         // width={500}
         // height={500}
       />
 
-      <div className="h-auto w-full bg-zinc-50 md:flex md:items-center md:justify-center">
-        <div className="container md:flex  md:items-center md:justify-center md:space-x-8">
-          <div className="px-24 pt-12 md:w-5/12 md:p-7">
-            <p className="text-3xl font-semibold text-black">
+      <div className="align-center flex h-auto w-full items-center justify-center bg-white">
+        <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
+          <div className="px-24 pt-12 sm:px-24 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
+            <p className="text-xl font-semibold text-black sm:text-3xl">
               A different perspective
             </p>
-            <p className="mt-2 text-justify text-lg leading-snug text-black/70">
+
+            <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
               Hotel Bozikovina is a family-run, award-winning design hotel with
               sustainability at its foundation. You will find us at a
               comfortable distance from the noise and rush of the old city
@@ -117,23 +117,24 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="flex items-center justify-center p-24">
-            <Image src={image4} alt="image4" width={540} height={764} />
+          <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pr-12">
+            <Image src={image1} alt="image4" width={540} height={764} />
           </div>
         </div>
       </div>
 
-      <div className="h-auto w-full bg-white md:flex md:items-center md:justify-center">
-        <div className="container md:flex  md:items-center md:justify-center md:space-x-8">
-          <div className="flex items-center justify-center p-24">
-            <Image src={image5} alt="image5" width={540} height={764} />
+      <div className="align-center flex h-auto w-full items-center justify-center bg-zinc-50">
+        <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
+          <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pl-12">
+            <Image src={image2} alt="image5" width={540} height={764} />
           </div>
 
-          <div className="px-24 pt-12 md:w-5/12 md:p-7">
-            <p className="text-3xl font-semibold text-black">
+          <div className="px-24 pb-12 sm:px-24 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
+            <p className="text-xl font-semibold text-black sm:text-3xl">
               Workplace and beyond
             </p>
-            <p className="mt-2 text-justify text-lg leading-snug text-black/70">
+
+            <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
               Meaningful gatherings can only be held in an equally significant
               space. Following the same line and concept, we host an array of
               events, from private celebrations to business meetings. As in
@@ -144,12 +145,12 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="h-auto w-full bg-white md:flex md:items-center md:justify-center">
-        <div className="px-24 pt-12 text-center md:w-5/12 md:p-7">
-          <p className="text-3xl font-semibold text-black">
+      <div className="flex h-auto w-full items-center justify-center bg-white py-20 xl:px-20">
+        <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
+          <p className="text-xl font-semibold text-black sm:text-3xl">
             Your unforgettable adventure awaits
           </p>
-          <p className="mt-2 text-lg leading-snug text-black/70">
+          <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
             Luxury Hotel Božikovina is warm and friendly hotel located in
             Podstrana just 7km from city of Split. This is a modern, relaxed
             luxury - Dalmatian style hotel, built in 2002 and at the highest
@@ -158,6 +159,7 @@ const Index = () => {
             main attractions are a beautiful location with crystal clear sea,
             mild climate and beautiful pebble beaches.
           </p>
+
           <a
             href="#"
             className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
@@ -169,7 +171,7 @@ const Index = () => {
 
       <div className="bg-primary h-auto w-full md:flex md:items-center md:justify-center"></div>
 
-      <Link href="/rooms">Rooms</Link>
+      {/* <Link href="/rooms">Rooms</Link> */}
     </>
   );
 };
