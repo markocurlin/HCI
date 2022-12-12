@@ -4,6 +4,7 @@
 // import { Main } from '@/components/Main';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import image1 from 'src/assets/image1.jpg';
 import image2 from 'src/assets/image2.jpg';
 import image3 from 'src/assets/image3.jpg';
@@ -167,6 +168,8 @@ const Index = () => {
       </div>
 
       <div className="bg-primary h-auto w-full md:flex md:items-center md:justify-center"></div>
+
+      <Link href="/rooms">Rooms</Link>
     </>
   );
 };

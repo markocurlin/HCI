@@ -5,7 +5,7 @@ const Navbar = () => (
   <>
     <div className="bg-primary relative">
       <div className="mx-auto max-w-full px-4 sm:px-28">
-        <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start md:w-0 md:flex-1 lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Your Company</span>

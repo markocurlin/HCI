@@ -23,10 +23,12 @@ a:hover {
 
 .bg-primary {
   background-color: #3698CA;
+  /*background-color: #FAFAD2;*/
 }
 
 .bg-secondary {
   background-color: #005792;
+  /*background-color: #FAFAD2;*/
 }
 
 .h-100 {
