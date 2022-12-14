@@ -16,12 +16,13 @@ const Index = () => {
   return (
     <>
       <Layout>
-        <Image
-          src={image}
-          alt="image"
-          // width={500}
-          // height={500}
-        />
+        <div className="h-130 w-full">
+          <Image
+            src={image}
+            alt="Hero image of hotel"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
         <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">
           <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
@@ -54,7 +55,7 @@ const Index = () => {
                 A different perspective
               </p>
 
-              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
                 Hotel Bozikovina is a family-run, award-winning design hotel
                 with sustainability at its foundation. You will find us at a
                 comfortable distance from the noise and rush of the old city
@@ -93,12 +94,13 @@ const Index = () => {
           </div>
         </div>
 
-        <Image
-          src={image3}
-          alt="image3"
-          // width={500}
-          // height={500}
-        />
+        <div className="h-130 w-full">
+          <Image
+            src={image3}
+            alt="image3"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
         <div className="flex h-auto w-full items-center justify-center bg-white">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
@@ -107,7 +109,7 @@ const Index = () => {
                 A different perspective
               </p>
 
-              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
                 Hotel Bozikovina is a family-run, award-winning design hotel
                 with sustainability at its foundation. You will find us at a
                 comfortable distance from the noise and rush of the old city
@@ -135,7 +137,7 @@ const Index = () => {
                 Workplace and beyond
               </p>
 
-              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
                 Meaningful gatherings can only be held in an equally significant
                 space. Following the same line and concept, we host an array of
                 events, from private celebrations to business meetings. As in

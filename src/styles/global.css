@@ -43,6 +43,14 @@ a:hover {
   height: 48rem;
 }
 
+.h-130 {
+  height: 53rem;
+}
+
 .w-104 {
   width: 42rem;
+}
+
+.w-custom {
+  max-width: 540px;
 }

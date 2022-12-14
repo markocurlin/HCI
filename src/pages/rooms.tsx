@@ -1,5 +1,11 @@
 import Image from 'next/image';
-import image3 from 'src/assets/image3.jpg';
+import deluxeroom1 from 'src/assets/rooms/deluxeroom-1.jpeg';
+import deluxeroom2 from 'src/assets/rooms/deluxeroom-2.jpg';
+import heroimage from 'src/assets/rooms/heroimage.jpg';
+import standardroom1 from 'src/assets/rooms/standardroom-1.jpg';
+import standardroom2 from 'src/assets/rooms/standardroom-2.jpeg';
+import superiorroom1 from 'src/assets/rooms/superiorroom-1.jpeg';
+import superiorroom2 from 'src/assets/rooms/superiorroom-2.png';
 
 import Layout from '@/layouts/Layout';
 
@@ -8,7 +14,7 @@ const rooms = [
     id: 0,
     name: 'Standard double room',
     href: '#',
-    imageSrc: image3,
+    imageSrc: standardroom1,
     imageAlt: 'Standard double room',
     description:
       'The Superior Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
@@ -24,12 +30,15 @@ const rooms = [
       'Work desk and chair',
       'In-room coffee and tea',
     ],
+    maxOccupancy: '2 adults, 2 Children (11 years old and below)',
+    bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
+    images: standardroom2,
   },
   {
     id: 1,
     name: 'Superior double room',
     href: '#',
-    imageSrc: image3,
+    imageSrc: superiorroom1,
     imageAlt: 'Superior double room',
     description:
       'The Superior Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
@@ -43,12 +52,15 @@ const rooms = [
       'Work desk and chair',
       'In-room coffee and tea',
     ],
+    maxOccupancy: '2 adults, 2 Children (11 years old and below)',
+    bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
+    images: superiorroom2,
   },
   {
     id: 2,
     name: 'The Deluxe suite',
     href: '#',
-    imageSrc: image3,
+    imageSrc: deluxeroom1,
     imageAlt: 'The Deluxe suite',
     description:
       'The Deluxe Suite provides a sophisticated blend of modern design and classic elegance that enhances the light, spacious atmosphere.  Provides leisure and business travelers with a luxurious retreat, where they can enjoy the atmosphere of this beautiful hotel.',
@@ -64,6 +76,9 @@ const rooms = [
       'Work desk and chair',
       'In-room coffee and tea',
     ],
+    maxOccupancy: '2 adults, 2 Children (11 years old and below)',
+    bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
+    images: deluxeroom2,
   },
 ];
 
@@ -71,6 +86,14 @@ const Rooms = () => {
   return (
     <>
       <Layout>
+        <div className="h-124 w-full bg-gray-300">
+          <Image
+            src={heroimage}
+            alt="Hero image of room"
+            className="h-full w-full object-cover"
+          />
+        </div>
+
         <div className="bg-white">
           <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <h2 className="text-center text-3xl font-semibold tracking-tight text-black">
@@ -85,6 +108,7 @@ const Rooms = () => {
                       alt={room.imageAlt}
                       width={320}
                       height={320}
+                      className="h-full w-full object-cover"
                     />
                   </div>
 
@@ -136,6 +160,22 @@ const Rooms = () => {
                     <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
                       {room.description}
                     </p>
+                    <div className="mt-1 flex">
+                      <p className="mt-2 text-justify text-sm font-semibold leading-snug text-black/70 sm:text-lg">
+                        MAXIMUM OCCUPANCY:{' '}
+                      </p>
+                      <p className="mt-2 ml-1 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                        {room.maxOccupancy}
+                      </p>
+                    </div>
+                    <div className="mt-1 flex">
+                      <p className="text-justify text-sm font-semibold leading-snug text-black/70 sm:text-lg">
+                        BED CONFIGURATION:{' '}
+                      </p>
+                      <p className="ml-1 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                        {room.bedConfiguration}
+                      </p>
+                    </div>
                     <a
                       href="#"
                       className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
@@ -157,9 +197,14 @@ const Rooms = () => {
                   </div>
                 </div>
               </div>
-              {/* <Image src={room.imageSrc} alt={room.imageAlt} className="object-scale-down"/> */}
-              <div className="h-124 w-full bg-black">
-                <div className="h-104 bg-gray-300"></div>
+              <div className="h-124 w-full">
+                <div className="h-104">
+                  <Image
+                    src={room.images}
+                    alt={room.imageAlt}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
                 <div className="bg-primary h-24"></div>
               </div>
             </>

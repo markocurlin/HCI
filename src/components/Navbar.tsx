@@ -47,22 +47,22 @@ const Navbar = () => {
 
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex shrink-0 items-center">
-                  <a href="#">
+                  <Link href="/">
                     <span className="sr-only">Your Hotel</span>
                     <Image
                       className="block h-12 w-auto sm:h-20 lg:hidden"
                       src={logo}
-                      alt="logo"
+                      alt="Hotel Božikovina logo"
                     />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link href="/">
                     <span className="sr-only">Your Hotel</span>
                     <Image
                       className="hidden h-12 w-auto sm:h-20 lg:block"
                       src={logo}
-                      alt="logo"
+                      alt="Hotel Božikovina logo"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/*
