@@ -10,12 +10,6 @@ const Navbar = () => (
             <a href="#">
               <span className="sr-only">Your Company</span>
               <Image className="h-12 w-auto sm:h-20" src={logo} alt="logo" />
-              {/*
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-/> */}
             </a>
           </div>
 
