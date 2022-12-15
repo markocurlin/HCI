@@ -2,7 +2,11 @@
 
 // import { Meta } from '@/layouts/Meta';
 // import { Main } from '@/components/Main';
+
+import '../i18n';
+
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 import image1 from 'src/assets/image1.jpg';
 import image2 from 'src/assets/image2.jpg';
 import image3 from 'src/assets/image3.jpg';
@@ -12,6 +16,7 @@ import Layout from '@/layouts/Layout';
 
 const Index = () => {
   // const router = useRouter();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -27,7 +32,7 @@ const Index = () => {
         <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">
           <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
             <p className="text-xl font-semibold text-white sm:text-3xl">
-              Welcome to Luxury Hotel Božikovina
+              {t('Welcome to Luxury Hotel Božikovina')}
             </p>
             <p className="mt-2 text-justify text-sm leading-snug text-white/70 sm:text-lg">
               Luxury Hotel Božikovina is warm and friendly hotel located in

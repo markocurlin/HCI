@@ -1,14 +1,17 @@
-import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Disclosure /* , Menu, Transition */ } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Fragment, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+// import { Fragment, useState } from 'react';
 import logo from 'src/assets/logowhite.png';
 
+import { availableLanguages } from '../i18n';
+
 export const navLinks = [
-  { name: 'Home', path: '/', current: true },
+  { name: 'Home', path: '/', current: false },
   { name: 'Rooms', path: '/rooms', current: false },
-  { name: 'Dining', path: '/dining', current: false },
+  { name: 'Services', path: '/services', current: false },
   { name: 'About us', path: '/about', current: false },
   { name: 'Contact us', path: '/contact', current: false },
 ];
@@ -25,7 +28,9 @@ function classNames(...classes: any) {
 }
 
 const Navbar = () => {
-  const [language] = useState('En');
+  // const [language] = useState('En');
+
+  const { t, i18n } = useTranslation();
 
   return (
     <Disclosure as="nav" className="bg-primary">
@@ -65,27 +70,42 @@ const Navbar = () => {
                   </Link>
                 </div>
               </div>
-              {/*
-              <div className="hidden sm:ml-6 sm:block">
+              {
+                <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navLinks.map((link, index) => {
-                      return(
+                      return (
                         <ul key={index}>
                           <Link href={link.path}>
-                            <li key={index} className={classNames(
-                              link.current ? 'bg-secondary text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'px-3 py-2 rounded-md text-sm font-medium'
-                              )} 
-                              >{link.name}</li>
+                            <li
+                              key={index}
+                              className={classNames(
+                                link.current
+                                  ? 'bg-secondary text-white'
+                                  : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                'px-3 py-2 rounded-md text-sm font-medium'
+                              )}
+                            >
+                              {link.name}
+                            </li>
                           </Link>
                         </ul>
                       );
                     })}
                   </div>
-              </div>
-                  */}
+                </div>
+              }
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Language dropdown */}
+                <select
+                  defaultValue={i18n.language}
+                  onChange={(e) => i18n.changeLanguage(e.target.value)}
+                >
+                  {availableLanguages.map((language) => (
+                    <option key={language}>{language}</option>
+                  ))}
+                </select>
+                {/*
                 <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex items-center text-base font-medium text-white hover:text-gray-900 focus:outline-none">
@@ -158,13 +178,13 @@ const Navbar = () => {
                       </Menu.Item>
                     </Menu.Items>
                   </Transition>
-                </Menu>
+                </Menu> */}
                 <div className="hidden sm:block">
                   <a
                     href="#"
                     className="bg-secondary mx-5 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                   >
-                    BOOK NOW
+                    {t('BOOK NOW')}
                   </a>
                 </div>
                 <Disclosure.Button className="hidden items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white lg:block">
