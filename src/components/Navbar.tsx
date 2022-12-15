@@ -1,9 +1,10 @@
-import { Disclosure /* , Menu, Transition */ } from '@headlessui/react';
+import { Disclosure, Listbox, Transition } from '@headlessui/react';
+import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Fragment, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-// import { Fragment, useState } from 'react';
 import logo from 'src/assets/logowhite.png';
 
 import { availableLanguages } from '../i18n';
@@ -12,35 +13,32 @@ export const navLinks = [
   { name: 'Home', path: '/', current: false },
   { name: 'Rooms', path: '/rooms', current: false },
   { name: 'Services', path: '/services', current: false },
-  { name: 'About us', path: '/about', current: false },
-  { name: 'Contact us', path: '/contact', current: false },
+  { name: 'About', path: '/about', current: false },
+  { name: 'Contact', path: '/contact', current: false },
 ];
-
-/*
-const languages = [
-  { name: 'En', current: true },
-  { name: 'Hrv', current: false },
-  { name: 'De', current: false },
-] */
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
 
 const Navbar = () => {
-  // const [language] = useState('En');
+  const [selectedLanguage, setSelectedLanguage] = useState('En');
 
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(selectedLanguage);
+  }, [selectedLanguage]);
 
   return (
     <Disclosure as="nav" className="bg-primary">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-full px-4 sm:px-28">
+          <div className="mx-auto max-w-full px-4 lg:px-28">
             <div className="relative flex h-16 items-center justify-between sm:h-24">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -70,9 +68,9 @@ const Navbar = () => {
                   </Link>
                 </div>
               </div>
-              {
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex">
                     {navLinks.map((link, index) => {
                       return (
                         <ul key={index}>
@@ -82,8 +80,8 @@ const Navbar = () => {
                               className={classNames(
                                 link.current
                                   ? 'bg-secondary text-white'
-                                  : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                'px-3 py-2 rounded-md text-sm font-medium'
+                                  : 'text-white hover:text-gray-900',
+                                'px-3 py-2 text-sm font-medium'
                               )}
                             >
                               {link.name}
@@ -94,91 +92,6 @@ const Navbar = () => {
                     })}
                   </div>
                 </div>
-              }
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/* Language dropdown */}
-                <select
-                  defaultValue={i18n.language}
-                  onChange={(e) => i18n.changeLanguage(e.target.value)}
-                >
-                  {availableLanguages.map((language) => (
-                    <option key={language}>{language}</option>
-                  ))}
-                </select>
-                {/*
-                <Menu as="div" className="relative ml-3">
-                  <div>
-                    <Menu.Button className="flex items-center text-base font-medium text-white hover:text-gray-900 focus:outline-none">
-                      <span className="sr-only">Open language menu</span>
-                      <span className="mr-1">{language}</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
-                        className="h-4 w-4"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                        />
-                      </svg>
-                    </Menu.Button>
-                  </div>
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-100"
-                    enterFrom="transform opacity-0 scale-95"
-                    enterTo="transform opacity-100 scale-100"
-                    leave="transition ease-in duration-75"
-                    leaveFrom="transform opacity-100 scale-100"
-                    leaveTo="transform opacity-0 scale-95"
-                  >
-                    <Menu.Items className="absolute right-0 z-10 mt-2 w-14 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
-                            )}
-                          >
-                            En
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
-                            )}
-                          >
-                            Hrv
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
-                            )}
-                          >
-                            De
-                          </a>
-                        )}
-                      </Menu.Item>
-                    </Menu.Items>
-                  </Transition>
-                </Menu> */}
                 <div className="hidden sm:block">
                   <a
                     href="#"
@@ -187,14 +100,72 @@ const Navbar = () => {
                     {t('BOOK NOW')}
                   </a>
                 </div>
-                <Disclosure.Button className="hidden items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white lg:block">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
+
+                {/* Language dropdown */}
+                <Listbox
+                  as="div"
+                  className="relative ml-3"
+                  value={selectedLanguage}
+                  onChange={setSelectedLanguage}
+                >
+                  <div>
+                    <Listbox.Button className="flex w-10 items-center text-base font-medium text-white hover:text-gray-900 focus:outline-none">
+                      <span className="truncate">{selectedLanguage}</span>
+                      <span className="pointer-events-none flex items-center">
+                        <ChevronDownIcon
+                          className="h-5 w-5 text-white"
+                          aria-hidden="true"
+                        />
+                      </span>
+                    </Listbox.Button>
+
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-100"
+                      enterFrom="transform opacity-0 scale-95"
+                      enterTo="transform opacity-100 scale-100"
+                      leave="transition ease-in duration-75"
+                      leaveFrom="transform opacity-100 scale-100"
+                      leaveTo="transform opacity-0 scale-95"
+                    >
+                      <Listbox.Options className="absolute top-6 -right-3 mt-1 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                        {availableLanguages.map((language) => (
+                          <Listbox.Option
+                            key={language}
+                            className={({ active }) =>
+                              `relative cursor-default select-none py-2 pl-10 pr-4 ${
+                                active
+                                  ? 'bg-amber-100 text-amber-900'
+                                  : 'text-black'
+                              }`
+                            }
+                            value={language}
+                          >
+                            {({ selected }) => (
+                              <>
+                                <span
+                                  className={`block truncate ${
+                                    selected ? 'font-medium' : 'font-normal'
+                                  }`}
+                                >
+                                  {language}
+                                </span>
+                                {selected ? (
+                                  <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
+                                    <CheckIcon
+                                      className="h-5 w-5"
+                                      aria-hidden="true"
+                                    />
+                                  </span>
+                                ) : null}
+                              </>
+                            )}
+                          </Listbox.Option>
+                        ))}
+                      </Listbox.Options>
+                    </Transition>
+                  </div>
+                </Listbox>
               </div>
             </div>
           </div>
@@ -210,8 +181,8 @@ const Navbar = () => {
                         className={classNames(
                           link.current
                             ? 'bg-secondary text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                            : 'text-white hover:text-gray-900',
+                          'px-3 py-2text-sm font-medium'
                         )}
                       >
                         {link.name}
