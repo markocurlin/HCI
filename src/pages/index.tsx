@@ -7,12 +7,45 @@ import '../i18n';
 
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
+import carouselImage1 from 'src/assets/carousel/image1.jpg';
+import carouselImage2 from 'src/assets/carousel/image2.jpg';
+import carouselImage3 from 'src/assets/carousel/image3.jpg';
+import carouselImage4 from 'src/assets/carousel/image4.jpg';
+import carouselImage5 from 'src/assets/carousel/image5.jpg';
 import image1 from 'src/assets/image1.jpg';
 import image2 from 'src/assets/image2.jpg';
-import image3 from 'src/assets/image3.jpg';
 import image from 'src/assets/imagebg.jpg';
 
+import Carousel from '@/components/Carousel';
 import Layout from '@/layouts/Layout';
+
+const carouselImages = [
+  {
+    id: 0,
+    imageSrc: carouselImage1,
+    imageAlt: 'Carousel image 1',
+  },
+  {
+    id: 1,
+    imageSrc: carouselImage2,
+    imageAlt: 'Carousel image 2',
+  },
+  {
+    id: 2,
+    imageSrc: carouselImage3,
+    imageAlt: 'Carousel image 3',
+  },
+  {
+    id: 3,
+    imageSrc: carouselImage4,
+    imageAlt: 'Carousel image 4',
+  },
+  {
+    id: 4,
+    imageSrc: carouselImage5,
+    imageAlt: 'Carousel image 5',
+  },
+];
 
 const Index = () => {
   // const router = useRouter();
@@ -100,11 +133,7 @@ const Index = () => {
         </div>
 
         <div className="h-130 w-full">
-          <Image
-            src={image3}
-            alt="image3"
-            className="h-full w-full object-cover"
-          />
+          <Carousel imageList={carouselImages} />
         </div>
 
         <div className="flex h-auto w-full items-center justify-center bg-white">

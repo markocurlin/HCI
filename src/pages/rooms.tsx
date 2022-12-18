@@ -1,12 +1,22 @@
 import Image from 'next/image';
 import deluxeroom1 from 'src/assets/rooms/deluxeroom-1.jpeg';
 import deluxeroom2 from 'src/assets/rooms/deluxeroom-2.jpg';
+import deluxeroom3 from 'src/assets/rooms/deluxeroom-3.jpg';
+import deluxeroom4 from 'src/assets/rooms/deluxeroom-4.jpg';
+import deluxeroom5 from 'src/assets/rooms/deluxeroom-5.jpg';
 import heroimage from 'src/assets/rooms/heroimage.jpg';
 import standardroom1 from 'src/assets/rooms/standardroom-1.jpg';
 import standardroom2 from 'src/assets/rooms/standardroom-2.jpeg';
+import standardroom3 from 'src/assets/rooms/standardroom-3.jpg';
+import standardroom4 from 'src/assets/rooms/standardroom-4.jpg';
+import standardroom5 from 'src/assets/rooms/standardroom-5.jpg';
 import superiorroom1 from 'src/assets/rooms/superiorroom-1.jpeg';
 import superiorroom2 from 'src/assets/rooms/superiorroom-2.png';
+import superiorroom3 from 'src/assets/rooms/superiorroom-3.jpg';
+import superiorroom4 from 'src/assets/rooms/superiorroom-4.jpg';
+import superiorroom5 from 'src/assets/rooms/superiorroom-5.jpg';
 
+import Carousel from '@/components/Carousel';
 import Layout from '@/layouts/Layout';
 
 const rooms = [
@@ -32,7 +42,28 @@ const rooms = [
     ],
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
     bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
-    images: standardroom2,
+    images: [
+      {
+        id: 0,
+        imageSrc: standardroom2,
+        imageAlt: 'Carousel image 1 of standard room',
+      },
+      {
+        id: 1,
+        imageSrc: standardroom3,
+        imageAlt: 'Carousel image 2 of standard room',
+      },
+      {
+        id: 2,
+        imageSrc: standardroom4,
+        imageAlt: 'Carousel image 3 of standard room',
+      },
+      {
+        id: 3,
+        imageSrc: standardroom5,
+        imageAlt: 'Carousel image 4 of standard room',
+      },
+    ],
   },
   {
     id: 1,
@@ -54,7 +85,28 @@ const rooms = [
     ],
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
     bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
-    images: superiorroom2,
+    images: [
+      {
+        id: 0,
+        imageSrc: superiorroom2,
+        imageAlt: 'Carousel image 1 of superior room',
+      },
+      {
+        id: 1,
+        imageSrc: superiorroom3,
+        imageAlt: 'Carousel image 2 of superior room',
+      },
+      {
+        id: 2,
+        imageSrc: superiorroom4,
+        imageAlt: 'Carousel image 3 of superior room',
+      },
+      {
+        id: 3,
+        imageSrc: superiorroom5,
+        imageAlt: 'Carousel image 4 of superior room',
+      },
+    ],
   },
   {
     id: 2,
@@ -78,7 +130,28 @@ const rooms = [
     ],
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
     bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
-    images: deluxeroom2,
+    images: [
+      {
+        id: 0,
+        imageSrc: deluxeroom2,
+        imageAlt: 'Carousel image 1 of deluxe room',
+      },
+      {
+        id: 1,
+        imageSrc: deluxeroom3,
+        imageAlt: 'Carousel image 2 of deluxe room',
+      },
+      {
+        id: 2,
+        imageSrc: deluxeroom4,
+        imageAlt: 'Carousel image 3 of deluxe room',
+      },
+      {
+        id: 3,
+        imageSrc: deluxeroom5,
+        imageAlt: 'Carousel image 4 of deluxe room',
+      },
+    ],
   },
 ];
 
@@ -197,43 +270,36 @@ const Rooms = () => {
                   </div>
                 </div>
               </div>
-              <div className="h-124 w-full">
-                <div className="h-104">
-                  <Image
-                    src={room.images}
-                    alt={room.imageAlt}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="bg-primary h-24"></div>
-              </div>
 
-              <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
-                <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
-                  <p className="text-xl font-semibold text-black sm:text-3xl">
-                    Your unforgettable adventure awaits
-                  </p>
-                  <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
-                    Luxury Hotel Božikovina is warm and friendly hotel located
-                    in Podstrana just 7km from city of Split. This is a modern,
-                    relaxed luxury - Dalmatian style hotel, built in 2002 and at
-                    the highest European standards renovated in 2022. Thanks to
-                    its enchanting heritage, Podstrana is evolving into an elite
-                    cultural site, and its main attractions are a beautiful
-                    location with crystal clear sea, mild climate and beautiful
-                    pebble beaches.
-                  </p>
-
-                  <a
-                    href="#"
-                    className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-                  >
-                    LEARN MORE
-                  </a>
-                </div>
+              <div className="h-130 w-full">
+                <Carousel imageList={room.images} />
               </div>
             </>
           ))}
+        </div>
+
+        <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
+          <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
+            <p className="text-xl font-semibold text-black sm:text-3xl">
+              Your unforgettable adventure awaits
+            </p>
+            <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              Luxury Hotel Božikovina is warm and friendly hotel located in
+              Podstrana just 7km from city of Split. This is a modern, relaxed
+              luxury - Dalmatian style hotel, built in 2002 and at the highest
+              European standards renovated in 2022. Thanks to its enchanting
+              heritage, Podstrana is evolving into an elite cultural site, and
+              its main attractions are a beautiful location with crystal clear
+              sea, mild climate and beautiful pebble beaches.
+            </p>
+
+            <a
+              href="#"
+              className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+            >
+              LEARN MORE
+            </a>
+          </div>
         </div>
       </Layout>
     </>

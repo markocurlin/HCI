@@ -16,7 +16,7 @@ const Services = () => {
   return (
     <Layout>
       <div className="relative my-10 overflow-hidden bg-white">
-        <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+        <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-60 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -107,7 +107,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="flex h-auto w-full items-center justify-center bg-white">
+      <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
         <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
           <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pl-12">
             <Image src={diningimage} alt="image2" width={540} height={764} />
@@ -152,7 +152,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
+      <div className="flex h-auto w-full items-center justify-center bg-white">
         <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
           <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pl-12">
             <Image src={poolimage} alt="image2" width={540} height={764} />
@@ -220,8 +220,6 @@ const Services = () => {
           </a>
         </div>
       </div>
-
-      <div className="bg-primary h-96"></div>
     </Layout>
   );
 };
