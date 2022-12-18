@@ -30,6 +30,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.1",
     "react-translator-component": "^2.2.0",
+    "swiper": "^8.4.5",
     "tw-elements": "^1.0.0-alpha13"
   },
   "devDependencies": {

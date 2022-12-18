@@ -1,3 +1,4 @@
+import Carousel from '@/components/Carousel';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -9,6 +10,8 @@ const About = () => (
       voluptatibus distinctio recusandae autem esse explicabo molestias officia
       placeat, accusamus aut saepe.
     </p>
+
+    <Carousel />
   </Main>
 );
 
