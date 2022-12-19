@@ -1,6 +1,13 @@
 {
   "common": {
-    "Welcome to Luxury Hotel Božikovina": "Welcome to Luxury Hotel Božikovina!!!",
-    "BOOK NOW": "BOOK NOW"
+    "Home": "Home",
+    "Rooms": "Rooms",
+    "Services": "Services",
+    "About": "About",
+    "Contact": "Contact",
+    "BOOK NOW": "BOOK NOW",
+    "Welcome to Luxury Hotel Božikovina": "Welcome to Luxury Hotel Božikovina",
+    "Luxury Hotel Božikovina is warm and friendly hotel located in Podstrana just 7km from city of Split. This is a modern, relaxed luxury - Dalmatian style hotel, built in 2002 and at the highest European standards renovated in 2022. Thanks to its enchanting heritage, Podstrana is evolving into an elite cultural site, and its main attractions are a beautiful location with crystal clear sea, mild climate and beautiful pebble beaches.": "Luxury Hotel Božikovina is warm and friendly hotel located in Podstrana just 7km from city of Split. This is a modern, relaxed luxury - Dalmatian style hotel, built in 2002 and at the highest European standards renovated in 2022. Thanks to its enchanting heritage, Podstrana is evolving into an elite cultural site, and its main attractions are a beautiful location with crystal clear sea, mild climate and beautiful pebble beaches.",
+    "LEARN MORE": "LEARN MORE"
   }
 }

@@ -1,8 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
 
+import { navLinks } from './Navbar';
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="bg-primary w-full p-4 sm:p-6">
@@ -17,7 +22,23 @@ const Footer = () => {
                   alt="Hotel Božikovina logo"
                 />
               </Link>
-              <ul className="mb-6 flex flex-wrap items-center text-sm text-white sm:mb-0 ">
+              <ul className="mb-6 flex flex-wrap items-center text-sm text-white sm:mb-0">
+                {navLinks.map((link, index) => {
+                  return (
+                    <li key={index}>
+                      <Link
+                        href={link.path}
+                        className="mr-4 text-justify text-sm leading-snug text-white sm:text-lg md:mr-6"
+                      >
+                        {t(`${link.name}`)}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+
+              {/*
+              <ul className="mb-6 flex flex-wrap items-center text-sm text-white sm:mb-0">
                 <li>
                   <Link
                     href=""
@@ -58,7 +79,7 @@ const Footer = () => {
                     Contact
                   </Link>
                 </li>
-              </ul>
+            </ul> */}
             </div>
 
             <hr className="my-6 border-white/70 sm:mx-auto lg:my-8" />

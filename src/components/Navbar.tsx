@@ -84,7 +84,7 @@ const Navbar = () => {
                                 'px-3 py-2 text-sm font-medium'
                               )}
                             >
-                              {link.name}
+                              {t(`${link.name}`)}
                             </li>
                           </Link>
                         </ul>

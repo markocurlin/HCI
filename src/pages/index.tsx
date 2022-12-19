@@ -68,20 +68,16 @@ const Index = () => {
               {t('Welcome to Luxury Hotel Božikovina')}
             </p>
             <p className="mt-2 text-justify text-sm leading-snug text-white/70 sm:text-lg">
-              Luxury Hotel Božikovina is warm and friendly hotel located in
-              Podstrana just 7km from city of Split. This is a modern, relaxed
-              luxury - Dalmatian style hotel, built in 2002 and at the highest
-              European standards renovated in 2022. Thanks to its enchanting
-              heritage, Podstrana is evolving into an elite cultural site, and
-              its main attractions are a beautiful location with crystal clear
-              sea, mild climate and beautiful pebble beaches.
+              {t(
+                'Luxury Hotel Božikovina is warm and friendly hotel located in Podstrana just 7km from city of Split. This is a modern, relaxed luxury - Dalmatian style hotel, built in 2002 and at the highest European standards renovated in 2022. Thanks to its enchanting heritage, Podstrana is evolving into an elite cultural site, and its main attractions are a beautiful location with crystal clear sea, mild climate and beautiful pebble beaches.'
+              )}
             </p>
 
             <a
               href="#"
               className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
-              LEARN MORE
+              {t('LEARN MORE')}
             </a>
           </div>
         </div>
