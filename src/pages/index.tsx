@@ -63,7 +63,7 @@ const Index = () => {
         </div>
 
         <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">
-          <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
+          <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
             <p className="text-xl font-semibold text-white sm:text-3xl">
               {t('Welcome to Luxury Hotel Božikovina')}
             </p>
@@ -84,7 +84,7 @@ const Index = () => {
 
         <div className="flex h-auto w-full items-center justify-center bg-white">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="px-24 pt-12 sm:px-24 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
+            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 A different perspective
               </p>
@@ -100,7 +100,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pr-12">
+            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-12">
               <Image src={image1} alt="image1" width={540} height={764} />
             </div>
           </div>
@@ -108,11 +108,11 @@ const Index = () => {
 
         <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pl-12">
+            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pl-12">
               <Image src={image2} alt="image2" width={540} height={764} />
             </div>
 
-            <div className="px-24 pb-12 sm:px-24 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
+            <div className="px-8 pb-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 Workplace and beyond
               </p>
@@ -134,7 +134,7 @@ const Index = () => {
 
         <div className="flex h-auto w-full items-center justify-center bg-white">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="px-24 pt-12 sm:px-24 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
+            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 A different perspective
               </p>
@@ -150,7 +150,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pr-12">
+            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-12">
               <Image src={image1} alt="image4" width={540} height={764} />
             </div>
           </div>
@@ -158,11 +158,11 @@ const Index = () => {
 
         <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="flex items-center justify-center px-24 py-12 lg:p-24 lg:pl-12">
+            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pl-12">
               <Image src={image2} alt="image5" width={540} height={764} />
             </div>
 
-            <div className="px-24 pb-12 sm:px-24 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
+            <div className="px-8 pb-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 Workplace and beyond
               </p>
@@ -179,7 +179,7 @@ const Index = () => {
         </div>
 
         <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
-          <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
+          <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
             <p className="text-xl font-semibold text-black sm:text-3xl">
               Your unforgettable adventure awaits
             </p>
