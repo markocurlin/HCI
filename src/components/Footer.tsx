@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
 
+// import { navLinks } from 'src/constants/navbar.js';
 import { navLinks } from './Navbar';
 
 const Footer = () => {

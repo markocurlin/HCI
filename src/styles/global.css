@@ -54,3 +54,9 @@ a:hover {
 .w-custom {
   max-width: 540px;
 }
+
+@media screen and ( max-width: 640px ){
+  .h-130 {
+    height: auto;
+  }
+}
