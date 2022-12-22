@@ -58,7 +58,7 @@ const Index = () => {
           <Image
             src={image}
             alt="Hero image of hotel"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center"
           />
         </div>
 
@@ -100,7 +100,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-12">
+            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
               <Image src={image1} alt="image1" width={540} height={764} />
             </div>
           </div>
@@ -108,22 +108,26 @@ const Index = () => {
 
         <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pl-12">
+            <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
               <Image src={image2} alt="image2" width={540} height={764} />
             </div>
 
-            <div className="px-8 pb-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
+            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 Workplace and beyond
               </p>
 
-              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
                 Meaningful gatherings can only be held in an equally significant
                 space. Following the same line and concept, we host an array of
                 events, from private celebrations to business meetings. As in
                 every supportive home, our professional staff is fully committed
                 to your desired results, whatever the context.
               </p>
+            </div>
+
+            <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
+              <Image src={image2} alt="image2" width={540} height={764} />
             </div>
           </div>
         </div>
@@ -150,19 +154,19 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-12">
-              <Image src={image1} alt="image4" width={540} height={764} />
+            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
+              <Image src={image1} alt="image1" width={540} height={764} />
             </div>
           </div>
         </div>
 
         <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pl-12">
-              <Image src={image2} alt="image5" width={540} height={764} />
+            <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
+              <Image src={image2} alt="image2" width={540} height={764} />
             </div>
 
-            <div className="px-8 pb-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
+            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 Workplace and beyond
               </p>
@@ -174,6 +178,10 @@ const Index = () => {
                 every supportive home, our professional staff is fully committed
                 to your desired results, whatever the context.
               </p>
+            </div>
+
+            <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
+              <Image src={image2} alt="image2" width={540} height={764} />
             </div>
           </div>
         </div>
