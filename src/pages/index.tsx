@@ -112,7 +112,7 @@ const Index = () => {
               <Image src={image2} alt="image2" width={540} height={764} />
             </div>
 
-            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
+            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 Workplace and beyond
               </p>
@@ -166,7 +166,7 @@ const Index = () => {
               <Image src={image2} alt="image2" width={540} height={764} />
             </div>
 
-            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
+            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 Workplace and beyond
               </p>
@@ -209,8 +209,6 @@ const Index = () => {
             </a>
           </div>
         </div>
-
-        <div className="bg-primary h-auto w-full md:flex md:items-center md:justify-center"></div>
       </Layout>
     </>
   );

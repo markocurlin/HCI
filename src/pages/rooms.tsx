@@ -1,181 +1,32 @@
 import Image from 'next/image';
-import deluxeroom1 from 'src/assets/rooms/deluxeroom-1.jpeg';
-import deluxeroom2 from 'src/assets/rooms/deluxeroom-2.jpg';
-import deluxeroom3 from 'src/assets/rooms/deluxeroom-3.jpg';
-import deluxeroom4 from 'src/assets/rooms/deluxeroom-4.jpg';
-import deluxeroom5 from 'src/assets/rooms/deluxeroom-5.jpg';
 import heroimage from 'src/assets/rooms/heroimage.jpg';
-import standardroom1 from 'src/assets/rooms/standardroom-1.jpg';
-import standardroom2 from 'src/assets/rooms/standardroom-2.jpeg';
-import standardroom3 from 'src/assets/rooms/standardroom-3.jpg';
-import standardroom4 from 'src/assets/rooms/standardroom-4.jpg';
-import standardroom5 from 'src/assets/rooms/standardroom-5.jpg';
-import superiorroom1 from 'src/assets/rooms/superiorroom-1.jpeg';
-import superiorroom2 from 'src/assets/rooms/superiorroom-2.png';
-import superiorroom3 from 'src/assets/rooms/superiorroom-3.jpg';
-import superiorroom4 from 'src/assets/rooms/superiorroom-4.jpg';
-import superiorroom5 from 'src/assets/rooms/superiorroom-5.jpg';
+import rooms from 'src/constants/rooms';
 
 import Carousel from '@/components/Carousel';
 import Layout from '@/layouts/Layout';
-
-const rooms = [
-  {
-    id: 0,
-    name: 'Standard double room',
-    href: '#',
-    imageSrc: standardroom1,
-    imageAlt: 'Standard double room',
-    description:
-      'The Superior Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
-    amenities: [
-      'Complimentary wireless Internet',
-      'Mini Bar',
-      'Mini cooler',
-      'Hairdryer',
-      'Complimentary bottle of wine',
-      'Air conditioning',
-      'Flat-screen TV with cable',
-      'Welcome fruit basket',
-      'Work desk and chair',
-      'In-room coffee and tea',
-    ],
-    maxOccupancy: '2 adults, 2 Children (11 years old and below)',
-    bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
-    images: [
-      {
-        id: 0,
-        imageSrc: standardroom2,
-        imageAlt: 'Carousel image 1 of standard room',
-      },
-      {
-        id: 1,
-        imageSrc: standardroom3,
-        imageAlt: 'Carousel image 2 of standard room',
-      },
-      {
-        id: 2,
-        imageSrc: standardroom4,
-        imageAlt: 'Carousel image 3 of standard room',
-      },
-      {
-        id: 3,
-        imageSrc: standardroom5,
-        imageAlt: 'Carousel image 4 of standard room',
-      },
-    ],
-  },
-  {
-    id: 1,
-    name: 'Superior double room',
-    href: '#',
-    imageSrc: superiorroom1,
-    imageAlt: 'Superior double room',
-    description:
-      'The Superior Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
-    amenities: [
-      'Complimentary wireless Internet',
-      'Mini Bar',
-      'Mini cooler',
-      'Hairdryer',
-      'Air conditioning',
-      'Flat-screen TV with cable',
-      'Work desk and chair',
-      'In-room coffee and tea',
-    ],
-    maxOccupancy: '2 adults, 2 Children (11 years old and below)',
-    bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
-    images: [
-      {
-        id: 0,
-        imageSrc: superiorroom2,
-        imageAlt: 'Carousel image 1 of superior room',
-      },
-      {
-        id: 1,
-        imageSrc: superiorroom3,
-        imageAlt: 'Carousel image 2 of superior room',
-      },
-      {
-        id: 2,
-        imageSrc: superiorroom4,
-        imageAlt: 'Carousel image 3 of superior room',
-      },
-      {
-        id: 3,
-        imageSrc: superiorroom5,
-        imageAlt: 'Carousel image 4 of superior room',
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: 'The Deluxe suite',
-    href: '#',
-    imageSrc: deluxeroom1,
-    imageAlt: 'The Deluxe suite',
-    description:
-      'The Deluxe Suite provides a sophisticated blend of modern design and classic elegance that enhances the light, spacious atmosphere.  Provides leisure and business travelers with a luxurious retreat, where they can enjoy the atmosphere of this beautiful hotel.',
-    amenities: [
-      'Complimentary wireless Internet',
-      'Mini Bar',
-      'Mini cooler',
-      'Hairdryer',
-      'Complimentary bottle of wine',
-      'Air conditioning',
-      'Flat-screen TV with cable',
-      'Welcome fruit basket',
-      'Work desk and chair',
-      'In-room coffee and tea',
-    ],
-    maxOccupancy: '2 adults, 2 Children (11 years old and below)',
-    bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
-    images: [
-      {
-        id: 0,
-        imageSrc: deluxeroom2,
-        imageAlt: 'Carousel image 1 of deluxe room',
-      },
-      {
-        id: 1,
-        imageSrc: deluxeroom3,
-        imageAlt: 'Carousel image 2 of deluxe room',
-      },
-      {
-        id: 2,
-        imageSrc: deluxeroom4,
-        imageAlt: 'Carousel image 3 of deluxe room',
-      },
-      {
-        id: 3,
-        imageSrc: deluxeroom5,
-        imageAlt: 'Carousel image 4 of deluxe room',
-      },
-    ],
-  },
-];
 
 const Rooms = () => {
   return (
     <>
       <Layout>
-        <div className="h-124 w-full bg-gray-300">
+        <div className="h-130 w-full">
           <Image
             src={heroimage}
             alt="Hero image of room"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center"
           />
         </div>
 
         <div className="bg-white">
-          <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div className="mx-auto max-w-2xl p-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8">
             <h2 className="text-center text-3xl font-semibold tracking-tight text-black">
               Rooms and suites
             </h2>
-            <div className="mt-8 grid grid-cols-1 items-center justify-items-center gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-0">
+
+            <div className="mt-4 grid grid-cols-1 items-center justify-items-center gap-y-8 gap-x-16 sm:mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-0">
               {rooms.map((room) => (
-                <div key={room.id} className="group relative w-80">
-                  <div className="lg:aspect-none h-80 w-80 overflow-hidden bg-gray-200 group-hover:opacity-75">
+                <div key={room.id} className="container p-4 sm:w-80 sm:p-0">
+                  <div className="lg:aspect-none h-80 overflow-hidden bg-black group-hover:opacity-75 sm:w-80 sm:p-0">
                     <Image
                       src={room.imageSrc}
                       alt={room.imageAlt}
@@ -185,9 +36,8 @@ const Rooms = () => {
                     />
                   </div>
 
-                  <div className="mt-3 flex items-center justify-between">
+                  <div className="mt-3 flex items-center justify-between sm:w-80 sm:p-0">
                     <div>
-                      <span aria-hidden="true" className="absolute inset-0" />
                       <p className="text-justify text-lg font-semibold leading-snug tracking-tight text-black/70">
                         {room.name}
                       </p>
@@ -223,9 +73,9 @@ const Rooms = () => {
             <>
               <div
                 key={room.id}
-                className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+                className="mx-auto max-w-2xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
               >
-                <div className="container justify-around lg:flex">
+                <div className="container justify-around px-2 sm:px-8 lg:flex">
                   <div className="container p-2">
                     <p className="text-xl font-semibold text-black sm:text-2xl">
                       {room.name}
@@ -279,7 +129,7 @@ const Rooms = () => {
         </div>
 
         <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
-          <div className="container px-24 text-center sm:px-24 md:px-28 xl:w-3/5">
+          <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
             <p className="text-xl font-semibold text-black sm:text-3xl">
               Your unforgettable adventure awaits
             </p>

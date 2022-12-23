@@ -7,15 +7,9 @@ import { Fragment, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
 
-import { availableLanguages } from '../i18n';
+import { navLinks } from '@/constants/navbar';
 
-export const navLinks = [
-  { name: 'Home', path: '/', current: false },
-  { name: 'Rooms', path: '/rooms', current: false },
-  { name: 'Villas', path: '/villas', current: false },
-  { name: 'Services', path: '/services', current: false },
-  { name: 'Contact', path: '/contact', current: false },
-];
+import { availableLanguages } from '../i18n';
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
