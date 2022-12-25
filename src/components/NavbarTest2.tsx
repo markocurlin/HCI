@@ -60,42 +60,9 @@ const NavbarTest2 = () => {
                 alt="Hotel Božikovina logo"
               />
             </Link>
-            {/*
-              <Link href="/">
-                <span className="sr-only">Your Hotel</span>
-                <Image
-                  className="hidden h-12 w-auto sm:h-20 lg:block"
-                  src={logo}
-                  alt="Hotel Božikovina logo"
-                />
-              </Link> */}
           </div>
 
           <div className="flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
-            {/* <div className="hidden sm:ml-6 sm:block">
-              <div className="flex">
-                {navLinks.map((link, index) => {
-                  return (
-                    <ul key={index}>
-                      <Link href={link.path}>
-                        <li
-                          key={index}
-                          className={classNames(
-                            link.current
-                              ? 'bg-secondary text-white'
-                            : 'text-white hover:text-gray-900',
-                            'px-3 py-2 text-sm font-medium'
-                          )}
-                          >
-                          {t(`${link.name}`)}
-                          </li>
-                      </Link>
-                    </ul>
-                  );
-                })}
-              </div>
-            </div> */}
-
             <div className="hidden md:block">
               <Link
                 href="#"
@@ -208,7 +175,7 @@ const NavbarTest2 = () => {
                 >
                   <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md">
                     <div className="flex h-full flex-col bg-white py-6 shadow-xl">
-                      <div className="mt-14 flex-1 px-4 lg:px-28">
+                      <div className="mt-32 flex-1 px-4 lg:px-28">
                         {/* <div className="h-full border-2 border-dashed border-gray-200" aria-hidden="true" /> */}
                         <div className="">
                           {navLinks.map((link, index) => {
@@ -221,7 +188,7 @@ const NavbarTest2 = () => {
                                       link.current
                                         ? 'bg-secondary text-black/70'
                                         : 'text-black/70 hover:text-gray-900',
-                                      'px-3 py-2 text-xl font-medium'
+                                      'px-3 py-2 text-2xl font-medium'
                                     )}
                                   >
                                     {t(`${link.name}`)}
