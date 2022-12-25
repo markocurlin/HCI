@@ -62,6 +62,7 @@ const Navbar = () => {
                   </Link>
                 </div>
               </div>
+
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex">
@@ -87,12 +88,12 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div className="hidden sm:block">
-                  <a
+                  <Link
                     href="#"
                     className="bg-secondary mx-5 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                   >
                     {t('BOOK NOW')}
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Language dropdown */}
@@ -164,29 +165,38 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3">
-              {navLinks.map((link, index) => {
-                return (
-                  <ul key={index}>
-                    <Link href={link.path}>
-                      <li
-                        key={index}
-                        className={classNames(
-                          link.current
-                            ? 'bg-secondary text-white'
-                            : 'text-white hover:text-gray-900',
-                          'px-3 py-2text-sm font-medium'
-                        )}
-                      >
-                        {t(`${link.name}`)}
-                      </li>
-                    </Link>
-                  </ul>
-                );
-              })}
-            </div>
-          </Disclosure.Panel>
+          <Transition
+            enter="transition ease-out duration-100"
+            enterFrom="transform opacity-0 scale-95"
+            enterTo="transform opacity-100 scale-100"
+            leave="transition ease-in duration-75"
+            leaveFrom="transform opacity-100 scale-100"
+            leaveTo="transform opacity-0 scale-95"
+          >
+            <Disclosure.Panel className="sm:hidden">
+              <div className="space-y-1 px-2 pt-2 pb-3">
+                {navLinks.map((link, index) => {
+                  return (
+                    <ul key={index}>
+                      <Link href={link.path}>
+                        <li
+                          key={index}
+                          className={classNames(
+                            link.current
+                              ? 'bg-secondary text-white'
+                              : 'text-white hover:text-gray-900',
+                            'px-3 py-2text-sm font-medium'
+                          )}
+                        >
+                          {t(`${link.name}`)}
+                        </li>
+                      </Link>
+                    </ul>
+                  );
+                })}
+              </div>
+            </Disclosure.Panel>
+          </Transition>
         </>
       )}
     </Disclosure>

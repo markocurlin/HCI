@@ -6,46 +6,17 @@
 import '../i18n';
 
 import Image from 'next/image';
+import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import { useTranslation } from 'react-i18next';
-import carouselImage1 from 'src/assets/carousel/image1.jpg';
-import carouselImage2 from 'src/assets/carousel/image2.jpg';
-import carouselImage3 from 'src/assets/carousel/image3.jpg';
-import carouselImage4 from 'src/assets/carousel/image4.jpg';
-import carouselImage5 from 'src/assets/carousel/image5.jpg';
 import image1 from 'src/assets/image1.jpg';
 import image2 from 'src/assets/image2.jpg';
 import image from 'src/assets/imagebg.jpg';
+import carouselImages from 'src/constants/home';
+import SEO from 'src/data/next-seo.config';
 
 import Carousel from '@/components/Carousel';
 import Layout from '@/layouts/Layout';
-
-const carouselImages = [
-  {
-    id: 0,
-    imageSrc: carouselImage1,
-    imageAlt: 'Carousel image 1',
-  },
-  {
-    id: 1,
-    imageSrc: carouselImage2,
-    imageAlt: 'Carousel image 2',
-  },
-  {
-    id: 2,
-    imageSrc: carouselImage3,
-    imageAlt: 'Carousel image 3',
-  },
-  {
-    id: 3,
-    imageSrc: carouselImage4,
-    imageAlt: 'Carousel image 4',
-  },
-  {
-    id: 4,
-    imageSrc: carouselImage5,
-    imageAlt: 'Carousel image 5',
-  },
-];
 
 const Index = () => {
   // const router = useRouter();
@@ -53,6 +24,7 @@ const Index = () => {
 
   return (
     <>
+      <NextSeo {...SEO} />
       <Layout>
         <div className="h-130 w-full">
           <Image
@@ -73,12 +45,12 @@ const Index = () => {
               )}
             </p>
 
-            <a
+            <Link
               href="#"
               className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
               {t('LEARN MORE')}
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -201,12 +173,12 @@ const Index = () => {
               sea, mild climate and beautiful pebble beaches.
             </p>
 
-            <a
+            <Link
               href="#"
               className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
               LEARN MORE
-            </a>
+            </Link>
           </div>
         </div>
       </Layout>

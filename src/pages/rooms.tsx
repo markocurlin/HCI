@@ -1,13 +1,18 @@
+import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
+import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import heroimage from 'src/assets/rooms/heroimage.jpg';
 import rooms from 'src/constants/rooms';
 
 import Carousel from '@/components/Carousel';
+import SEO from '@/data/next-seo.config';
 import Layout from '@/layouts/Layout';
 
 const Rooms = () => {
   return (
     <>
+      <NextSeo title={`${SEO.title} - Rooms`} />
       <Layout>
         <div className="h-130 w-full">
           <Image
@@ -25,7 +30,10 @@ const Rooms = () => {
 
             <div className="mt-4 grid grid-cols-1 items-center justify-items-center gap-y-8 gap-x-16 sm:mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-0">
               {rooms.map((room) => (
-                <div key={room.id} className="container p-4 sm:w-80 sm:p-0">
+                <div
+                  key={room.id}
+                  className="group container p-4 sm:w-80 sm:p-0"
+                >
                   <div className="lg:aspect-none h-80 overflow-hidden bg-black group-hover:opacity-75 sm:w-80 sm:p-0">
                     <Image
                       src={room.imageSrc}
@@ -42,25 +50,12 @@ const Rooms = () => {
                         {room.name}
                       </p>
                     </div>
-                    <a
+                    <Link
                       href="#"
                       className="bg-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent p-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
-                        className="h-6 w-6"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                        />
-                      </svg>
-                    </a>
+                      <ArrowRightIcon className="h-6 w-6 text-white" />
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -99,12 +94,12 @@ const Rooms = () => {
                         {room.bedConfiguration}
                       </p>
                     </div>
-                    <a
+                    <Link
                       href="#"
                       className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                     >
                       BOOK NOW
-                    </a>
+                    </Link>
                   </div>
                   <div className="container mt-4 p-2 lg:mt-0 xl:mt-0">
                     {room.amenities.map((amenitie, index) => (
@@ -143,12 +138,12 @@ const Rooms = () => {
               sea, mild climate and beautiful pebble beaches.
             </p>
 
-            <a
+            <Link
               href="#"
               className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
               LEARN MORE
-            </a>
+            </Link>
           </div>
         </div>
       </Layout>
