@@ -197,6 +197,7 @@ const NavbarTest2 = () => {
                               </ul>
                             );
                           })}
+                          <div>{/* ikone i dalje */}</div>
                         </div>
                       </div>
                     </div>
