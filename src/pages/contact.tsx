@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
-import mapImage from 'src/assets/mapimage.png';
+import mapImage from 'src/assets/mapImage.png';
 import heroImage from 'src/assets/podstrana.jpg';
 import SEO from 'src/data/next-seo.config';
 
