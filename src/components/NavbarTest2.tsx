@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import image from 'src/assets/imagebg.jpg';
 import logo from 'src/assets/logowhite.png';
 
-import { navLinks } from '@/constants/navbar';
+import { navLinks, socialMedia } from '@/constants/navbar';
 
 import { availableLanguages } from '../i18n';
 
@@ -28,7 +28,7 @@ const NavbarTest2 = () => {
   }, [selectedLanguage]);
   return (
     <>
-      <div className="bg-primary mx-auto max-w-full px-4 lg:px-28">
+      <div className="bg-primary mx-auto max-w-full px-4 lg:px-20">
         <div className="relative flex h-16 items-center justify-between sm:h-24">
           <div className="z-50 w-auto">
             {/* Mobile menu button */}
@@ -80,7 +80,7 @@ const NavbarTest2 = () => {
               onChange={setSelectedLanguage}
             >
               <div>
-                <Listbox.Button className="flex w-10 items-center text-base font-medium text-white hover:text-gray-900 focus:outline-none">
+                <Listbox.Button className="flex w-10 items-center text-base font-medium text-white focus:outline-none">
                   <span className="truncate">{selectedLanguage}</span>
                   <span className="pointer-events-none flex items-center">
                     <ChevronDownIcon
@@ -173,11 +173,10 @@ const NavbarTest2 = () => {
                   leaveFrom="translate-x-0"
                   leaveTo="-translate-x-full"
                 >
-                  <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md">
-                    <div className="flex h-full flex-col bg-white py-6 shadow-xl">
-                      <div className="mt-32 flex-1 px-4 lg:px-28">
-                        {/* <div className="h-full border-2 border-dashed border-gray-200" aria-hidden="true" /> */}
-                        <div className="">
+                  <Dialog.Panel className="pointer-events-auto relative w-screen max-w-lg">
+                    <div className="scroll-y flex h-full flex-col bg-white py-6 shadow-xl">
+                      <div className="mt-32 mb-16 px-4 lg:px-20">
+                        <div className="flex flex-col items-center sm:items-start">
                           {navLinks.map((link, index) => {
                             return (
                               <ul key={index}>
@@ -188,7 +187,7 @@ const NavbarTest2 = () => {
                                       link.current
                                         ? 'bg-secondary text-black/70'
                                         : 'text-black/70 hover:text-gray-900',
-                                      'px-3 py-2 text-2xl font-medium'
+                                      'px-3 py-2 text-2xl sm:text-3xl font-normal'
                                     )}
                                   >
                                     {t(`${link.name}`)}
@@ -197,7 +196,31 @@ const NavbarTest2 = () => {
                               </ul>
                             );
                           })}
-                          <div>{/* ikone i dalje */}</div>
+                          <div className="mt-16 flex flex-col items-center sm:items-start">
+                            {socialMedia.map((media, index) => {
+                              return (
+                                <ul key={index}>
+                                  <Link href={media.href}>
+                                    <li
+                                      key={index}
+                                      className="px-3 py-2 text-lg font-normal text-black/70 hover:text-gray-900 sm:text-xl"
+                                    >
+                                      {media.name}
+                                    </li>
+                                  </Link>
+                                </ul>
+                              );
+                            })}
+                          </div>
+
+                          <div className="mt-16 px-3 py-2">
+                            <Link
+                              href="#"
+                              className="bg-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                            >
+                              {t('BOOK NOW')}
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
