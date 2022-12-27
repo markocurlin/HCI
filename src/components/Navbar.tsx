@@ -3,6 +3,7 @@ import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Fragment, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
@@ -16,6 +17,8 @@ function classNames(...classes: any) {
 }
 
 const Navbar = () => {
+  const router = useRouter();
+  const currentPage = router.pathname;
   const [selectedLanguage, setSelectedLanguage] = useState('En');
 
   const { t, i18n } = useTranslation();
@@ -73,7 +76,7 @@ const Navbar = () => {
                             <li
                               key={index}
                               className={classNames(
-                                link.current
+                                currentPage === link.path
                                   ? 'bg-secondary text-white'
                                   : 'text-white hover:text-gray-900',
                                 'px-3 py-2 text-sm font-medium'

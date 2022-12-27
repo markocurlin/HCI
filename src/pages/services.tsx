@@ -15,7 +15,7 @@ import Layout from '@/layouts/Layout';
 const Services = () => {
   return (
     <Layout>
-      <div className="relative my-10 overflow-hidden bg-white">
+      <div className="relative mt-10 overflow-hidden bg-white lg:my-10">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-60 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">

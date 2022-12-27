@@ -3,6 +3,7 @@ import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Fragment, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import image from 'src/assets/imagebg.jpg';
@@ -17,10 +18,10 @@ function classNames(...classes: any) {
 }
 
 const NavbarTest2 = () => {
+  const router = useRouter();
+  const currentPage = router.pathname;
   const [open, setOpen] = useState(false);
-
   const [selectedLanguage, setSelectedLanguage] = useState('En');
-
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -184,9 +185,9 @@ const NavbarTest2 = () => {
                                   <li
                                     key={index}
                                     className={classNames(
-                                      link.current
-                                        ? 'bg-secondary text-black/70'
-                                        : 'text-black/70 hover:text-gray-900',
+                                      currentPage === link.path
+                                        ? 'text-black font-medium'
+                                        : 'text-black/60 hover:text-gray-900',
                                       'px-3 py-2 text-2xl sm:text-3xl font-normal'
                                     )}
                                   >
@@ -203,7 +204,7 @@ const NavbarTest2 = () => {
                                   <Link href={media.href}>
                                     <li
                                       key={index}
-                                      className="px-3 py-2 text-lg font-normal text-black/70 hover:text-gray-900 sm:text-xl"
+                                      className="px-3 py-2 text-lg font-normal text-black/60 hover:text-gray-900 sm:text-xl"
                                     >
                                       {media.name}
                                     </li>

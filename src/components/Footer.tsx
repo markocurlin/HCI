@@ -28,7 +28,7 @@ const Footer = () => {
                     <li key={index}>
                       <Link
                         href={link.path}
-                        className="mr-4 text-justify text-sm leading-snug text-white sm:text-lg md:mr-6"
+                        className="mr-4 text-justify text-sm font-semibold leading-snug text-white sm:text-lg md:mr-6"
                       >
                         {t(`${link.name}`)}
                       </Link>
@@ -36,50 +36,6 @@ const Footer = () => {
                   );
                 })}
               </ul>
-
-              {/*
-              <ul className="mb-6 flex flex-wrap items-center text-sm text-white sm:mb-0">
-                <li>
-                  <Link
-                    href=""
-                    className="mr-4 text-justify text-sm leading-snug text-white sm:text-lg md:mr-6"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href=""
-                    className="mr-4 text-justify text-sm leading-snug text-white sm:text-lg md:mr-6"
-                  >
-                    Rooms
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href=""
-                    className="mr-4 text-justify text-sm leading-snug text-white sm:text-lg md:mr-6"
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href=""
-                    className="mr-4 text-justify text-sm leading-snug text-white sm:text-lg md:mr-6"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href=""
-                    className="mr-4 text-justify text-sm leading-snug text-white sm:text-lg md:mr-6"
-                  >
-                    Contact
-                  </Link>
-                </li>
-            </ul> */}
             </div>
 
             <hr className="my-6 border-white/70 sm:mx-auto lg:my-8" />
