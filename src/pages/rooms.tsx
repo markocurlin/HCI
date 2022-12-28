@@ -77,12 +77,8 @@ const Rooms = () => {
 
         <div className="bg-white">
           {rooms.map((room) => (
-            <>
-              <div
-                key={room.id}
-                ref={room.id === id ? ref : null}
-                className="mx-auto max-w-2xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
-              >
+            <div key={room.id} ref={room.id === id ? ref : null}>
+              <div className="mx-auto max-w-2xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="container justify-around px-2 sm:px-8 lg:flex">
                   <div className="container p-2">
                     <p className="text-xl font-semibold text-black sm:text-2xl">
@@ -128,11 +124,10 @@ const Rooms = () => {
                   </div>
                 </div>
               </div>
-
               <div key={`${room.id}-carousel`} className="h-130 w-full">
                 <Carousel imageList={room.images} />
               </div>
-            </>
+            </div>
           ))}
         </div>
 

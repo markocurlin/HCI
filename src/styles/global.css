@@ -108,7 +108,7 @@ li::marker {
   scale: 0.80;
   border-radius: 100%;
   padding: 2rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
 }
 
@@ -116,8 +116,18 @@ li::marker {
   scale: 0.80;
   border-radius: 100%;
   padding: 2rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}
+
+@media screen and ( max-width: 1025px ) {
+  .swiper-button-prev::after {
+    margin-left: 0rem;
+  }
+
+  .swiper-button-next::after {
+    margin-right: 0rem;
+  }
 }
 
 .sticky-header-up {
