@@ -3,13 +3,80 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
 
-import { navLinks } from '@/constants/navbar';
+import { navLinks, socialMedia } from '@/constants/navbar';
 
 const Footer = () => {
   const { t } = useTranslation();
 
   return (
     <>
+      <div className="bg-primary w-full p-4 sm:p-6">
+        <div className="mx-auto max-w-full px-4 sm:px-28">
+          <div className="p-4 px-4 md:px-6 md:py-8">
+            <div className="flex flex-col items-center">
+              <Link href="/" className="mb-4 flex items-center sm:mb-8">
+                <span className="sr-only">Your Hotel</span>
+                <Image
+                  className="h-12 w-auto sm:h-24"
+                  src={logo}
+                  alt="Hotel Božikovina logo"
+                />
+              </Link>
+              <ul className="mb-4 flex flex-wrap items-center text-sm text-white sm:mb-6">
+                {navLinks.map((link, index) => {
+                  return (
+                    <li key={index}>
+                      <Link
+                        href={link.path}
+                        className="mr-4 text-justify text-sm font-semibold uppercase leading-snug text-white sm:text-lg md:mr-6"
+                      >
+                        {t(`${link.name}`)}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+              <ul className="flex flex-wrap items-center text-sm text-white sm:mb-6">
+                {socialMedia.map((media, index) => {
+                  return (
+                    <li key={index}>
+                      <div className="mx-4 flex h-8 w-8 items-center justify-center rounded-full bg-white">
+                        <Link
+                          href="#"
+                          className="text-primary hover:text-gray-900"
+                        >
+                          <svg
+                            className="h-5 w-5"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d={media.iconUrl}
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </Link>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+              <span className="text-sm text-white sm:text-center">
+                © 2023
+                <Link href="https://flowbite.com/" className="text-white">
+                  {' '}
+                  Hotel Božikovina
+                </Link>
+                . All Rights Reserved.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*
       <div className="bg-primary w-full p-4 sm:p-6">
         <div className="mx-auto max-w-full px-4 sm:px-28">
           <div className="p-4 px-4 md:px-6 md:py-8">
@@ -99,7 +166,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

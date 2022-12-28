@@ -31,6 +31,10 @@ a:hover {
   /*background-color: #FAFAD2;*/
 }
 
+.text-primary {
+  color: #3698CA;
+}
+
 .h-100 {
   height: 40rem;
 }
