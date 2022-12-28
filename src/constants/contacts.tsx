@@ -16,7 +16,7 @@ const contacts = [
   {
     id: 2,
     iconSrc: EnvelopeIcon,
-    title: 'MASSAGE US',
+    title: 'MESSAGE US',
     text: 'bbozikovina@gmail.com',
   },
 ];

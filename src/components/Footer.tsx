@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
 
+import contacts from '@/constants/contacts';
 import { navLinks, socialMedia } from '@/constants/navbar';
 
 const Footer = () => {
@@ -17,18 +18,18 @@ const Footer = () => {
               <Link href="/" className="mb-4 flex items-center sm:mb-8">
                 <span className="sr-only">Your Hotel</span>
                 <Image
-                  className="h-12 w-auto sm:h-24"
+                  className="h-20 w-auto sm:h-24"
                   src={logo}
                   alt="Hotel Božikovina logo"
                 />
               </Link>
-              <ul className="mb-4 flex flex-wrap items-center text-sm text-white sm:mb-6">
+              <ul className="mb-4 flex flex-wrap items-center justify-center text-sm text-white sm:mb-6">
                 {navLinks.map((link, index) => {
                   return (
                     <li key={index}>
                       <Link
                         href={link.path}
-                        className="mr-4 text-justify text-sm font-semibold uppercase leading-snug text-white sm:text-lg md:mr-6"
+                        className="mx-4 text-justify text-sm font-semibold uppercase leading-snug text-white sm:text-lg"
                       >
                         {t(`${link.name}`)}
                       </Link>
@@ -36,7 +37,7 @@ const Footer = () => {
                   );
                 })}
               </ul>
-              <ul className="flex flex-wrap items-center text-sm text-white sm:mb-6">
+              <ul className="mb-4 flex flex-wrap items-center text-sm text-white sm:mb-6">
                 {socialMedia.map((media, index) => {
                   return (
                     <li key={index}>
@@ -63,13 +64,20 @@ const Footer = () => {
                   );
                 })}
               </ul>
-              <span className="text-sm text-white sm:text-center">
-                © 2023
-                <Link href="https://flowbite.com/" className="text-white">
-                  {' '}
-                  Hotel Božikovina
-                </Link>
-                . All Rights Reserved.
+
+              <ul className="mb-4 flex flex-col items-center text-sm text-white sm:mb-6">
+                {contacts.map((contact, index) => {
+                  return (
+                    <li key={index}>
+                      <p className="text-justify text-sm font-medium leading-snug text-white/80 sm:text-base">
+                        {contact.text}
+                      </p>
+                    </li>
+                  );
+                })}
+              </ul>
+              <span className="text-center text-sm text-white/80 sm:text-center">
+                © 2023 Hotel Božikovina. All Rights Reserved.
               </span>
             </div>
           </div>
