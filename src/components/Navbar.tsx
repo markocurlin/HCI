@@ -8,7 +8,7 @@ import { Fragment, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
 
-import { navLinks } from '@/constants/navbar';
+import { navLinks } from '@/constants/navigation';
 
 import { availableLanguages } from '../i18n';
 

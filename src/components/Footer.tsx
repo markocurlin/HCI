@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
 
 import contacts from '@/constants/contacts';
-import { navLinks, socialMedia } from '@/constants/navbar';
+import { navLinks, socialMedia } from '@/constants/navigation';
 
 const Footer = () => {
   const { t } = useTranslation();

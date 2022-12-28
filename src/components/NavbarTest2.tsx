@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 import image from 'src/assets/imagebg.jpg';
 import logo from 'src/assets/logowhite.png';
 
-import { navLinks, socialMedia } from '@/constants/navbar';
+import { navLinks, socialMedia } from '@/constants/navigation';
 
 import { availableLanguages } from '../i18n';
 
@@ -27,12 +27,12 @@ const NavbarTest2 = () => {
   useEffect(() => {
     i18n.changeLanguage(selectedLanguage);
   }, [selectedLanguage]);
+
   return (
     <>
       <div className="bg-primary mx-auto max-w-full px-4 lg:px-20">
         <div className="relative flex h-16 items-center justify-between sm:h-24">
           <div className="z-50 w-auto">
-            {/* Mobile menu button */}
             <button
               onClick={() => setOpen(!open)}
               className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none"
@@ -73,10 +73,9 @@ const NavbarTest2 = () => {
               </Link>
             </div>
 
-            {/* Language dropdown */}
             <Listbox
               as="div"
-              className="relative ml-0 md:ml-3"
+              className="relative z-10 ml-0 md:ml-3"
               value={selectedLanguage}
               onChange={setSelectedLanguage}
             >

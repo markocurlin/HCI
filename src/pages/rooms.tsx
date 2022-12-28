@@ -2,6 +2,7 @@ import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
+import { useEffect, useRef, useState } from 'react';
 import heroimage from 'src/assets/rooms/heroimage.jpg';
 import rooms from 'src/constants/rooms';
 
@@ -10,6 +11,14 @@ import SEO from '@/data/next-seo.config';
 import Layout from '@/layouts/Layout';
 
 const Rooms = () => {
+  const [id, setId] = useState(4);
+  const ref = useRef<null | HTMLDivElement>(null);
+
+  useEffect(() => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+    setId(4);
+  }, [id]);
+
   return (
     <>
       <NextSeo title={`${SEO.title} - Rooms`} />
@@ -34,7 +43,10 @@ const Rooms = () => {
                   key={room.id}
                   className="group container p-4 sm:w-80 sm:p-0"
                 >
-                  <div className="lg:aspect-none h-80 overflow-hidden bg-black group-hover:opacity-75 sm:w-80 sm:p-0">
+                  <div
+                    onClick={() => setId(room.id)}
+                    className="lg:aspect-none h-80 overflow-hidden bg-black group-hover:opacity-95 sm:w-80 sm:p-0"
+                  >
                     <Image
                       src={room.imageSrc}
                       alt={room.imageAlt}
@@ -50,12 +62,12 @@ const Rooms = () => {
                         {room.name}
                       </p>
                     </div>
-                    <Link
-                      href="#"
-                      className="bg-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent p-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                    <button
+                      onClick={() => setId(room.id)}
+                      className="bg-secondary bg-hover-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent p-2 text-base font-medium text-white shadow-sm"
                     >
                       <ArrowRightIcon className="h-6 w-6 text-white" />
-                    </Link>
+                    </button>
                   </div>
                 </div>
               ))}
@@ -68,6 +80,7 @@ const Rooms = () => {
             <>
               <div
                 key={room.id}
+                ref={room.id === id ? ref : null}
                 className="mx-auto max-w-2xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
               >
                 <div className="container justify-around px-2 sm:px-8 lg:flex">
@@ -80,7 +93,7 @@ const Rooms = () => {
                     </p>
                     <div className="mt-1 flex">
                       <p className="mt-2 text-justify text-sm font-semibold leading-snug text-black/70 sm:text-lg">
-                        MAXIMUM OCCUPANCY:{' '}
+                        MAX. OCCUPANCY:{' '}
                       </p>
                       <p className="mt-2 ml-1 text-justify text-sm leading-snug text-black/70 sm:text-lg">
                         {room.maxOccupancy}
@@ -96,7 +109,7 @@ const Rooms = () => {
                     </div>
                     <Link
                       href="#"
-                      className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                      className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                     >
                       BOOK NOW
                     </Link>
@@ -116,7 +129,7 @@ const Rooms = () => {
                 </div>
               </div>
 
-              <div className="h-130 w-full">
+              <div key={`${room.id}-carousel`} className="h-130 w-full">
                 <Carousel imageList={room.images} />
               </div>
             </>
@@ -140,7 +153,7 @@ const Rooms = () => {
 
             <Link
               href="#"
-              className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+              className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
               LEARN MORE
             </Link>

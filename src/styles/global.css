@@ -33,7 +33,6 @@ a:hover {
 
 .text-hover-primary:hover {
   color: #287da8;
-  /*background-color: #FAFAD2;*/
 }
 
 .bg-hover-secondary:hover {
@@ -43,6 +42,14 @@ a:hover {
 
 .text-primary {
   color: #3698CA;
+}
+
+.text-secondary {
+  color: #01548a;
+}
+
+li::marker {
+  color: #01548a;
 }
 
 .h-100 {
@@ -83,4 +90,51 @@ a:hover {
   .scroll-y {
     overflow-y: scroll
   }
+}
+
+:root {
+  --swiper-theme-color: #3698CA !important ;
+}
+
+.swiper-button-prev:hover {
+  color: #287da8;
+}
+
+.swiper-button-next:hover {
+  color: #287da8;
+}
+
+.swiper-button-prev::after {
+  scale: 0.80;
+  border-radius: 100%;
+  padding: 2rem;
+  margin-left: 5rem;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}
+
+.swiper-button-next::after {
+  scale: 0.80;
+  border-radius: 100%;
+  padding: 2rem;
+  margin-right: 5rem;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}
+
+.sticky-header-up {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  background-color: red;
+}
+
+.sticky-header-down {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  background-color: black;
+  box-shadow: none
 }
