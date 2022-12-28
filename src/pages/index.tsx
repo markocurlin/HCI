@@ -1,5 +1,3 @@
-// import { useRouter } from 'next/router';
-
 // import { Meta } from '@/layouts/Meta';
 // import { Main } from '@/components/Main';
 
@@ -19,7 +17,6 @@ import Carousel from '@/components/Carousel';
 import Layout from '@/layouts/Layout';
 
 const Index = () => {
-  // const router = useRouter();
   const { t } = useTranslation();
 
   return (
@@ -47,7 +44,7 @@ const Index = () => {
 
             <Link
               href="#"
-              className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+              className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
               {t('LEARN MORE')}
             </Link>
@@ -61,7 +58,7 @@ const Index = () => {
                 A different perspective
               </p>
 
-              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
                 Hotel Bozikovina is a family-run, award-winning design hotel
                 with sustainability at its foundation. You will find us at a
                 comfortable distance from the noise and rush of the old city
@@ -84,12 +81,12 @@ const Index = () => {
               <Image src={image2} alt="image2" width={540} height={764} />
             </div>
 
-            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
+            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 Workplace and beyond
               </p>
 
-              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
                 Meaningful gatherings can only be held in an equally significant
                 space. Following the same line and concept, we host an array of
                 events, from private celebrations to business meetings. As in
@@ -115,7 +112,7 @@ const Index = () => {
                 A different perspective
               </p>
 
-              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
                 Hotel Bozikovina is a family-run, award-winning design hotel
                 with sustainability at its foundation. You will find us at a
                 comfortable distance from the noise and rush of the old city
@@ -138,12 +135,12 @@ const Index = () => {
               <Image src={image2} alt="image2" width={540} height={764} />
             </div>
 
-            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12">
+            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
               <p className="text-xl font-semibold text-black sm:text-3xl">
                 Workplace and beyond
               </p>
 
-              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
                 Meaningful gatherings can only be held in an equally significant
                 space. Following the same line and concept, we host an array of
                 events, from private celebrations to business meetings. As in
@@ -163,7 +160,7 @@ const Index = () => {
             <p className="text-xl font-semibold text-black sm:text-3xl">
               Your unforgettable adventure awaits
             </p>
-            <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+            <p className="mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
               Luxury Hotel Božikovina is warm and friendly hotel located in
               Podstrana just 7km from city of Split. This is a modern, relaxed
               luxury - Dalmatian style hotel, built in 2002 and at the highest
@@ -175,7 +172,7 @@ const Index = () => {
 
             <Link
               href="#"
-              className="bg-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+              className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
               LEARN MORE
             </Link>

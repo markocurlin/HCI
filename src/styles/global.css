@@ -31,6 +31,16 @@ a:hover {
   /*background-color: #FAFAD2;*/
 }
 
+.text-hover-primary:hover {
+  color: #287da8;
+  /*background-color: #FAFAD2;*/
+}
+
+.bg-hover-secondary:hover {
+  background-color: #01548a;
+  /*background-color: #FAFAD2;*/
+}
+
 .text-primary {
   color: #3698CA;
 }

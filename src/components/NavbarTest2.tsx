@@ -67,7 +67,7 @@ const NavbarTest2 = () => {
             <div className="hidden md:block">
               <Link
                 href="#"
-                className="bg-secondary mx-5 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                className="bg-secondary bg-hover-secondary mx-5 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
               >
                 {t('BOOK NOW')}
               </Link>
@@ -217,7 +217,7 @@ const NavbarTest2 = () => {
                           <div className="mt-16 px-3 py-2">
                             <Link
                               href="#"
-                              className="bg-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                              className="bg-secondary bg-hover-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                             >
                               {t('BOOK NOW')}
                             </Link>
