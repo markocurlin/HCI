@@ -2,30 +2,39 @@ import '../styles/global.css';
 
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
+
   return (
     <React.Fragment>
       <Head>
         <meta name="hotelbb" />
-        <link rel="shortcut icon" href="public/assets/favicon.ico" />
         <link
           rel="apple-touch-icon"
-          sizes="180x180"
-          href="public/assets/apple-touch-icon.png"
+          href={`${router.basePath}/apple-touch-icon.png`}
+          key="apple"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="public/assets/favicon-32x32.png"
+          href={`${router.basePath}/favicon-32x32.png`}
+          key="icon32"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="public/assets/favicon-16x16.png"
+          href={`${router.basePath}/favicon-16x16.png`}
+          key="icon16"
+        />
+        <link
+          rel="icon"
+          href={`${router.basePath}/favicon.ico`}
+          key="favicon"
         />
       </Head>
       <Component {...pageProps} />
