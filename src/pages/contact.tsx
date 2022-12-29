@@ -29,7 +29,7 @@ const Contact = () => {
             {contacts.map((contact) => (
               <div
                 key={contact.id}
-                className="group container flex h-80 w-80 flex-col items-center justify-center overflow-hidden bg-white p-4"
+                className="group container flex h-44 w-80 flex-col items-center justify-center overflow-hidden bg-white sm:h-80"
               >
                 <contact.iconSrc className="h-16 w-16 text-orange-600" />
                 <p className="text-lg font-semibold text-black sm:text-xl">
