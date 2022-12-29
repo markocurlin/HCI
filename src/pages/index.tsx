@@ -28,6 +28,7 @@ const Index = () => {
             src={image}
             alt="Hero image of hotel"
             className="h-full w-full object-cover object-center"
+            placeholder="blur"
           />
         </div>
 
@@ -70,7 +71,13 @@ const Index = () => {
             </div>
 
             <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
-              <Image src={image1} alt="image1" width={540} height={764} />
+              <Image
+                src={image1}
+                alt="image1"
+                width={540}
+                height={764}
+                placeholder="blur"
+              />
             </div>
           </div>
         </div>
@@ -78,7 +85,13 @@ const Index = () => {
         <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
             <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
-              <Image src={image2} alt="image2" width={540} height={764} />
+              <Image
+                src={image2}
+                alt="image2"
+                width={540}
+                height={764}
+                placeholder="blur"
+              />
             </div>
 
             <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
@@ -96,7 +109,13 @@ const Index = () => {
             </div>
 
             <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
-              <Image src={image2} alt="image2" width={540} height={764} />
+              <Image
+                src={image2}
+                alt="image2"
+                width={540}
+                height={764}
+                placeholder="blur"
+              />
             </div>
           </div>
         </div>
@@ -124,7 +143,13 @@ const Index = () => {
             </div>
 
             <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
-              <Image src={image1} alt="image1" width={540} height={764} />
+              <Image
+                src={image1}
+                alt="image1"
+                width={540}
+                height={764}
+                placeholder="blur"
+              />
             </div>
           </div>
         </div>
@@ -132,7 +157,13 @@ const Index = () => {
         <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
             <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
-              <Image src={image2} alt="image2" width={540} height={764} />
+              <Image
+                src={image2}
+                alt="image2"
+                width={540}
+                height={764}
+                placeholder="blur"
+              />
             </div>
 
             <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
@@ -150,7 +181,13 @@ const Index = () => {
             </div>
 
             <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
-              <Image src={image2} alt="image2" width={540} height={764} />
+              <Image
+                src={image2}
+                alt="image2"
+                width={540}
+                height={764}
+                placeholder="blur"
+              />
             </div>
           </div>
         </div>
