@@ -41,5 +41,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    /* eslint-disable global-require */
+    require('@tailwindcss/forms'),
+    /* eslint-enable global-require */
+  ],
 };

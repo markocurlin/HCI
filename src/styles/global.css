@@ -52,6 +52,14 @@ li::marker {
   color: #01548a;
 }
 
+.h-97 {
+  height: 40rem;
+}
+
+.h-98 {
+  height: 40rem;
+}
+
 .h-100 {
   height: 40rem;
 }
@@ -89,6 +97,18 @@ li::marker {
 @media screen and ( max-height: 740px ) {
   .scroll-y {
     overflow-y: scroll
+  }
+}
+
+@media screen and ( max-width: 640px) {
+  .h-97 {
+    height: 24rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .h-98 {
+    height: 35rem;
   }
 }
 
