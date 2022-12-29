@@ -28,6 +28,7 @@ const Rooms = () => {
             src={heroimage}
             alt="Hero image of room"
             className="h-full w-full object-cover object-center"
+            placeholder="blur"
           />
         </div>
 
@@ -53,6 +54,7 @@ const Rooms = () => {
                       width={320}
                       height={320}
                       className="h-full w-full object-cover"
+                      placeholder="blur"
                     />
                   </div>
 

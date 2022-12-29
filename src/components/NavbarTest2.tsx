@@ -59,6 +59,7 @@ const NavbarTest2 = () => {
                 className="h-12 w-auto sm:h-20"
                 src={logo}
                 alt="Hotel Božikovina logo"
+                placeholder="blur"
               />
             </Link>
           </div>
@@ -157,6 +158,7 @@ const NavbarTest2 = () => {
                 src={image}
                 alt="Hero image of hotel"
                 className="h-full w-full object-cover object-center"
+                placeholder="blur"
               />
             </div>
           </Transition.Child>

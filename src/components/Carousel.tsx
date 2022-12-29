@@ -30,6 +30,7 @@ const Carousel = ({ imageList }: any) => {
               className="h-full w-full object-cover"
               src={image.imageSrc}
               alt={image.imageAlt}
+              placeholder="blur"
             />
           </SwiperSlide>
         ))}

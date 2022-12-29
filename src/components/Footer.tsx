@@ -21,6 +21,7 @@ const Footer = () => {
                   className="h-20 w-auto sm:h-24"
                   src={logo}
                   alt="Hotel Božikovina logo"
+                  placeholder="blur"
                 />
               </Link>
               <ul className="mb-4 flex flex-wrap items-center justify-center text-sm text-white sm:mb-6">

@@ -17,6 +17,7 @@ const Contact = () => {
             src={heroImage}
             alt="Hero image of beach"
             className="h-full w-full object-cover object-center"
+            placeholder="blur"
           />
         </div>
 
@@ -24,7 +25,7 @@ const Contact = () => {
           <h2 className="text-center text-3xl font-semibold tracking-tight text-black">
             Contact us
           </h2>
-          <div className="my-4 grid grid-cols-1 items-center justify-items-center gap-y-8 gap-x-16 sm:mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-0">
+          <div className="my-4 grid grid-cols-1 items-center justify-items-center gap-x-16 sm:mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-0">
             {contacts.map((contact) => (
               <div
                 key={contact.id}
@@ -46,6 +47,7 @@ const Contact = () => {
               src={mapImage}
               alt="Image of map"
               className="h-full w-full object-cover object-center"
+              placeholder="blur"
             />
           </div>
         </div>

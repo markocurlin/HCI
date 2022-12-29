@@ -30,7 +30,6 @@ const Services = () => {
             </div>
             <div>
               <div className="mt-10">
-                {/* Decorative image grid */}
                 <div
                   aria-hidden="true"
                   className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
@@ -43,6 +42,7 @@ const Services = () => {
                             src={heroimage1}
                             alt="heroimage1"
                             className="h-full w-full object-cover object-center"
+                            placeholder="blur"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
@@ -50,6 +50,7 @@ const Services = () => {
                             src={heroimage2}
                             alt="heroimage2"
                             className="h-full w-full object-cover object-center"
+                            placeholder="blur"
                           />
                         </div>
                       </div>
@@ -59,6 +60,7 @@ const Services = () => {
                             src={heroimage3}
                             alt="heroimage3"
                             className="h-full w-full object-cover object-center"
+                            placeholder="blur"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
@@ -66,6 +68,7 @@ const Services = () => {
                             src={heroimage4}
                             alt="heroimage4"
                             className="h-full w-full object-cover object-center"
+                            placeholder="blur"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
@@ -73,6 +76,7 @@ const Services = () => {
                             src={heroimage5}
                             alt="heroimage5"
                             className="h-full w-full object-cover object-center"
+                            placeholder="blur"
                           />
                         </div>
                       </div>
@@ -82,6 +86,7 @@ const Services = () => {
                             src={heroimage6}
                             alt="heroimage6"
                             className="h-full w-full object-cover object-center"
+                            placeholder="blur"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
@@ -89,6 +94,7 @@ const Services = () => {
                             src={heroimage7}
                             alt="heroimage7"
                             className="h-full w-full object-cover object-center"
+                            placeholder="blur"
                           />
                         </div>
                       </div>
@@ -110,7 +116,13 @@ const Services = () => {
       <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
         <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
           <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
-            <Image src={diningimage} alt="image2" width={540} height={764} />
+            <Image
+              src={diningimage}
+              alt="image2"
+              width={540}
+              height={764}
+              placeholder="blur"
+            />
           </div>
 
           <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
@@ -128,7 +140,13 @@ const Services = () => {
           </div>
 
           <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
-            <Image src={diningimage} alt="image2" width={540} height={764} />
+            <Image
+              src={diningimage}
+              alt="image2"
+              width={540}
+              height={764}
+              placeholder="blur"
+            />
           </div>
         </div>
       </div>
@@ -151,7 +169,13 @@ const Services = () => {
           </div>
 
           <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
-            <Image src={barimage} alt="image1" width={540} height={764} />
+            <Image
+              src={barimage}
+              alt="image1"
+              width={540}
+              height={764}
+              placeholder="blur"
+            />
           </div>
         </div>
       </div>
@@ -177,7 +201,13 @@ const Services = () => {
           </div>
 
           <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
-            <Image src={diningimage} alt="image2" width={540} height={764} />
+            <Image
+              src={diningimage}
+              alt="image2"
+              width={540}
+              height={764}
+              placeholder="blur"
+            />
           </div>
         </div>
       </div>
@@ -200,7 +230,13 @@ const Services = () => {
           </div>
 
           <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
-            <Image src={barimage} alt="image1" width={540} height={764} />
+            <Image
+              src={barimage}
+              alt="image1"
+              width={540}
+              height={764}
+              placeholder="blur"
+            />
           </div>
         </div>
       </div>
