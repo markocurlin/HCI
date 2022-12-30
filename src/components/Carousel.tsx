@@ -29,6 +29,7 @@ const Carousel = ({ imageList }: any) => {
             <Image
               className="h-full w-full object-cover"
               src={image.imageSrc}
+              sizes="100vw, 100vh"
               alt={image.imageAlt}
               placeholder="blur"
             />

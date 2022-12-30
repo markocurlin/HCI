@@ -29,6 +29,7 @@ const Villas = () => {
           <Image
             src={heroimage}
             alt="Hero image of villa"
+            sizes="100vw, 100vh"
             className="h-full w-full object-cover object-center"
             placeholder="blur"
           />

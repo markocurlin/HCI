@@ -56,8 +56,9 @@ const NavbarTest2 = () => {
             <Link href="/">
               <span className="sr-only">Your Hotel</span>
               <Image
-                className="h-12 w-auto sm:h-20"
+                className="h-12 w-auto object-cover object-center sm:h-20"
                 src={logo}
+                sizes="100vw, 100vh"
                 alt="Hotel Božikovina logo"
                 placeholder="blur"
               />

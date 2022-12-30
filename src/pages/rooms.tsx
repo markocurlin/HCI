@@ -29,6 +29,7 @@ const Rooms = () => {
           <Image
             src={heroimage}
             alt="Hero image of room"
+            sizes="100vw, 100vh"
             className="h-full w-full object-cover object-center"
             placeholder="blur"
           />

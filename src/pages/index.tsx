@@ -25,6 +25,7 @@ const Index = () => {
           <Image
             src={heroImage}
             alt="Hero image of hotel"
+            sizes="100vw, 100vh"
             className="h-full w-full object-cover object-center"
             placeholder="blur"
           />
