@@ -5,7 +5,7 @@ const contacts = [
     id: 0,
     iconSrc: HomeIcon,
     title: 'VISIT US',
-    text: 'Grljevacka 14a Podstrana, Croatia',
+    text: 'Grljevačka 14a Podstrana, Croatia',
   },
   {
     id: 1,

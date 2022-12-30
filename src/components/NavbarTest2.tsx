@@ -67,7 +67,7 @@ const NavbarTest2 = () => {
           <div className="flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
             <div className="hidden md:block">
               <Link
-                href="#"
+                href="/contact/#book"
                 className="bg-secondary bg-hover-secondary mx-5 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
               >
                 {t('BOOK NOW')}
@@ -202,7 +202,7 @@ const NavbarTest2 = () => {
                             {socialMedia.map((media, index) => {
                               return (
                                 <ul key={index}>
-                                  <Link href={media.href}>
+                                  <Link href={media.href} target="_blank">
                                     <li
                                       key={index}
                                       className="px-3 py-2 text-lg font-normal text-black/60 hover:text-gray-900 sm:text-xl"
@@ -217,7 +217,7 @@ const NavbarTest2 = () => {
 
                           <div className="mt-16 px-3 py-2">
                             <Link
-                              href="#"
+                              href="/contact/#book"
                               className="bg-secondary bg-hover-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                             >
                               {t('BOOK NOW')}

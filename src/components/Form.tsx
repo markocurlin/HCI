@@ -1,4 +1,10 @@
+import '../i18n';
+
+import { useTranslation } from 'react-i18next';
+
 const Form = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="">
@@ -11,7 +17,7 @@ const Form = () => {
                     htmlFor="name"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Your Name
+                    {t('Your Name')}
                   </label>
                   <input
                     type="text"
@@ -27,7 +33,7 @@ const Form = () => {
                     htmlFor="email-address"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Email address
+                    {t('Email address')}
                   </label>
                   <input
                     type="text"
@@ -43,7 +49,7 @@ const Form = () => {
                     htmlFor="message"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Your Message
+                    {t('Your Message')}
                   </label>
                   <div className="mt-1">
                     <textarea
@@ -61,7 +67,7 @@ const Form = () => {
                     type="submit"
                     className="bg-secondary bg-hover-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                   >
-                    Send
+                    {t('SEND')}
                   </button>
                 </div>
               </div>

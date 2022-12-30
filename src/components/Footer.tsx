@@ -44,7 +44,8 @@ const Footer = () => {
                     <li key={index}>
                       <div className="mx-4 flex h-8 w-8 items-center justify-center rounded-full bg-white">
                         <Link
-                          href="#"
+                          href={media.href}
+                          target="_blank"
                           className="text-primary text-hover-primary"
                         >
                           <svg
@@ -71,14 +72,14 @@ const Footer = () => {
                   return (
                     <li key={index}>
                       <p className="text-justify text-sm font-medium leading-snug text-white/80 sm:text-base">
-                        {contact.text}
+                        {t(`${contact.text}`)}
                       </p>
                     </li>
                   );
                 })}
               </ul>
               <span className="text-center text-sm text-white/80 sm:text-center">
-                © 2023 Hotel Božikovina. All Rights Reserved.
+                © 2023 Hotel Božikovina. {t('All Rights Reserved.')}
               </span>
             </div>
           </div>

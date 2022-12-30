@@ -1,8 +1,8 @@
-import carouselImage1 from 'src/assets/carousel/image1.jpg';
-import carouselImage2 from 'src/assets/carousel/image2.jpg';
-import carouselImage3 from 'src/assets/carousel/image3.jpg';
-import carouselImage4 from 'src/assets/carousel/image4.jpg';
-import carouselImage5 from 'src/assets/carousel/image5.jpg';
+import carouselImage1 from 'src/assets/home/carousel-image1.jpg';
+import carouselImage2 from 'src/assets/home/carousel-image2.jpg';
+import carouselImage3 from 'src/assets/home/carousel-image3.jpg';
+import carouselImage4 from 'src/assets/home/carousel-image4.jpg';
+import carouselImage5 from 'src/assets/home/carousel-image5.jpg';
 
 const Home = [
   {

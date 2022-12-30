@@ -110,7 +110,7 @@ const rooms = [
     imageSrc: standardroom1,
     imageAlt: 'Standard double room',
     description:
-      'The Superior Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
+      'The Standard double room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
     amenities: [
       'Complimentary wireless Internet',
       'Mini Bar',
