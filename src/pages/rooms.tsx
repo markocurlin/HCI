@@ -129,6 +129,7 @@ const Rooms = () => {
                   </div>
                 </div>
               </div>
+
               <div key={`${room.id}-carousel`} className="h-130 w-full">
                 <Carousel imageList={room.images} />
               </div>

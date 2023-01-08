@@ -5,9 +5,9 @@ import { NextSeo } from 'next-seo';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import heroimage from 'src/assets/villas/heroimage.jpeg';
-import villas from 'src/constants/villas';
 
 import Carousel from '@/components/Carousel';
+import villas from '@/constants/villas';
 import SEO from '@/data/next-seo.config';
 import Layout from '@/layouts/Layout';
 
@@ -52,8 +52,8 @@ const Villas = () => {
                     className="lg:aspect-none h-80 overflow-hidden bg-black group-hover:opacity-95 md:w-80 md:p-0"
                   >
                     <Image
-                      src={villa.imageSrc}
-                      alt={villa.imageAlt}
+                      src={villa.images[0]?.imageSrc!}
+                      alt={villa.images[0]?.imageAlt!}
                       width={320}
                       height={320}
                       className="h-full w-full object-cover"
@@ -80,57 +80,118 @@ const Villas = () => {
           </div>
         </div>
 
-        <div className="bg-white">
+        <div>
           {villas.map((villa) => (
-            <div key={villa.id} ref={villa.id === id ? ref : null}>
-              <div className="mx-auto max-w-2xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="container justify-around px-2 sm:px-8 lg:flex">
-                  <div className="container p-2">
-                    <p className="text-xl font-semibold text-black sm:text-2xl">
-                      {t(`${villa.name}`)}
+            <div key={villa.id}>
+              <div className="flex flex-col items-center p-8">
+                <p className="text-2xl font-semibold text-black sm:text-4xl">
+                  {villa.name}
+                </p>
+                <hr className="my-4 w-14" />
+                <p className="text-sm leading-snug text-black/60 sm:text-lg">
+                  MARVELLOUS VILLA WITH AMAZING VIEW AND POOL
+                </p>
+                <Link
+                  href="/contact/#book"
+                  className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
+                >
+                  {t('BOOK NOW')}
+                </Link>
+              </div>
+
+              <div className="flex h-auto w-full items-center justify-center bg-white">
+                <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
+                  <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
+                    <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
+                      {villa.description1}
                     </p>
-                    <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
-                      {t(`${villa.description}`)}
-                    </p>
-                    <div className="mt-1 flex">
-                      <p className="mt-2 text-justify text-sm font-semibold leading-snug text-black/70 sm:text-lg">
-                        {t('MAX OCCUPANCY:')}{' '}
-                      </p>
-                      <p className="mt-2 ml-1 text-justify text-sm leading-snug text-black/70 sm:text-lg">
-                        {t(`${villa.maxOccupancy}`)}
-                      </p>
-                    </div>
-                    <div className="mt-1 flex">
-                      <p className="text-justify text-sm font-semibold leading-snug text-black/70 sm:text-lg">
-                        {t('BED CONFIGURATION:')}{' '}
-                      </p>
-                      <p className="ml-1 text-justify text-sm leading-snug text-black/70 sm:text-lg">
-                        {t(`${villa.bedConfiguration}`)}
-                      </p>
-                    </div>
-                    <Link
-                      href="/contact/#book"
-                      className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
-                    >
-                      {t('BOOK NOW')}
-                    </Link>
                   </div>
-                  <div className="container mt-4 p-2 lg:mt-0 xl:mt-0">
-                    {villa.amenities.map((amenitie, index) => (
-                      <ul
-                        key={`${index}-${amenitie}`}
-                        className="ml-0 list-inside list-disc lg:ml-32"
-                      >
-                        <li className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
-                          {t(`${amenitie}`)}
-                        </li>
-                      </ul>
-                    ))}
+
+                  <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
+                    <Image
+                      src={villa.images[0]?.imageSrc!}
+                      alt={villa.images[0]?.imageAlt!}
+                      width={540}
+                      height={764}
+                      placeholder="blur"
+                    />
                   </div>
                 </div>
               </div>
-              <div key={`${villa.id}-carousel`} className="h-130 w-full">
-                <Carousel imageList={villa.images} />
+
+              <div className="flex h-auto w-full items-center justify-center">
+                <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
+                  <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
+                    <Image
+                      src={villa.images[1]?.imageSrc!}
+                      alt={villa.images[1]?.imageAlt!}
+                      width={540}
+                      height={764}
+                      placeholder="blur"
+                    />
+                  </div>
+
+                  <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
+                    <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
+                      {villa.description2}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
+                    <Image
+                      src={villa.images[1]?.imageSrc!}
+                      alt={villa.images[1]?.imageAlt!}
+                      width={540}
+                      height={764}
+                      placeholder="blur"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-zinc-50" key={villa.id}>
+                <div className="mx-auto max-w-2xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                  <div className="flex h-auto w-full items-center justify-center">
+                    <div className="">
+                      <div className="mb-12 flex flex-col items-center py-2">
+                        <p className="text-2xl font-semibold text-black sm:text-4xl">
+                          Facilities
+                        </p>
+                        <hr className="my-4 w-14" />
+                        <p className="text-sm leading-snug text-black/60 sm:text-lg">
+                          DETAILS ABOUT THE VILLA
+                        </p>
+                      </div>
+                      <div className="">
+                        <hr />
+                        {villa.facilities?.map((facilitie) => (
+                          <div key={facilitie.title}>
+                            <div className="my-5 flex p-3">
+                              <p className="w-40 p-1 text-sm font-semibold leading-snug text-black/70 sm:w-60 sm:text-lg">
+                                {facilitie.title}
+                              </p>
+                              <ul className="flex flex-1 list-outside list-disc flex-wrap text-sm text-white">
+                                {facilitie.details.map((details) => (
+                                  <li
+                                    key={details}
+                                    className="mx-4 w-40 p-1 text-justify text-sm font-normal leading-snug text-black/70 sm:w-60 sm:text-lg"
+                                  >
+                                    {details}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <hr />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div key={`${villa.id}-carousel`} className="h-130 w-full">
+                  <Carousel imageList={villa.images} />
+                </div>
               </div>
             </div>
           ))}
