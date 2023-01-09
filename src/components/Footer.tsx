@@ -47,6 +47,7 @@ const Footer = () => {
                           href={media.href}
                           target="_blank"
                           className="text-primary text-hover-primary"
+                          aria-label={`Check out ${media.name} page`}
                         >
                           <svg
                             className="h-5 w-5"
