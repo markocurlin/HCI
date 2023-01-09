@@ -1,26 +1,21 @@
-// import { Meta } from '@/layouts/Meta';
-// import { Main } from '@/components/Main';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
 import { useTranslation } from 'react-i18next';
 import heroImage from 'src/assets/home/heroImage.jpg';
 import image1 from 'src/assets/home/image1.jpg';
 import image2 from 'src/assets/home/image2.jpg';
 import carouselImages from 'src/constants/home';
-import SEO from 'src/data/next-seo.config';
 
 import Carousel from '@/components/Carousel';
 import Layout from '@/layouts/Layout';
+import { Meta } from '@/layouts/Meta';
 
 const Index = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      <NextSeo {...SEO} />
-      <Layout>
+      <Layout meta={<Meta title="" description="Home page" />}>
         <div className="h-130 w-full">
           <Image
             src={heroImage}

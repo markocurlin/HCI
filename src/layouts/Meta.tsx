@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 
+import SEO from '@/data/next-seo.config';
 import { AppConfig } from '@/utils/AppConfig';
 
 type IMetaProps = {
@@ -48,7 +49,7 @@ const Meta = (props: IMetaProps) => {
         />
       </Head>
       <NextSeo
-        title={props.title}
+        title={`${SEO.title} ${props.title}`}
         description={props.description}
         canonical={props.canonical}
         openGraph={{

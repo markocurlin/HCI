@@ -178,6 +178,7 @@ const NavbarTest2 = () => {
                 >
                   <Dialog.Panel className="pointer-events-auto relative w-screen max-w-lg">
                     <div className="scroll-y flex h-full flex-col bg-white py-6 shadow-xl">
+                      <div className="absolute inset-x-10 z-40 h-14 w-80 bg-white"></div>
                       <div className="mt-32 mb-16 px-4 lg:px-20">
                         <div className="flex flex-col items-center sm:items-start">
                           {navLinks.map((link, index) => {

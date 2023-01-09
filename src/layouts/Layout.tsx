@@ -1,12 +1,21 @@
+import type { ReactNode } from 'react';
+
 import Footer from '@/components/Footer';
-// import Navbar from '@/components/Navbar';
 import NavbarTest2 from '@/components/NavbarTest2';
 
-const Layout = ({ children }: { children: any }) => {
+type ILayoutProps = {
+  meta: ReactNode;
+  children: ReactNode;
+};
+
+// const Layout = ({ children }: { children: any }) => {
+//  <main>{children}</main>
+const Layout = (props: ILayoutProps) => {
   return (
     <>
+      {props.meta}
       <NavbarTest2 />
-      <main>{children}</main>
+      <main>{props.children}</main>
       <Footer />
     </>
   );

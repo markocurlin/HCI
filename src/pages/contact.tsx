@@ -2,23 +2,23 @@ import '../i18n';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
 import { useTranslation } from 'react-i18next';
 import heroImage from 'src/assets/podstrana.jpg';
-import SEO from 'src/data/next-seo.config';
 
 import Form from '@/components/Form';
 import Map from '@/components/Map';
 import contacts from '@/constants/contacts';
 import Layout from '@/layouts/Layout';
+import { Meta } from '@/layouts/Meta';
 
 const Contact = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      <NextSeo title={`${SEO.title} - Contact us`} />
-      <Layout>
+      <Layout
+        meta={<Meta title="- Contact us" description="Contact us page" />}
+      >
         <div className="h-130 w-full">
           <Image
             src={heroImage}

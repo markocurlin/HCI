@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 import { AppConfig } from '@/utils/AppConfig';
@@ -21,6 +20,7 @@ const Main = (props: IMainProps) => (
           <div className="text-xl">{AppConfig.description}</div>
         </div>
         <div>
+          {/* }
           <ul className="flex flex-wrap text-xl">
             <li className="mr-6">
               <Link
@@ -46,7 +46,7 @@ const Main = (props: IMainProps) => (
                 GitHub
               </a>
             </li>
-          </ul>
+</ul> */}
         </div>
       </div>
 

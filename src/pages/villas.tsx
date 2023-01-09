@@ -1,15 +1,14 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import heroimage from 'src/assets/villas/heroimage.jpeg';
 
 import Carousel from '@/components/Carousel';
 import villas from '@/constants/villas';
-import SEO from '@/data/next-seo.config';
 import Layout from '@/layouts/Layout';
+import { Meta } from '@/layouts/Meta';
 
 const Villas = () => {
   const [id, setId] = useState(4);
@@ -23,8 +22,7 @@ const Villas = () => {
 
   return (
     <>
-      <NextSeo title={`${SEO.title} - Villas`} />
-      <Layout>
+      <Layout meta={<Meta title="Villas" description="Villas" />}>
         <div className="h-130 w-full">
           <Image
             src={heroimage}

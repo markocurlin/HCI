@@ -79,7 +79,8 @@ const Footer = () => {
                 })}
               </ul>
               <span className="text-center text-sm text-white/80 sm:text-center">
-                © 2023 Hotel Božikovina. {t('All Rights Reserved.')}
+                © {new Date().getFullYear()} Hotel Božikovina.{' '}
+                {t('All Rights Reserved.')}
               </span>
             </div>
           </div>
