@@ -22,7 +22,7 @@ const Villas = () => {
 
   return (
     <>
-      <Layout meta={<Meta title="Villas" description="Villas" />}>
+      <Layout meta={<Meta title="- Villas" description="Villas" />}>
         <div className="h-130 w-full">
           <Image
             src={heroimage}
@@ -80,7 +80,7 @@ const Villas = () => {
 
         <div>
           {villas.map((villa) => (
-            <div key={villa.id}>
+            <div key={villa.id} ref={villa.id === id ? ref : null}>
               <div className="flex flex-col items-center p-8">
                 <p className="text-2xl font-semibold text-black sm:text-4xl">
                   {villa.name}
@@ -147,7 +147,7 @@ const Villas = () => {
                 </div>
               </div>
 
-              <div className="bg-zinc-50" key={villa.id}>
+              <div className="bg-zinc-50">
                 <div className="mx-auto max-w-2xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                   <div className="flex h-auto w-full items-center justify-center">
                     <div className="">
@@ -162,8 +162,8 @@ const Villas = () => {
                       </div>
                       <div className="">
                         <hr />
-                        {villa.facilities?.map((facilitie) => (
-                          <div key={facilitie.title}>
+                        {villa.facilities?.map((facilitie, index) => (
+                          <div key={`${index}-${facilitie.title}`}>
                             <div className="my-5 flex p-3">
                               <p className="w-40 p-1 text-sm font-semibold leading-snug text-black/70 sm:w-60 sm:text-lg">
                                 {facilitie.title}
@@ -171,7 +171,7 @@ const Villas = () => {
                               <ul className="flex flex-1 list-outside list-disc flex-wrap text-sm text-white">
                                 {facilitie.details.map((details) => (
                                   <li
-                                    key={details}
+                                    key={`${index}-${details}`}
                                     className="mx-4 w-40 p-1 text-justify text-sm font-normal leading-snug text-black/70 sm:w-60 sm:text-lg"
                                   >
                                     {details}

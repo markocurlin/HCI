@@ -80,7 +80,7 @@ const Footer = () => {
                 })}
               </ul>
               <span className="text-center text-sm text-white/80 sm:text-center">
-                © {new Date().getFullYear()} Hotel Božikovina.{' '}
+                © Copyright {new Date().getFullYear()} Hotel Božikovina.{' '}
                 {t('All Rights Reserved.')}
               </span>
             </div>
