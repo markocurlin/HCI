@@ -31,7 +31,13 @@ const Navbar = () => {
   }, [selectedLanguage]);
 
   const handleScroll = useCallback(() => {
-    if (scrollPosition > window.scrollY) {
+    if (scrollPosition > window.scrollY && window.scrollY < 100) {
+      navbarRef.current!.classList.remove('sticky-header-up');
+      navbarRef.current!.classList.remove('sticky-header-down');
+    } else if (scrollPosition < window.scrollY && window.scrollY < 100) {
+      navbarRef.current!.classList.remove('sticky-header-up');
+      navbarRef.current!.classList.remove('sticky-header-down');
+    } else if (scrollPosition > window.scrollY) {
       navbarRef.current!.classList.add('sticky-header-up');
       navbarRef.current!.classList.remove('sticky-header-down');
     } else if (scrollPosition < window.scrollY) {
@@ -52,11 +58,11 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="bg-primary sticky top-0 mx-auto max-w-full px-4 lg:px-20"
+        className="bg-primary sticky top-0 z-30 mx-auto max-w-full px-4 lg:px-20"
         ref={navbarRef}
       >
         <div className="relative flex h-16 items-center justify-between sm:h-24">
-          <div className="z-50 w-auto">
+          <div className="w-auto">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none"
@@ -171,7 +177,7 @@ const Navbar = () => {
       </div>
 
       <Transition.Root show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={setIsOpen}>
+        <Dialog as="div" className="relative z-40" onClose={setIsOpen}>
           <Transition.Child
             as={Fragment}
             enter="ease-in-out duration-300"

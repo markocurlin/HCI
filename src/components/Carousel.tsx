@@ -22,7 +22,7 @@ const Carousel = ({ imageList }: any) => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="h-full w-full object-cover"
+        className="z-20 h-full w-full object-cover"
       >
         {imageList.map((image: any) => (
           <SwiperSlide key={image.id}>
