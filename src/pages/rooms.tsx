@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import heroimage from 'src/assets/rooms/heroimage.jpg';
-import { pageInfo, rooms } from 'src/constants/rooms';
 
+import heroimage from '@/assets/rooms/heroimage.jpg';
 import Carousel from '@/components/Carousel';
+import { pageInfo, rooms } from '@/constants/rooms';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 

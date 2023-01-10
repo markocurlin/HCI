@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import heroImage from 'src/assets/home/heroImage.jpg';
-import image1 from 'src/assets/home/image1.jpg';
-import image2 from 'src/assets/home/image2.jpg';
-import { carouselImages, pageInfo } from 'src/constants/home';
 
+import heroImage from '@/assets/home/heroImage.jpg';
+import image1 from '@/assets/home/image1.jpg';
+import image2 from '@/assets/home/image2.jpg';
 import Carousel from '@/components/Carousel';
+import { carouselImages, pageInfo } from '@/constants/home';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 

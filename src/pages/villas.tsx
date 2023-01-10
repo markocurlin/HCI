@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import heroimage from 'src/assets/villas/heroimage.jpeg';
 
+import heroimage from '@/assets/villas/heroimage.jpeg';
 import Carousel from '@/components/Carousel';
 import { pageInfo, villas } from '@/constants/villas';
 import Layout from '@/layouts/Layout';

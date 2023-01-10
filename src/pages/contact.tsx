@@ -3,8 +3,8 @@ import '../i18n';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import heroImage from 'src/assets/podstrana.jpg';
 
+import heroImage from '@/assets/podstrana.jpg';
 import Form from '@/components/Form';
 import Map from '@/components/Map';
 import { contacts, pageInfo } from '@/constants/contacts';

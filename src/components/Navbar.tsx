@@ -6,9 +6,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Fragment, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import image from 'src/assets/imagebg.jpg';
-import logo from 'src/assets/logowhite.png';
 
+import image from '@/assets/imagebg.jpg';
+import logo from '@/assets/logowhite.png';
 import { navLinks, socialMedia } from '@/constants/navigation';
 
 import { availableLanguages } from '../i18n';
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-primary mx-auto max-w-full px-4 lg:px-20">
+      <div className="bg-primary sticky top-0 mx-auto max-w-full px-4 lg:px-20">
         <div className="relative flex h-16 items-center justify-between sm:h-24">
           <div className="z-50 w-auto">
             <button
@@ -38,7 +38,7 @@ const Navbar = () => {
               className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none"
             >
               <span className="sr-only">Open main menu</span>
-              {open ? (
+              {/* open ? (
                 <XMarkIcon
                   className="block h-6 w-6 text-black"
                   aria-hidden="true"
@@ -48,7 +48,11 @@ const Navbar = () => {
                   className="block h-6 w-6 text-white"
                   aria-hidden="true"
                 />
-              )}
+              ) */}
+              <Bars3Icon
+                className="block h-6 w-6 text-white"
+                aria-hidden="true"
+              />
             </button>
           </div>
 
@@ -177,7 +181,21 @@ const Navbar = () => {
                   leaveTo="-translate-x-full"
                 >
                   <Dialog.Panel className="pointer-events-auto relative w-screen max-w-lg">
-                    <div className="absolute z-40 -ml-4 h-14 w-full bg-white"></div>
+                    <div className="absolute z-40 -ml-4 h-14 w-full bg-white">
+                      <div className="z-50 w-auto px-8 py-3 sm:py-7 lg:px-24">
+                        <button
+                          onClick={() => setOpen(!open)}
+                          className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none"
+                        >
+                          <span className="sr-only">Open main menu</span>
+
+                          <XMarkIcon
+                            className="block h-6 w-6 text-black"
+                            aria-hidden="true"
+                          />
+                        </button>
+                      </div>
+                    </div>
                     <div className="scroll-y flex h-full flex-col bg-white py-6 shadow-xl">
                       <div className="mt-32 mb-16 px-4 lg:px-20">
                         <div className="flex flex-col items-center sm:items-start">

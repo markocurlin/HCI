@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import barimage from 'src/assets/services/bar.jpg';
-import diningimage from 'src/assets/services/dining.jpg';
-import heroimage1 from 'src/assets/services/heroimage-1.jpg';
-import heroimage2 from 'src/assets/services/heroimage-2.jpg';
-import heroimage3 from 'src/assets/services/heroimage-3.jpg';
-import heroimage4 from 'src/assets/services/heroimage-4.jpg';
-import heroimage5 from 'src/assets/services/heroimage-5.jpg';
-import heroimage6 from 'src/assets/services/heroimage-6.jpg';
-import heroimage7 from 'src/assets/services/heroimage-7.jpg';
-import poolimage from 'src/assets/services/pool.jpg';
 
+import barimage from '@/assets/services/bar.jpg';
+import diningimage from '@/assets/services/dining.jpg';
+import heroimage1 from '@/assets/services/heroimage-1.jpg';
+import heroimage2 from '@/assets/services/heroimage-2.jpg';
+import heroimage3 from '@/assets/services/heroimage-3.jpg';
+import heroimage4 from '@/assets/services/heroimage-4.jpg';
+import heroimage5 from '@/assets/services/heroimage-5.jpg';
+import heroimage6 from '@/assets/services/heroimage-6.jpg';
+import heroimage7 from '@/assets/services/heroimage-7.jpg';
+import poolimage from '@/assets/services/pool.jpg';
 import { pageInfo } from '@/constants/services';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
