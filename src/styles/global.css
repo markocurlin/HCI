@@ -159,7 +159,6 @@ li::marker {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
-  background-color: red;
 }
 
 .sticky-header-down {
@@ -168,6 +167,5 @@ li::marker {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
-  background-color: black;
-  box-shadow: none
+  box-shadow: none;
 }

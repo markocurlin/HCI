@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import image from '@/assets/imagebg.jpg';
@@ -20,7 +20,9 @@ function classNames(...classes: any) {
 const Navbar = () => {
   const router = useRouter();
   const currentPage = router.pathname;
-  const [open, setOpen] = useState(false);
+  const navbarRef = useRef<HTMLInputElement>(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrollPosition, setSrollPosition] = useState(0);
   const [selectedLanguage, setSelectedLanguage] = useState('En');
   const { t, i18n } = useTranslation();
 
@@ -28,31 +30,52 @@ const Navbar = () => {
     i18n.changeLanguage(selectedLanguage);
   }, [selectedLanguage]);
 
+  const handleScroll = useCallback(() => {
+    if (scrollPosition > window.scrollY) {
+      navbarRef.current!.classList.add('sticky-header-up');
+      navbarRef.current!.classList.remove('sticky-header-down');
+    } else if (scrollPosition < window.scrollY) {
+      navbarRef.current!.classList.add('sticky-header-down');
+      navbarRef.current!.classList.remove('sticky-header-up');
+    }
+    setSrollPosition(window.scrollY);
+  }, [scrollPosition]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
+
   return (
     <>
-      <div className="bg-primary sticky top-0 mx-auto max-w-full px-4 lg:px-20">
+      <div
+        className="bg-primary sticky top-0 mx-auto max-w-full px-4 lg:px-20"
+        ref={navbarRef}
+      >
         <div className="relative flex h-16 items-center justify-between sm:h-24">
           <div className="z-50 w-auto">
             <button
-              onClick={() => setOpen(!open)}
+              onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none"
             >
               <span className="sr-only">Open main menu</span>
-              {/* open ? (
-                <XMarkIcon
-                  className="block h-6 w-6 text-black"
-                  aria-hidden="true"
-                />
-              ) : (
+              <Transition
+                show={!isOpen}
+                enter="transition-opacity duration-150"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="transition-opacity duration-150"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+              >
                 <Bars3Icon
                   className="block h-6 w-6 text-white"
                   aria-hidden="true"
                 />
-              ) */}
-              <Bars3Icon
-                className="block h-6 w-6 text-white"
-                aria-hidden="true"
-              />
+              </Transition>
             </button>
           </div>
 
@@ -147,8 +170,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={setOpen}>
+      <Transition.Root show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={setIsOpen}>
           <Transition.Child
             as={Fragment}
             enter="ease-in-out duration-300"
@@ -181,14 +204,13 @@ const Navbar = () => {
                   leaveTo="-translate-x-full"
                 >
                   <Dialog.Panel className="pointer-events-auto relative w-screen max-w-lg">
-                    <div className="absolute z-40 -ml-4 h-14 w-full bg-white">
+                    <div className="absolute z-40 -ml-4 h-14 w-full bg-white sm:h-20">
                       <div className="z-50 w-auto px-8 py-3 sm:py-7 lg:px-24">
                         <button
-                          onClick={() => setOpen(!open)}
+                          onClick={() => setIsOpen(!isOpen)}
                           className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none"
                         >
                           <span className="sr-only">Open main menu</span>
-
                           <XMarkIcon
                             className="block h-6 w-6 text-black"
                             aria-hidden="true"
