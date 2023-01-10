@@ -15,7 +15,12 @@ import villaRoyal25 from 'src/assets/villas/VillaRoyal2/villaRoyal2-5.jpg';
 import villaRoyal26 from 'src/assets/villas/VillaRoyal2/villaRoyal2-6.jpg';
 import villaRoyal27 from 'src/assets/villas/VillaRoyal2/villaRoyal2-7.jpg';
 
-const villas = [
+export const pageInfo = {
+  title: '- Villas',
+  desription: 'This page is showcase of Luxury villas',
+};
+
+export const villas = [
   {
     id: 0,
     name: 'Villa Royal 1',
@@ -275,5 +280,3 @@ const villas = [
       'Villa Royal 1 Podstrana is located on a slope with beautiful views of the Adriatic Sea, islands, and the coastal town of Podstrana. All necessary amenities such as shops, restaurants, and cafes are just a short walk from the villa. Spend your holiday on beautiful pebble beaches, ideal for families with children. The villa is located in central Dalmatia, making it an ideal base for many day trips. Visit the city of Split and its Diocletians Palace with its many narrow streets and top restaurants. Dont miss visiting the islands of Brac, Solta, and Hvar, or maybe even the island of Vis, which is quite different from other islands in the Adriatic. Relax in the beautiful nature, in numerous national parks and nature reserves. For all adrenaline lovers, visit the river Cetina, where you can enjoy rafting and zipline, or drive to Biokovo mountain and take a walk on the skywalk.',
   },
 ];
-
-export default villas;

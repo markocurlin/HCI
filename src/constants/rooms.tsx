@@ -14,7 +14,12 @@ import superiorroom3 from 'src/assets/rooms/superiorroom-3.jpg';
 import superiorroom4 from 'src/assets/rooms/superiorroom-4.jpg';
 import superiorroom5 from 'src/assets/rooms/superiorroom-5.jpg';
 
-const rooms = [
+export const pageInfo = {
+  title: '- Rooms',
+  desription: 'This page is showcase of rooms',
+};
+
+export const rooms = [
   {
     id: 0,
     name: 'The Deluxe suite',
@@ -149,5 +154,3 @@ const rooms = [
     ],
   },
 ];
-
-export default rooms;

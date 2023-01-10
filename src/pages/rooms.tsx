@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import heroimage from 'src/assets/rooms/heroimage.jpg';
-import rooms from 'src/constants/rooms';
+import { pageInfo, rooms } from 'src/constants/rooms';
 
 import Carousel from '@/components/Carousel';
 import Layout from '@/layouts/Layout';
@@ -22,7 +22,9 @@ const Rooms = () => {
 
   return (
     <>
-      <Layout meta={<Meta title="- Rooms" description="Rooms page" />}>
+      <Layout
+        meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
+      >
         <div className="h-130 w-full">
           <Image
             src={heroimage}

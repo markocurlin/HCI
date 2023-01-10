@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import heroimage from 'src/assets/villas/heroimage.jpeg';
 
 import Carousel from '@/components/Carousel';
-import villas from '@/constants/villas';
+import { pageInfo, villas } from '@/constants/villas';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 
@@ -22,7 +22,9 @@ const Villas = () => {
 
   return (
     <>
-      <Layout meta={<Meta title="- Villas" description="Villas" />}>
+      <Layout
+        meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
+      >
         <div className="h-130 w-full">
           <Image
             src={heroimage}

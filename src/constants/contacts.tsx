@@ -1,6 +1,11 @@
 import { EnvelopeIcon, HomeIcon, PhoneIcon } from '@heroicons/react/20/solid';
 
-const contacts = [
+export const pageInfo = {
+  title: '- Contact us',
+  desription: 'Contact us page',
+};
+
+export const contacts = [
   {
     id: 0,
     iconSrc: HomeIcon,
@@ -20,5 +25,3 @@ const contacts = [
     text: 'bbozikovina@gmail.com',
   },
 ];
-
-export default contacts;

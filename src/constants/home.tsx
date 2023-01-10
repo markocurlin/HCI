@@ -4,7 +4,12 @@ import carouselImage3 from 'src/assets/home/carousel-image3.jpg';
 import carouselImage4 from 'src/assets/home/carousel-image4.jpg';
 import carouselImage5 from 'src/assets/home/carousel-image5.jpg';
 
-const Home = [
+export const pageInfo = {
+  title: '',
+  desription: 'Home page',
+};
+
+export const carouselImages = [
   {
     id: 0,
     imageSrc: carouselImage1,
@@ -31,5 +36,3 @@ const Home = [
     imageAlt: 'Carousel image 5',
   },
 ];
-
-export default Home;

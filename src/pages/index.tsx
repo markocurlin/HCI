@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import heroImage from 'src/assets/home/heroImage.jpg';
 import image1 from 'src/assets/home/image1.jpg';
 import image2 from 'src/assets/home/image2.jpg';
-import carouselImages from 'src/constants/home';
+import { carouselImages, pageInfo } from 'src/constants/home';
 
 import Carousel from '@/components/Carousel';
 import Layout from '@/layouts/Layout';
@@ -15,7 +15,9 @@ const Index = () => {
 
   return (
     <>
-      <Layout meta={<Meta title="" description="Home page" />}>
+      <Layout
+        meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
+      >
         <div className="h-130 w-full">
           <Image
             src={heroImage}

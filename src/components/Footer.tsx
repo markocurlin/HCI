@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logowhite.png';
 
-import contacts from '@/constants/contacts';
+import { contacts } from '@/constants/contacts';
 import { navLinks, socialMedia } from '@/constants/navigation';
 
 const Footer = () => {

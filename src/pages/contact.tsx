@@ -7,7 +7,7 @@ import heroImage from 'src/assets/podstrana.jpg';
 
 import Form from '@/components/Form';
 import Map from '@/components/Map';
-import contacts from '@/constants/contacts';
+import { contacts, pageInfo } from '@/constants/contacts';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 
@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <>
       <Layout
-        meta={<Meta title="- Contact us" description="Contact us page" />}
+        meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
         <div className="h-130 w-full">
           <Image

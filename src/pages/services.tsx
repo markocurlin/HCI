@@ -12,6 +12,7 @@ import heroimage6 from 'src/assets/services/heroimage-6.jpg';
 import heroimage7 from 'src/assets/services/heroimage-7.jpg';
 import poolimage from 'src/assets/services/pool.jpg';
 
+import { pageInfo } from '@/constants/services';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 
@@ -20,7 +21,11 @@ const Services = () => {
 
   return (
     <>
-      <Layout meta={<Meta title="- Services" description="Services page" />}>
+      <Layout
+        meta={
+          <Meta title={pageInfo.title} description={pageInfo.description} />
+        }
+      >
         <div className="relative mt-10 overflow-hidden bg-white lg:my-10">
           <div className="pt-8 pb-80 sm:pt-24 sm:pb-40 lg:pt-60 lg:pb-48">
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
