@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
-import barimage from '@/assets/services/bar.jpg';
+import barimage from '@/assets/services/bar1.jpg';
 import diningimage from '@/assets/services/dining.jpg';
 import heroimage1 from '@/assets/services/heroimage-1.jpg';
 import heroimage2 from '@/assets/services/heroimage-2.jpg';
@@ -11,8 +11,8 @@ import heroimage4 from '@/assets/services/heroimage-4.jpg';
 import heroimage5 from '@/assets/services/heroimage-5.jpg';
 import heroimage6 from '@/assets/services/heroimage-6.jpg';
 import heroimage7 from '@/assets/services/heroimage-7.jpg';
-import poolimage from '@/assets/services/pool.jpg';
-import { pageInfo } from '@/constants/services';
+import poolimage from '@/assets/services/pool1.jpg';
+import { pageInfo, services } from '@/constants/services';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 
@@ -123,6 +123,61 @@ const Services = () => {
             </div>
           </div>
         </div>
+
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex h-auto w-full items-center justify-center bg-zinc-50"
+          >
+            <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
+              {index % 2 === 0 && (
+                <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.imageAlt}
+                    width={540}
+                    height={764}
+                    placeholder="blur"
+                  />
+                </div>
+              )}
+
+              <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
+                <p className="text-xl font-semibold text-black sm:text-3xl">
+                  {service.title}
+                </p>
+
+                <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
+                  {service.description}
+                </p>
+              </div>
+
+              {index % 2 === 0 && (
+                <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.imageAlt}
+                    width={540}
+                    height={764}
+                    placeholder="blur"
+                  />
+                </div>
+              )}
+
+              {index % 2 !== 0 && (
+                <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.imageAlt}
+                    width={540}
+                    height={764}
+                    placeholder="blur"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
 
         <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
