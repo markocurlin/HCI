@@ -3,8 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import room3 from 'src/assets/home/carousel-image1.jpg';
+import room2 from 'src/assets/home/carousel-image5.jpg';
+import room1 from 'src/assets/home/image1.jpg';
 
-import heroimage from '@/assets/rooms/heroimage.jpg';
 import Carousel from '@/components/Carousel';
 import { pageInfo, rooms } from '@/constants/rooms';
 import Layout from '@/layouts/Layout';
@@ -25,22 +27,88 @@ const Rooms = () => {
       <Layout
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
-        <div className="h-130 w-full">
-          <Image
-            src={heroimage}
-            alt="Hero image of room"
-            sizes="100vw, 100vh"
-            className="h-full w-full object-cover object-center"
-            placeholder="blur"
-          />
+        <div className="bg-white">
+          <div className="my-4 flex justify-center py-6 lg:my-16">
+            <div className="mx-10 mt-6 flex flex-col justify-center sm:px-6 lg:px-8">
+              <div className="sm:max-w-md">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                  Rooms & suites
+                </h1>
+                <p className="text-md mt-4 leading-snug tracking-tight text-black/70 sm:text-xl">
+                  We d love to surprise you, but there s so much about our
+                  luxury rooms and suites we just have to share. From the bold,
+                  innovative design and Italian marble bathrooms.
+                </p>
+              </div>
+
+              <div>
+                <Link
+                  href="#"
+                  className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
+                >
+                  LEARN MORE
+                </Link>
+              </div>
+            </div>
+
+            <div className="mx-10 mt-6 hidden max-w-2xl sm:px-6 lg:grid lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div className="img-gradient aspect-w-3 aspect-h-4 overflow-hidden lg:block">
+                <Image
+                  src={room1}
+                  alt="soba1"
+                  className="h-full w-full object-cover"
+                  placeholder="blur"
+                />
+                <div className="absolute bottom-0 left-0 z-20 p-6">
+                  <p className="py-0.5 text-sm font-semibold leading-snug text-white sm:text-lg">
+                    The Deluxe suite
+                  </p>
+                  <p className="py-0.5 text-xs font-light leading-snug text-white sm:text-base">
+                    Discover now
+                  </p>
+                </div>
+              </div>
+              <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
+                <div className="img-gradient aspect-w-3 aspect-h-2 overflow-hidden ">
+                  <Image
+                    src={room2}
+                    alt="soba2"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-sm font-semibold leading-snug text-white sm:text-lg">
+                      Superior double room
+                    </p>
+                    <p className="py-0.5 text-xs font-light leading-snug text-white sm:text-base">
+                      Discover now
+                    </p>
+                  </div>
+                </div>
+                <div className="img-gradient aspect-w-3 aspect-h-2 overflow-hidden">
+                  <Image
+                    src={room3}
+                    alt="soba3"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-sm font-semibold leading-snug text-white sm:text-lg">
+                      Standard double room
+                    </p>
+                    <p className="py-0.5 text-xs font-light leading-snug text-white sm:text-base">
+                      Discover now
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="bg-white">
           <div className="mx-auto max-w-2xl p-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8">
-            <h2 className="text-center text-3xl font-semibold tracking-tight text-black">
-              {t('Rooms and suites')}
-            </h2>
-
+            <hr className="mb-16" />
             <div className="mt-4 grid grid-cols-1 items-center justify-items-center gap-y-8 gap-x-16 sm:mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-0">
               {rooms.map((room) => (
                 <div
@@ -77,6 +145,7 @@ const Rooms = () => {
                 </div>
               ))}
             </div>
+            <hr className="mt-16" />
           </div>
         </div>
 
@@ -130,7 +199,10 @@ const Rooms = () => {
                 </div>
               </div>
 
-              <div key={`${room.id}-carousel`} className="h-130 w-full">
+              <div
+                key={`${room.id}-carousel`}
+                className="h-124 w-full px-0 sm:px-44"
+              >
                 <Carousel imageList={room.images} />
               </div>
             </div>

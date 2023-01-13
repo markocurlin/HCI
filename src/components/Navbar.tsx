@@ -240,9 +240,13 @@ const Navbar = () => {
                                 <Link href={link.path}>
                                   <li
                                     key={index}
+                                    onClick={() => {
+                                      if (currentPage === link.path)
+                                        setIsOpen(false);
+                                    }}
                                     className={classNames(
                                       currentPage === link.path
-                                        ? 'text-black font-medium'
+                                        ? 'text-black font-[600]'
                                         : 'text-black/60 hover:text-gray-900',
                                       'px-3 py-2 text-2xl sm:text-3xl font-normal'
                                     )}
