@@ -28,7 +28,7 @@ const Rooms = () => {
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
         <div className="bg-white">
-          <div className="my-4 flex flex-col items-center justify-center py-6 lg:my-16 lg:flex-row">
+          <div className="mt-4 flex flex-col items-center justify-center py-6 lg:my-16 lg:flex-row">
             <div className="mx-10 mt-6 flex flex-col justify-center sm:px-6 lg:px-8">
               <div className="sm:max-w-md">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -125,12 +125,12 @@ const Rooms = () => {
           <div
             key={room.id}
             ref={room.id === id ? ref : null}
-            className="bg-zinc-100 p-4 pt-8 sm:p-8"
+            className="bg-zinc-100 pt-16 sm:p-8"
           >
-            <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 px-2 md:max-w-screen-2xl md:items-center">
+            <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 sm:px-2 md:max-w-screen-2xl md:items-center">
               {room.id % 2 === 0 && (
                 <>
-                  <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
+                  <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
                     <div className="bg-white p-4 sm:p-12 md:px-8">
                       <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                         <div className="container flex flex-col">
@@ -183,9 +183,18 @@ const Rooms = () => {
 
               {room.id % 2 !== 0 && (
                 <>
-                  <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                  <div className="md:col-span-auto z-10 col-span-12 sm:z-30 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+                    <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                      <div
+                        key={`${room.id}-carousel`}
+                        className="absolute inset-0 h-full w-full object-cover"
+                      >
+                        <Carousel imageList={room.images} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="md:col-span-auto relative z-20 col-span-12 -mt-8 px-10 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
                     <div className="bg-white p-4 sm:p-12 md:px-8">
-                      {/*  lg:px-2  */}
                       <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 lg:pl-24 xl:py-24 xl:pl-32">
                         <div className="container flex flex-col">
                           <div className="container">
@@ -221,7 +230,7 @@ const Rooms = () => {
                       </div>
                     </div>
                   </div>
-
+                  {/*
                   <div className="md:col-span-auto z-20 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
                     <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                       <div
@@ -231,7 +240,7 @@ const Rooms = () => {
                         <Carousel imageList={room.images} />
                       </div>
                     </div>
-                  </div>
+                            </div> */}
                 </>
               )}
             </div>
