@@ -131,7 +131,7 @@ const Rooms = () => {
               {room.id % 2 === 0 && (
                 <>
                   <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
-                    <div className="bg-white p-12 md:px-8">
+                    <div className="bg-white p-4 sm:p-12 md:px-8">
                       <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                         <div className="container flex flex-col">
                           <div className="container">
@@ -195,7 +195,7 @@ const Rooms = () => {
                   </div>
 
                   <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
-                    <div className="bg-white p-12 md:px-8">
+                    <div className="bg-white p-4 sm:p-12 md:px-8">
                       <div className="mx-auto max-w-xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-2xl lg:pl-24 xl:pl-32">
                         <div className="container flex flex-col">
                           <div className="container">
