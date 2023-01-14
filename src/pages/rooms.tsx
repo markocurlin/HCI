@@ -28,7 +28,7 @@ const Rooms = () => {
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
         <div className="bg-white">
-          <div className="mt-4 flex flex-col items-center justify-center py-6 lg:my-16 lg:flex-row">
+          <div className="mt-4 flex flex-col items-center justify-center py-6 lg:mt-16 lg:mb-20 lg:flex-row">
             <div className="mx-10 mt-6 flex flex-col justify-center sm:px-6 lg:px-8">
               <div className="sm:max-w-md">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -121,131 +121,122 @@ const Rooms = () => {
           </div>
         </div>
 
-        {rooms.map((room) => (
-          <div
-            key={room.id}
-            ref={room.id === id ? ref : null}
-            className="bg-zinc-100 pt-16 sm:p-8"
-          >
-            <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 sm:px-2 md:max-w-screen-2xl md:items-center">
-              {room.id % 2 === 0 && (
-                <>
-                  <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
-                    <div className="bg-white p-4 sm:p-12 md:px-8">
-                      <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
-                        <div className="container flex flex-col">
-                          <div className="container">
-                            <p className="text-xl font-semibold text-black sm:text-4xl">
-                              {t(`${room.name}`)}
-                            </p>
-                            <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base lg:pr-24 xl:pr-32">
-                              {t(`${room.description}`)}
-                            </p>
-                          </div>
+        <div className="bg-zinc-100 pb-8 sm:py-12">
+          {rooms.map((room) => (
+            <div
+              key={room.id}
+              ref={room.id === id ? ref : null}
+              className="bg-zinc-100 pb-8 sm:p-8"
+            >
+              <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 sm:px-2 md:max-w-screen-2xl md:items-center">
+                {room.id % 2 === 0 && (
+                  <>
+                    <div className="md:col-span-auto z-0 col-span-12 sm:z-20 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                      <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                        <div
+                          key={`${room.id}-carousel`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                        >
+                          <Carousel imageList={room.images} />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
+                      <div className="bg-white p-4 sm:p-12 md:px-8">
+                        <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
+                          <div className="container flex flex-col">
+                            <div className="container">
+                              <p className="text-xl font-semibold text-black sm:text-4xl">
+                                {t(`${room.name}`)}
+                              </p>
+                              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base lg:pr-24 xl:pr-32">
+                                {t(`${room.description}`)}
+                              </p>
+                            </div>
 
-                          <div className="container mt-4 p-2 lg:mt-0 xl:mt-0">
-                            {room.amenities.map((amenitie, index) => (
-                              <ul
-                                key={`${index}-${amenitie}`}
-                                className="ml-0 list-inside list-disc"
+                            <div className="container mt-4 p-2 lg:mt-0 xl:mt-0">
+                              {room.amenities.map((amenitie, index) => (
+                                <ul
+                                  key={`${index}-${amenitie}`}
+                                  className="ml-0 list-inside list-disc"
+                                >
+                                  <li className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                                    {t(`${amenitie}`)}
+                                  </li>
+                                </ul>
+                              ))}
+                            </div>
+                            <div>
+                              <Link
+                                href="/contact/#book"
+                                className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                               >
-                                <li className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
-                                  {t(`${amenitie}`)}
-                                </li>
-                              </ul>
-                            ))}
-                          </div>
-                          <div>
-                            <Link
-                              href="/contact/#book"
-                              className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
-                            >
-                              {t('BOOK NOW')}
-                            </Link>
+                                {t('BOOK NOW')}
+                              </Link>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </>
+                )}
 
-                  <div className="md:col-span-auto z-20 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
-                    <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
-                      <div
-                        key={`${room.id}-carousel`}
-                        className="absolute inset-0 h-full w-full object-cover"
-                      >
-                        <Carousel imageList={room.images} />
+                {room.id % 2 !== 0 && (
+                  <>
+                    <div className="md:col-span-auto z-0 col-span-12 sm:z-20 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+                      <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                        <div
+                          key={`${room.id}-carousel`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                        >
+                          <Carousel imageList={room.images} />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </>
-              )}
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                      <div className="bg-white p-4 sm:p-12 md:px-8">
+                        <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 lg:pl-24 xl:py-24 xl:pl-32">
+                          <div className="container flex flex-col">
+                            <div className="container">
+                              <p className="text-xl font-semibold text-black sm:text-4xl">
+                                {t(`${room.name}`)}
+                              </p>
+                              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
+                                {t(`${room.description}`)}
+                              </p>
+                            </div>
 
-              {room.id % 2 !== 0 && (
-                <>
-                  <div className="md:col-span-auto z-10 col-span-12 sm:z-30 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
-                    <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
-                      <div
-                        key={`${room.id}-carousel`}
-                        className="absolute inset-0 h-full w-full object-cover"
-                      >
-                        <Carousel imageList={room.images} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="md:col-span-auto relative z-20 col-span-12 -mt-8 px-10 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
-                    <div className="bg-white p-4 sm:p-12 md:px-8">
-                      <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 lg:pl-24 xl:py-24 xl:pl-32">
-                        <div className="container flex flex-col">
-                          <div className="container">
-                            <p className="text-xl font-semibold text-black sm:text-4xl">
-                              {t(`${room.name}`)}
-                            </p>
-                            <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
-                              {t(`${room.description}`)}
-                            </p>
-                          </div>
-
-                          <div className="container mt-4 p-2 lg:mt-0 xl:mt-0">
-                            {room.amenities.map((amenitie, index) => (
-                              <ul
-                                key={`${index}-${amenitie}`}
-                                className="ml-0 list-inside list-disc"
+                            <div className="container mt-4 p-2 lg:mt-0 xl:mt-0">
+                              {room.amenities.map((amenitie, index) => (
+                                <ul
+                                  key={`${index}-${amenitie}`}
+                                  className="ml-0 list-inside list-disc"
+                                >
+                                  <li className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                                    {t(`${amenitie}`)}
+                                  </li>
+                                </ul>
+                              ))}
+                            </div>
+                            <div>
+                              <Link
+                                href="/contact/#book"
+                                className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                               >
-                                <li className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
-                                  {t(`${amenitie}`)}
-                                </li>
-                              </ul>
-                            ))}
-                          </div>
-                          <div>
-                            <Link
-                              href="/contact/#book"
-                              className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
-                            >
-                              {t('BOOK NOW')}
-                            </Link>
+                                {t('BOOK NOW')}
+                              </Link>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  {/*
-                  <div className="md:col-span-auto z-20 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
-                    <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
-                      <div
-                        key={`${room.id}-carousel`}
-                        className="absolute inset-0 h-full w-full object-cover"
-                      >
-                        <Carousel imageList={room.images} />
-                      </div>
-                    </div>
-                            </div> */}
-                </>
-              )}
+                  </>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
         {/*
         <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
           <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
