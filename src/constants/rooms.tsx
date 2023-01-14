@@ -32,12 +32,12 @@ export const rooms = [
       'Complimentary wireless Internet',
       'Mini Bar',
       'Mini cooler',
-      'Hairdryer',
+      /* 'Hairdryer', */
       'Complimentary bottle of wine',
       'Air conditioning',
       'Flat-screen TV with cable',
       'Welcome fruit basket',
-      'Work desk and chair',
+      /* 'Work desk and chair', */
       'In-room coffee and tea',
     ],
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
@@ -120,12 +120,12 @@ export const rooms = [
       'Complimentary wireless Internet',
       'Mini Bar',
       'Mini cooler',
-      'Hairdryer',
+      /* 'Hairdryer', */
       'Complimentary bottle of wine',
       'Air conditioning',
       'Flat-screen TV with cable',
       'Welcome fruit basket',
-      'Work desk and chair',
+      /* 'Work desk and chair', */
       'In-room coffee and tea',
     ],
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',

@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from '@heroicons/react/20/solid';
+// import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -28,7 +28,7 @@ const Rooms = () => {
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
         <div className="bg-white">
-          <div className="my-4 flex justify-center py-6 lg:my-16">
+          <div className="my-4 flex flex-col items-center justify-center py-6 lg:my-16 lg:flex-row">
             <div className="mx-10 mt-6 flex flex-col justify-center sm:px-6 lg:px-8">
               <div className="sm:max-w-md">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -51,8 +51,8 @@ const Rooms = () => {
               </div>
             </div>
 
-            <div className="mx-10 mt-6 hidden max-w-2xl sm:px-6 lg:grid lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-              <div className="img-gradient aspect-w-3 aspect-h-4 overflow-hidden lg:block">
+            <div className="mx-10 mt-6 max-w-2xl sm:px-1 lg:grid lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div className="img-gradient group container my-12 h-96 overflow-hidden group-hover:opacity-95 lg:my-0 lg:block lg:h-auto">
                 <Image
                   src={room1}
                   alt="soba1"
@@ -60,16 +60,21 @@ const Rooms = () => {
                   placeholder="blur"
                 />
                 <div className="absolute bottom-0 left-0 z-20 p-6">
-                  <p className="py-0.5 text-sm font-semibold leading-snug text-white sm:text-lg">
+                  <p className="py-0.5 text-lg font-semibold leading-snug text-white">
                     The Deluxe suite
                   </p>
-                  <p className="py-0.5 text-xs font-light leading-snug text-white sm:text-base">
-                    Discover now
-                  </p>
+                  <div className="flex py-0.5">
+                    <p
+                      onClick={() => setId(0)}
+                      className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                    >
+                      Discover now
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
-                <div className="img-gradient aspect-w-3 aspect-h-2 overflow-hidden ">
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto ">
                   <Image
                     src={room2}
                     alt="soba2"
@@ -77,15 +82,20 @@ const Rooms = () => {
                     placeholder="blur"
                   />
                   <div className="absolute bottom-0 left-0 z-20 p-6">
-                    <p className="py-0.5 text-sm font-semibold leading-snug text-white sm:text-lg">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
                       Superior double room
                     </p>
-                    <p className="py-0.5 text-xs font-light leading-snug text-white sm:text-base">
-                      Discover now
-                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(1)}
+                        className="link-underline link-underline-white text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div className="img-gradient aspect-w-3 aspect-h-2 overflow-hidden">
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
                   <Image
                     src={room3}
                     alt="soba3"
@@ -93,12 +103,17 @@ const Rooms = () => {
                     placeholder="blur"
                   />
                   <div className="absolute bottom-0 left-0 z-20 p-6">
-                    <p className="py-0.5 text-sm font-semibold leading-snug text-white sm:text-lg">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
                       Standard double room
                     </p>
-                    <p className="py-0.5 text-xs font-light leading-snug text-white sm:text-base">
-                      Discover now
-                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(2)}
+                        className="link-underline link-underline-white text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -106,6 +121,166 @@ const Rooms = () => {
           </div>
         </div>
 
+        {/* }
+        <div className="bg-zinc-50">
+          {rooms.map((room) => (
+            <div className="grid grid-cols-12 md:items-center w-full max-w-screen-sm md:max-w-screen-md mx-auto px-4">
+              <div className="a relative block w-full h-0 pb bg-gray-300 overflow-hidden shadow-lg">
+                 <div className="mx-auto max-w-2xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                  <div className="container justify-around px-2 sm:px-8 lg:flex">
+                    <div className="container p-2">
+                      <p className="text-xl font-semibold text-black sm:text-2xl">
+                        {t(`${room.name}`)}
+                      </p>
+                      <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                        {t(`${room.description}`)}
+                      </p>
+                      <div className="mt-1 flex">
+                        <p className="mt-2 text-justify text-sm font-semibold leading-snug text-black/70 sm:text-lg">
+                          {t('MAX OCCUPANCY:')}{' '}
+                        </p>
+                        <p className="mt-2 ml-1 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                          {t(`${room.maxOccupancy}`)}
+                        </p>
+                      </div>
+                      <div className="mt-1 flex">
+                        <p className="text-justify text-sm font-semibold leading-snug text-black/70 sm:text-lg">
+                          {t('BED CONFIGURATION:')}{' '}
+                        </p>
+                        <p className="ml-1 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                          {t(`${room.bedConfiguration}`)}
+                        </p>
+                      </div>
+                      <Link
+                        href="/contact/#book"
+                        className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
+                      >
+                        {t('BOOK NOW')}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+          */}
+
+        <div className="my-20 bg-zinc-100 p-8">
+          {rooms.map((room) => (
+            <div key={room.id} ref={room.id === id ? ref : null}>
+              <div className="my-8 mx-auto grid w-full max-w-screen-sm grid-cols-12 px-4 md:max-w-screen-2xl md:items-center">
+                {room.id % 2 === 0 && (
+                  <>
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:col-start-1 md:col-end-7 md:row-start-1 md:row-end-1 md:mt-0">
+                      <div className="bg-white p-8 md:px-8">
+                        <div className="mx-auto max-w-xl py-8 px-4 sm:py-24 sm:px-6 lg:max-w-4xl lg:px-2">
+                          <div className="container flex flex-col">
+                            <div className="container">
+                              <p className="text-xl font-semibold text-black sm:text-4xl">
+                                {t(`${room.name}`)}
+                              </p>
+                              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base md:pr-32">
+                                {t(`${room.description}`)}
+                              </p>
+                            </div>
+
+                            <div className="container mt-4 p-2 lg:mt-0 xl:mt-0">
+                              {room.amenities.map((amenitie, index) => (
+                                <ul
+                                  key={`${index}-${amenitie}`}
+                                  className="ml-0 list-inside list-disc"
+                                >
+                                  <li className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                                    {t(`${amenitie}`)}
+                                  </li>
+                                </ul>
+                              ))}
+                            </div>
+                            <div>
+                              <Link
+                                href="/contact/#book"
+                                className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
+                              >
+                                {t('BOOK NOW')}
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="md:col-span-auto z-20 col-span-12 bg-red-500 md:col-start-6 md:col-end-13 md:row-start-1 md:row-end-1">
+                      <div className="a relative block h-0 w-full overflow-hidden bg-gray-300">
+                        <div
+                          key={`${room.id}-carousel`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                        >
+                          <Carousel imageList={room.images} />
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {room.id % 2 !== 0 && (
+                  <>
+                    <div className="md:col-span-auto z-20 col-span-12 bg-red-500 md:col-start-1 md:col-end-7 md:row-start-1 md:row-end-1">
+                      <div className="a relative block h-0 w-full overflow-hidden bg-gray-300">
+                        <div
+                          key={`${room.id}-carousel`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                        >
+                          <Carousel imageList={room.images} />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:col-start-6 md:col-end-13 md:row-start-1 md:row-end-1 md:mt-0">
+                      <div className="bg-white p-8 md:px-8">
+                        <div className="mx-auto max-w-xl py-8 px-4 sm:py-24 sm:px-6 sm:pl-32 lg:max-w-4xl lg:pl-32">
+                          <div className="container flex flex-col">
+                            <div className="container">
+                              <p className="text-xl font-semibold text-black sm:text-4xl">
+                                {t(`${room.name}`)}
+                              </p>
+                              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
+                                {t(`${room.description}`)}
+                              </p>
+                            </div>
+
+                            <div className="container mt-4 p-2 lg:mt-0 xl:mt-0">
+                              {room.amenities.map((amenitie, index) => (
+                                <ul
+                                  key={`${index}-${amenitie}`}
+                                  className="ml-0 list-inside list-disc"
+                                >
+                                  <li className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-lg">
+                                    {t(`${amenitie}`)}
+                                  </li>
+                                </ul>
+                              ))}
+                            </div>
+                            <div>
+                              <Link
+                                href="/contact/#book"
+                                className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
+                              >
+                                {t('BOOK NOW')}
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/*
         <div className="bg-white">
           <div className="mx-auto max-w-2xl p-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8">
             <hr className="mb-16" />
@@ -201,13 +376,13 @@ const Rooms = () => {
 
               <div
                 key={`${room.id}-carousel`}
-                className="h-124 w-full px-0 sm:px-44"
+                className="h-130 w-full"
               >
                 <Carousel imageList={room.images} />
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
           <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
