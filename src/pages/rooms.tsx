@@ -1,4 +1,3 @@
-// import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -126,12 +125,12 @@ const Rooms = () => {
             <div
               key={room.id}
               ref={room.id === id ? ref : null}
-              className="bg-zinc-100 pb-8 sm:p-8"
+              className="bg-zinc-100 pb-8 lg:p-8"
             >
-              <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 sm:px-2 md:max-w-screen-2xl md:items-center">
+              <div className="mx-auto mt-8 grid w-full max-w-screen-md grid-cols-12 md:max-w-screen-2xl md:items-center">
                 {room.id % 2 === 0 && (
                   <>
-                    <div className="md:col-span-auto z-0 col-span-12 sm:z-20 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                    <div className="md:col-span-auto z-0 col-span-12 lg:z-20 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
                       <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                         <div
                           key={`${room.id}-carousel`}
@@ -141,12 +140,12 @@ const Rooms = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
-                      <div className="bg-white p-4 sm:p-12 md:px-8 lg:py-4">
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                      <div className="bg-white p-4 sm:p-12 md:px-8">
                         <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                           <div className="container flex flex-col">
                             <div className="container">
-                              <p className="text-xl font-semibold text-black sm:text-4xl">
+                              <p className="text-xl font-semibold text-black lg:text-3xl">
                                 {t(`${room.name}`)}
                               </p>
                               <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base lg:pr-24 xl:pr-32">
@@ -183,7 +182,7 @@ const Rooms = () => {
 
                 {room.id % 2 !== 0 && (
                   <>
-                    <div className="md:col-span-auto z-0 col-span-12 sm:z-20 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+                    <div className="md:col-span-auto z-0 col-span-12 lg:z-20 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
                       <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                         <div
                           key={`${room.id}-carousel`}
@@ -193,12 +192,12 @@ const Rooms = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
-                      <div className="bg-white p-4 sm:p-12 md:px-8 lg:py-4">
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                      <div className="bg-white p-4 sm:p-12 md:px-8">
                         <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 lg:pl-24 xl:py-24 xl:pl-32">
                           <div className="container flex flex-col">
                             <div className="container">
-                              <p className="text-xl font-semibold text-black sm:text-4xl">
+                              <p className="text-xl font-semibold text-black lg:text-3xl">
                                 {t(`${room.name}`)}
                               </p>
                               <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
