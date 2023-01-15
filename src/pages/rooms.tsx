@@ -28,12 +28,12 @@ const Rooms = () => {
       >
         <div className="bg-white">
           <div className="mt-4 flex flex-col items-center justify-center py-6 lg:mt-16 lg:mb-20 lg:flex-row">
-            <div className="mx-10 mt-6 flex flex-col justify-center sm:px-6 lg:px-8">
-              <div className="sm:max-w-md">
+            <div className="mx-8 mt-6 flex flex-col justify-center sm:px-10 lg:px-8">
+              <div className="sm:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                   Rooms & suites
                 </h1>
-                <p className="text-md mt-4 leading-snug tracking-tight text-black/70 sm:text-xl">
+                <p className="text-md mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
                   We d love to surprise you, but there s so much about our
                   luxury rooms and suites we just have to share. From the bold,
                   innovative design and Italian marble bathrooms.
@@ -50,8 +50,8 @@ const Rooms = () => {
               </div>
             </div>
 
-            <div className="mx-10 mt-6 max-w-2xl sm:px-1 lg:grid lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-              <div className="img-gradient group container my-12 h-96 overflow-hidden group-hover:opacity-95 lg:my-0 lg:block lg:h-auto">
+            <div className="mx-8 mt-6 max-w-2xl sm:px-1 lg:grid lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:block lg:h-auto">
                 <Image
                   src={room1}
                   alt="soba1"
