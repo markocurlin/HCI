@@ -54,7 +54,7 @@ const Rooms = () => {
               <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:block lg:h-auto">
                 <Image
                   src={room1}
-                  alt="soba1"
+                  alt="The Deluxe suite"
                   className="h-full w-full object-cover"
                   placeholder="blur"
                 />
@@ -73,10 +73,10 @@ const Rooms = () => {
                 </div>
               </div>
               <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
-                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto ">
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
                   <Image
                     src={room2}
-                    alt="soba2"
+                    alt="Superior double room"
                     className="h-full w-full object-cover"
                     placeholder="blur"
                   />
@@ -97,7 +97,7 @@ const Rooms = () => {
                 <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
                   <Image
                     src={room3}
-                    alt="soba3"
+                    alt="Standard double room"
                     className="h-full w-full object-cover"
                     placeholder="blur"
                   />

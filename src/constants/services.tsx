@@ -19,7 +19,7 @@ export const services = [
     imageSrc: restaurantImage,
     imageAlt: 'Image of restaurant',
     description:
-      'Restaurant Méditerranée pays homage to Mediterranean cuisine and local flavors, bringing the culinary traditions of Dalmatia into a new era. Whether you want the Adriatic catch of the day, premium meat delicacies, or a taste of the region, your Restaurant Méditerranée dining experience promises an adventure through Dalmatia, enhanced by an extensive wine list and creative desserts. ',
+      'Restaurant Méditerranée pays homage to Mediterranean cuisine and local flavors, bringing the culinary traditions of Dalmatia into a new era. Whether you want the Adriatic catch of the day, premium meat delicacies, or a taste of the region, your Restaurant Méditerranée dining experience promises an adventure through Dalmatia, enhanced by an extensive wine list and creative desserts.',
   },
   {
     id: 1,
@@ -67,7 +67,7 @@ export const services = [
     imageSrc: tourImage,
     imageAlt: 'Image of private tour shuttle',
     description:
-      'Our private tours provide the greatest flexibility, comfort and convenience. You will be traveling with air-conditioned vehicles and experienced drivers',
+      'Our private tours provide the greatest flexibility, comfort and convenience. You will be traveling with air-conditioned vehicles and experienced drivers.',
   },
   {
     id: 7,
@@ -75,6 +75,6 @@ export const services = [
     imageSrc: elevatorImage,
     imageAlt: 'Image of elevator',
     description:
-      'Elevator deliver guests to their rooms quietly, efficiently, and comfortably',
+      'Elevator deliver guests to their rooms quietly, efficiently, and comfortably.',
   },
 ];
