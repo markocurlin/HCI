@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
+/*
 import barimage from '@/assets/services/bar1.jpg';
 import diningimage from '@/assets/services/dining.jpg';
 import heroimage1 from '@/assets/services/heroimage-1.jpg';
@@ -11,13 +12,24 @@ import heroimage4 from '@/assets/services/heroimage-4.jpg';
 import heroimage5 from '@/assets/services/heroimage-5.jpg';
 import heroimage6 from '@/assets/services/heroimage-6.jpg';
 import heroimage7 from '@/assets/services/heroimage-7.jpg';
-import poolimage from '@/assets/services/pool1.jpg';
+import poolimage from '@/assets/services/pool1.jpg'; */
+import room3 from 'src/assets/home/carousel-image1.jpg';
+import room2 from 'src/assets/home/carousel-image5.jpg';
+
+// import room1 from 'src/assets/home/image1.jpg';
 import { pageInfo, services } from '@/constants/services';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 
 const Services = () => {
+  const [id, setId] = useState(4);
+  const ref = useRef<null | HTMLDivElement>(null);
   const { t } = useTranslation();
+
+  useEffect(() => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+    setId(10);
+  }, [id]);
 
   return (
     <>
@@ -26,105 +38,294 @@ const Services = () => {
           <Meta title={pageInfo.title} description={pageInfo.description} />
         }
       >
-        <div className="relative mt-10 overflow-hidden bg-white lg:my-10">
-          <div className="pt-8 pb-80 sm:pt-24 sm:pb-40 lg:pt-60 lg:pb-48">
-            <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-              <div className="sm:max-w-lg">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  {t('Summer styles are finally here')}
+        <div className="bg-white">
+          <div className="mt-4 flex flex-col items-center justify-center py-6 lg:mt-16 lg:mb-20 lg:flex-row">
+            <div className="mx-10 mt-6 flex flex-col justify-center sm:px-6 lg:px-8">
+              <div className="sm:max-w-md">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                  Services
                 </h1>
-                <p className="mt-4 text-xl text-gray-500">
-                  {t(
-                    'This year, our new summer collection will shelter you from the harsh elements of a world that doesnt care if you live or die.'
-                  )}
+                <p className="text-md mt-4 leading-snug tracking-tight text-black/70 sm:text-xl">
+                  We d love to surprise you, but there s so much about our
+                  luxury rooms and suites we just have to share. From the bold,
+                  innovative design and Italian marble bathrooms.
                 </p>
               </div>
+
               <div>
-                <div className="mt-10">
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
-                  >
-                    <div className="absolute sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                      <div className="flex items-center space-x-6 lg:space-x-8">
-                        <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                          <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                            <Image
-                              src={heroimage1}
-                              alt="heroimage1"
-                              className="h-full w-full object-cover object-center"
-                              placeholder="blur"
-                            />
-                          </div>
-                          <div className="h-64 w-44 overflow-hidden rounded-lg">
-                            <Image
-                              src={heroimage2}
-                              alt="heroimage2"
-                              className="h-full w-full object-cover object-center"
-                              placeholder="blur"
-                            />
-                          </div>
-                        </div>
-                        <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                          <div className="h-64 w-44 overflow-hidden rounded-lg">
-                            <Image
-                              src={heroimage3}
-                              alt="heroimage3"
-                              className="h-full w-full object-cover object-center"
-                              placeholder="blur"
-                            />
-                          </div>
-                          <div className="h-64 w-44 overflow-hidden rounded-lg">
-                            <Image
-                              src={heroimage4}
-                              alt="heroimage4"
-                              className="h-full w-full object-cover object-center"
-                              placeholder="blur"
-                            />
-                          </div>
-                          <div className="h-64 w-44 overflow-hidden rounded-lg">
-                            <Image
-                              src={heroimage5}
-                              alt="heroimage5"
-                              className="h-full w-full object-cover object-center"
-                              placeholder="blur"
-                            />
-                          </div>
-                        </div>
-                        <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                          <div className="h-64 w-44 overflow-hidden rounded-lg">
-                            <Image
-                              src={heroimage6}
-                              alt="heroimage6"
-                              className="h-full w-full object-cover object-center"
-                              placeholder="blur"
-                            />
-                          </div>
-                          <div className="h-64 w-44 overflow-hidden rounded-lg">
-                            <Image
-                              src={heroimage7}
-                              alt="heroimage7"
-                              className="h-full w-full object-cover object-center"
-                              placeholder="blur"
-                            />
-                          </div>
-                        </div>
-                      </div>
+                <Link
+                  href="#"
+                  className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
+                >
+                  LEARN MORE
+                </Link>
+              </div>
+            </div>
+
+            <div className="mx-10 mt-6 max-w-2xl sm:px-1 lg:grid lg:max-w-4xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+              <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto ">
+                  <Image
+                    src={room2}
+                    alt="soba2"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      Restaurant
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(0)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
                     </div>
                   </div>
-                  <Link
-                    href="#"
-                    className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
-                  >
-                    {t('LEARN MORE')}
-                  </Link>
+                </div>
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
+                  <Image
+                    src={room3}
+                    alt="soba3"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      Bar
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(1)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto ">
+                  <Image
+                    src={room2}
+                    alt="soba2"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      Pool
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(2)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
+                  <Image
+                    src={room3}
+                    alt="soba3"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      Massage
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(3)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
+                  <Image
+                    src={room3}
+                    alt="soba3"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      Sauna
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(4)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto ">
+                  <Image
+                    src={room2}
+                    alt="soba2"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      Private airport shuttle
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(5)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
+                  <Image
+                    src={room3}
+                    alt="soba3"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      Private tour shuttle
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(6)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
+                  <Image
+                    src={room3}
+                    alt="soba3"
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      Elevator
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(7)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {services.map((service, index) => (
+        <div className="bg-zinc-100 pb-8 sm:py-12 lg:px-8">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              ref={service.id === id ? ref : null}
+              className="bg-zinc-100 pb-8 sm:p-8"
+            >
+              <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 sm:px-2 md:max-w-screen-2xl md:items-center">
+                {service.id % 2 === 0 && (
+                  <>
+                    <div className="md:col-span-auto z-0 col-span-12 sm:z-20 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                      <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                        <div
+                          key={`${service.id}-image`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                        >
+                          <Image
+                            src={service.imageSrc}
+                            alt={service.imageAlt}
+                            placeholder="blur"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
+                      <div className="bg-white p-4 sm:p-12 md:px-8 lg:py-4">
+                        <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
+                          <div className="container flex flex-col">
+                            <div className="container">
+                              <p className="text-xl font-semibold text-black sm:text-4xl">
+                                {t(`${service.title}`)}
+                              </p>
+                              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base lg:pr-24 xl:pr-32">
+                                {t(`${service.description}`)}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {service.id % 2 !== 0 && (
+                  <>
+                    <div className="md:col-span-auto z-0 col-span-12 sm:z-20 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+                      <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                        <div
+                          key={`${service.id}-image`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                        >
+                          <Image
+                            src={service.imageSrc}
+                            alt={service.imageAlt}
+                            placeholder="blur"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                      <div className="bg-white p-4 sm:p-12 md:px-8 lg:py-4">
+                        <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 lg:pl-24 xl:py-24 xl:pl-32">
+                          <div className="container flex flex-col">
+                            <div className="container">
+                              <p className="text-xl font-semibold text-black sm:text-4xl">
+                                {t(`${service.title}`)}
+                              </p>
+                              <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
+                                {t(`${service.description}`)}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* services.map((service, index) => (
           <div
             key={index}
             className="flex h-auto w-full items-center justify-center bg-zinc-50"
@@ -314,8 +515,8 @@ const Services = () => {
             >
               {t('LEARN MORE')}
             </Link>
-          </div>
-        </div>
+              </div>
+        </div> */}
       </Layout>
     </>
   );

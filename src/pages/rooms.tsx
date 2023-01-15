@@ -88,7 +88,7 @@ const Rooms = () => {
                     <div className="flex py-0.5">
                       <p
                         onClick={() => setId(1)}
-                        className="link-underline link-underline-white text-base font-light leading-snug text-white"
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
                       >
                         Discover now
                       </p>
@@ -109,7 +109,7 @@ const Rooms = () => {
                     <div className="flex py-0.5">
                       <p
                         onClick={() => setId(2)}
-                        className="link-underline link-underline-white text-base font-light leading-snug text-white"
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
                       >
                         Discover now
                       </p>
@@ -121,7 +121,7 @@ const Rooms = () => {
           </div>
         </div>
 
-        <div className="bg-zinc-100 pb-8 sm:py-12">
+        <div className="bg-zinc-100 pb-8 sm:py-12 lg:px-8">
           {rooms.map((room) => (
             <div
               key={room.id}
@@ -141,8 +141,8 @@ const Rooms = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
-                      <div className="bg-white p-4 sm:p-12 md:px-8">
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1">
+                      <div className="bg-white p-4 sm:p-12 md:px-8 lg:py-4">
                         <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                           <div className="container flex flex-col">
                             <div className="container">
@@ -193,8 +193,8 @@ const Rooms = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
-                      <div className="bg-white p-4 sm:p-12 md:px-8">
+                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 md:mt-0 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                      <div className="bg-white p-4 sm:p-12 md:px-8 lg:py-4">
                         <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 lg:pl-24 xl:py-24 xl:pl-32">
                           <div className="container flex flex-col">
                             <div className="container">
