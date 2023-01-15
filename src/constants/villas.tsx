@@ -1,3 +1,4 @@
+import villaRoyal10 from 'src/assets/villas/VillaRoyal1/villaRoyal1-0.jpg';
 import villaRoyal11 from 'src/assets/villas/VillaRoyal1/villaRoyal1-1.jpg';
 import villaRoyal12 from 'src/assets/villas/VillaRoyal1/villaRoyal1-2.jpg';
 import villaRoyal13 from 'src/assets/villas/VillaRoyal1/villaRoyal1-3.jpg';
@@ -7,6 +8,7 @@ import villaRoyal16 from 'src/assets/villas/VillaRoyal1/villaRoyal1-6.jpg';
 import villaRoyal17 from 'src/assets/villas/VillaRoyal1/villaRoyal1-7.jpg';
 import villaRoyal18 from 'src/assets/villas/VillaRoyal1/villaRoyal1-8.jpg';
 import villaRoyal19 from 'src/assets/villas/VillaRoyal1/villaRoyal1-9.jpg';
+import villaRoyal20 from 'src/assets/villas/VillaRoyal2/villaRoyal2-0.jpg';
 import villaRoyal21 from 'src/assets/villas/VillaRoyal2/villaRoyal2-1.jpg';
 import villaRoyal22 from 'src/assets/villas/VillaRoyal2/villaRoyal2-2.jpg';
 import villaRoyal23 from 'src/assets/villas/VillaRoyal2/villaRoyal2-3.jpg';
@@ -24,8 +26,8 @@ export const villas = [
   {
     id: 0,
     name: 'Villa Royal 1',
-    imageSrc: '',
-    imageAlt: '',
+    imageSrc: villaRoyal10,
+    imageAlt: 'Image of Villa Royal 1',
     images: [
       {
         id: 0,
@@ -87,34 +89,32 @@ export const villas = [
         title: 'OUTDOORS',
         details: [
           'Private pool: 40 m2',
-          'Sun loungers: 6',
+          // 'Sun loungers: 6',
           'Garden',
-          'Panoramic views',
+          // 'Panoramic views',
           'Private parking',
-          'Pool towels',
+          // 'Pool towels',
         ],
       },
       {
         title: 'SUITABILITY',
-        details: ['Ground floor bedroom', 'Children', 'Pets considered'],
+        details: [
+          // 'Ground floor bedroom',
+          'Children',
+          'Pets considered',
+        ],
       },
       {
         title: 'COOLING & HEATING',
         details: [
           'Fully air-conditioned',
           'Heating with A/C units',
-          'Air-condition units no: 4',
+          // 'Air-condition units no: 4',
         ],
       },
       {
-        title: 'BEDROOMS',
-        details: [
-          'Bedroom #1: number of double beds: 1',
-          'Bedroom #2: number of double beds: 1',
-          'Bedroom #3: number of single beds: 2',
-          'Baby cot: 1',
-          'Sofa bed: 1',
-        ],
+        title: 'LAUNDRY',
+        details: ['Washing machine', 'Iron and board'],
       },
       {
         title: 'INTERNET',
@@ -129,7 +129,7 @@ export const villas = [
           'Dishwasher',
           'BBQ - charcoal',
           'Indoor dining area for: 8',
-          'Outdoor dining area for: 6',
+          // 'Outdoor dining area for: 6',
           'Espresso coffee machine',
           'Kettle',
         ],
@@ -139,8 +139,15 @@ export const villas = [
         details: ['SAT TV', 'TV', 'Sofabed'],
       },
       {
-        title: 'LAUNDRY',
-        details: ['Washing machine', 'Iron and board'],
+        title: 'BEDROOMS',
+        details: [
+          'Three bedrooms',
+          // 'Bedroom #1: number of double beds: 1',
+          // 'Bedroom #2: number of double beds: 1',
+          // 'Bedroom #3: number of single beds: 2',
+          'Baby cot: 1',
+          'Sofa bed: 1',
+        ],
       },
     ],
     distances: [
@@ -159,6 +166,8 @@ export const villas = [
   {
     id: 1,
     name: 'Villa Royal 2',
+    imageSrc: villaRoyal20,
+    imageAlt: 'Image of Villa Royal 2',
     images: [
       {
         id: 0,

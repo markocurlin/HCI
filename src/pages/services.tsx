@@ -52,7 +52,10 @@ const Services = () => {
                 {services.map((service) => (
                   <>
                     {service.id < 2 && (
-                      <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
+                      <div
+                        key={service.id}
+                        className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto"
+                      >
                         <Image
                           src={service.imageSrc}
                           alt={service.imageAlt}
@@ -82,7 +85,10 @@ const Services = () => {
                 {services.map((service) => (
                   <>
                     {service.id > 1 && service.id < 5 && (
-                      <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto ">
+                      <div
+                        key={service.id}
+                        className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto "
+                      >
                         <Image
                           src={service.imageSrc}
                           alt={service.imageAlt}
@@ -112,7 +118,10 @@ const Services = () => {
                 {services.map((service) => (
                   <>
                     {service.id > 4 && (
-                      <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto ">
+                      <div
+                        key={service.id}
+                        className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto "
+                      >
                         <Image
                           src={service.imageSrc}
                           alt={service.imageAlt}
