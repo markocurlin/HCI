@@ -173,17 +173,17 @@ const Villas = () => {
                       {index < 5 && (
                         <div key={`${index}-${facilitie.title}`}>
                           <div className="flex p-3">
-                            <p className="w-32 p-1 text-sm font-semibold leading-snug text-black/70 sm:min-w-[30%] sm:text-lg">
+                            <p className="mr-2 w-32 p-1 text-sm font-semibold leading-snug text-black/70 sm:min-w-[40%] sm:text-lg">
                               {facilitie.title}
                             </p>
                             <ul
                               key={`${index}-${facilitie}`}
-                              className="ml-0 list-inside list-disc sm:min-w-[70%]"
+                              className="ml-0 list-outside list-disc sm:min-w-[60%]"
                             >
                               {facilitie.details.map((details) => (
                                 <li
                                   key={`${index}-${details}`}
-                                  className="mx-4 p-1 text-justify text-sm font-normal leading-snug text-black/70 sm:text-lg"
+                                  className="mx-4 p-1 text-sm font-normal leading-snug text-black/70 sm:text-lg"
                                 >
                                   {details}
                                 </li>
@@ -202,17 +202,17 @@ const Villas = () => {
                       {index > 5 && (
                         <div key={`${index}-${facilitie.title}`}>
                           <div className="flex p-3">
-                            <p className="w-32 p-1 text-sm font-semibold leading-snug text-black/70 sm:min-w-[30%] sm:text-lg">
+                            <p className="mr-2 w-32 p-1 text-sm font-semibold leading-snug text-black/70 sm:min-w-[40%] sm:text-lg">
                               {facilitie.title}
                             </p>
                             <ul
                               key={`${index}-${facilitie}`}
-                              className="ml-0 list-inside list-disc sm:min-w-[70%]"
+                              className="ml-0 list-outside list-disc sm:min-w-[60%]"
                             >
                               {facilitie.details.map((details) => (
                                 <li
                                   key={`${index}-${details}`}
-                                  className="mx-4 p-1 text-justify text-sm font-normal leading-snug text-black/70 sm:text-lg"
+                                  className="mx-4 p-1 text-sm font-normal leading-snug text-black/70 sm:text-lg"
                                 >
                                   {details}
                                 </li>
