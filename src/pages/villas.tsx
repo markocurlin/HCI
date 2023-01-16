@@ -167,7 +167,7 @@ const Villas = () => {
               </div>
 
               <div className="mx-auto mt-16 mb-4 grid w-full max-w-screen-md grid-cols-11 justify-items-center px-10 sm:mt-24 md:mb-8 md:mt-16 md:max-w-screen-2xl md:px-24 lg:mt-24">
-                <div className="container col-span-11 mb-16 bg-white p-12 md:mb-16 lg:col-start-1 lg:col-end-6 lg:row-start-1 lg:row-end-1 lg:mb-0">
+                <div className="container col-span-11 mb-16 bg-white p-4 sm:p-12 md:mb-16 lg:col-start-1 lg:col-end-6 lg:row-start-1 lg:row-end-1 lg:mb-0">
                   {villas[0]!.facilities.map((facilitie, index) => (
                     <>
                       {index < 5 && (
