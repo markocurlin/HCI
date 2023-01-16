@@ -219,34 +219,32 @@ export const villas = [
         title: 'OUTDOORS',
         details: [
           'Private pool: 40 m2',
-          'Sun loungers: 6',
+          // 'Sun loungers: 6',
           'Garden',
-          'Panoramic views',
+          // 'Panoramic views',
           'Private parking',
-          'Pool towels',
+          // 'Pool towels',
         ],
       },
       {
         title: 'SUITABILITY',
-        details: ['Ground floor bedroom', 'Children', 'Pets considered'],
+        details: [
+          // 'Ground floor bedroom',
+          'Children',
+          'Pets considered',
+        ],
       },
       {
         title: 'COOLING & HEATING',
         details: [
           'Fully air-conditioned',
           'Heating with A/C units',
-          'Air-condition units no: 4',
+          // 'Air-condition units no: 4',
         ],
       },
       {
-        title: 'BEDROOMS',
-        details: [
-          'Bedroom #1: number of double beds: 1',
-          'Bedroom #2: number of double beds: 1',
-          'Bedroom #3: number of single beds: 2',
-          'Baby cot: 1',
-          'Sofa bed: 1',
-        ],
+        title: 'LAUNDRY',
+        details: ['Washing machine', 'Iron and board'],
       },
       {
         title: 'INTERNET',
@@ -261,7 +259,7 @@ export const villas = [
           'Dishwasher',
           'BBQ - charcoal',
           'Indoor dining area for: 8',
-          'Outdoor dining area for: 6',
+          // 'Outdoor dining area for: 6',
           'Espresso coffee machine',
           'Kettle',
         ],
@@ -271,8 +269,15 @@ export const villas = [
         details: ['SAT TV', 'TV', 'Sofabed'],
       },
       {
-        title: 'LAUNDRY',
-        details: ['Washing machine', 'Iron and board'],
+        title: 'BEDROOMS',
+        details: [
+          'Three bedrooms',
+          // 'Bedroom #1: number of double beds: 1',
+          // 'Bedroom #2: number of double beds: 1',
+          // 'Bedroom #3: number of single beds: 2',
+          'Baby cot: 1',
+          'Sofa bed: 1',
+        ],
       },
     ],
     distances: [
