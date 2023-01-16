@@ -18,7 +18,7 @@ const Index = () => {
       <Layout
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
-        <div className="h-130 w-full">
+        <div className=" h-130 w-full">
           <Image
             src={heroImage}
             alt="Hero image of hotel"
@@ -26,6 +26,22 @@ const Index = () => {
             className="h-full w-full object-cover object-center"
             placeholder="blur"
           />
+          {/* }inset-x-0 top-0 
+          hero-img-gradient 
+          <div className="flex flex-col absolute inset-x-0 bottom-0 items-center z-20 p-6">
+            
+            <p className="py-0.5 text-5xl font-normal leading-snug text-white">
+              AN UNRIVALLED WELCOME
+            </p>
+            
+            <div className="flex py-0.5">
+              <p
+                className="py-0.5 text-3xl italic font-light leading-snug text-white"
+              >
+                in the heart of Podstrana
+              </p>
+            </div>
+          </div> */}
         </div>
 
         <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">

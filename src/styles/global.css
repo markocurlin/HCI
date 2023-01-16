@@ -181,11 +181,27 @@ li::marker {
 .img-gradient:after {
   content:'';
   position:absolute;
-  left:0; top:0;
+  left:0;
+  top:0;
   width:100%; 
   height:100%;
   z-index: 1;
   background: linear-gradient(to bottom, transparent 30%, rgb(0, 0, 0) 130%);
+}
+
+.hero-img-gradient {
+  position:relative;
+}
+
+.hero-img-gradient:after {
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%; 
+  height:100%;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent 20%, rgb(0, 0, 0) 130%);
 }
 
 .link-underline {

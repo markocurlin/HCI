@@ -27,7 +27,7 @@ const Rooms = () => {
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
         <div className="bg-white">
-          <div className="container mt-16 pl-8 sm:pl-16">
+          <div className="container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-48">
             <nav aria-label="Breadcrumb">
               <ol role="list" className="flex items-center space-x-2">
                 <li>
@@ -39,13 +39,13 @@ const Rooms = () => {
                       Home
                     </Link>
                     <svg
-                      width="16"
-                      height="20"
+                      width="20"
+                      height="24"
                       viewBox="0 0 16 20"
                       fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
-                      className="h-5 w-4 text-gray-300"
+                      className="h-7 w-6 text-gray-300"
                     >
                       <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
                     </svg>
@@ -158,7 +158,7 @@ const Rooms = () => {
           </div>
         </div>
 
-        <div className="bg-zinc-100 pb-8 sm:py-12 lg:px-8">
+        <div className="bg-zinc-100 pb-8 sm:pb-12 md:pt-0 lg:px-8">
           {rooms.map((room) => (
             <div
               key={room.id}

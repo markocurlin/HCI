@@ -50,27 +50,25 @@ const Villas = () => {
               {villas.map((villa) => (
                 <div
                   key={villa.id}
-                  className="lg:grid lg:grid-cols-1 lg:gap-y-8"
+                  className="img-gradient my-12  h-auto overflow-hidden lg:my-0 lg:block"
                 >
-                  <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
-                    <Image
-                      src={villa.imageSrc}
-                      alt={villa.imageAlt}
-                      className="h-full w-full object-cover"
-                      placeholder="blur"
-                    />
-                    <div className="absolute bottom-0 left-0 z-20 p-6">
-                      <p className="py-0.5 text-lg font-semibold leading-snug text-white">
-                        {villa.name}
+                  <Image
+                    src={villa.imageSrc}
+                    alt={villa.imageAlt}
+                    className="h-full w-full object-cover"
+                    placeholder="blur"
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 p-6">
+                    <p className="py-0.5 text-lg font-semibold leading-snug text-white">
+                      {villa.name}
+                    </p>
+                    <div className="flex py-0.5">
+                      <p
+                        onClick={() => setId(villa.id)}
+                        className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
+                      >
+                        Discover now
                       </p>
-                      <div className="flex py-0.5">
-                        <p
-                          onClick={() => setId(villa.id)}
-                          className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
-                        >
-                          Discover now
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -79,7 +77,7 @@ const Villas = () => {
           </div>
         </div>
 
-        <div className="bg-zinc-100 pb-8 sm:py-12 md:pt-0 lg:px-8">
+        <div className="bg-zinc-100 pb-8 sm:pb-12 md:pt-0 lg:px-8">
           {villas.map((villa) => (
             <div
               key={villa.id}

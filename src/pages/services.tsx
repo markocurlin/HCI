@@ -150,7 +150,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="bg-zinc-100 pb-8 sm:py-12 lg:px-8">
+        <div className="bg-zinc-100 pb-8 sm:pb-12 md:pt-0 lg:px-8">
           {services.map((service) => (
             <div
               key={service.id}
