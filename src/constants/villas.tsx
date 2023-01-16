@@ -157,7 +157,7 @@ export const villas = [
       'Shop: 1 km Podstrana',
     ],
     description1:
-      'Villa Royal 1 Podstrana is located in the small place Podstrana, only a short drive from the city of Split. The villa has a total of 3 bedrooms and can accommodate up to 6+2 people.The interior is characterized by clean lines and modern design. The open ground floor consists of a modern and well-equipped kitchen, dining area, and living room with stunning sea views.',
+      'Villa Royal 1 Podstrana is located in the small place Podstrana, only a short drive from the city of Split. The villa has a total of 3 bedrooms and can accommodate up to 6+2 people. The interior is characterized by clean lines and modern design. The open ground floor consists of a modern and well-equipped kitchen, dining area, and living room with stunning sea views.',
     description2:
       'A bedroom with an en-suite bathroom is also located on the ground floor and has direct access to the terrace. On the first floor, there are two more bedrooms with double beds and en-suite bathrooms. All bedrooms have air conditioning and a TV. The terrace on the first floor offers you an additional private spot to enjoy the panoramic view. In front of the villa is a private pool where you can relax while reading your favourite book or soaking up the sun. This unique villa is perfect for families and groups and offers its guests a truly unforgettable holiday.',
     description3:
