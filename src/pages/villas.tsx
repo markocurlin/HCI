@@ -167,23 +167,23 @@ const Villas = () => {
               </div>
 
               <div className="mx-auto mt-16 mb-4 grid w-full max-w-screen-md grid-cols-11 justify-items-center px-10 sm:mt-24 md:mb-8 md:mt-16 md:max-w-screen-2xl md:px-24 lg:mt-24">
-                <div className="container col-span-11 mb-16 bg-white p-4 sm:p-12 md:mb-16 lg:col-start-1 lg:col-end-6 lg:row-start-1 lg:row-end-1 lg:mb-0">
-                  {villas[0]!.facilities.map((facilitie, index) => (
+                <div className="container col-span-11 mb-16 bg-white p-4 sm:p-14 md:mb-16 lg:col-start-1 lg:col-end-6 lg:row-start-1 lg:row-end-1 lg:mb-0 lg:px-4 lg:py-12">
+                  {villa.facilities.map((facilitie, index) => (
                     <>
                       {index < 5 && (
                         <div key={`${index}-${facilitie.title}`}>
                           <div className="flex p-3">
-                            <p className="w-40 p-1 text-sm font-semibold leading-snug text-black/70 sm:w-60 sm:text-lg">
+                            <p className="w-32 p-1 text-sm font-semibold leading-snug text-black/70 sm:min-w-[30%] sm:text-lg">
                               {facilitie.title}
                             </p>
                             <ul
                               key={`${index}-${facilitie}`}
-                              className="ml-0 list-inside list-disc"
+                              className="ml-0 list-inside list-disc sm:min-w-[70%]"
                             >
                               {facilitie.details.map((details) => (
                                 <li
                                   key={`${index}-${details}`}
-                                  className="mx-4 w-40 p-1 text-justify text-sm font-normal leading-snug text-black/70 sm:w-60 sm:text-lg"
+                                  className="mx-4 p-1 text-justify text-sm font-normal leading-snug text-black/70 sm:text-lg"
                                 >
                                   {details}
                                 </li>
@@ -196,23 +196,23 @@ const Villas = () => {
                   ))}
                 </div>
 
-                <div className="container col-span-11 bg-white p-12 lg:col-start-7 lg:col-end-12 lg:row-start-1 lg:row-end-1">
-                  {villas[0]!.facilities.map((facilitie, index) => (
+                <div className="container col-span-11 bg-white p-4 sm:p-14 lg:col-start-7 lg:col-end-12 lg:row-start-1 lg:row-end-1 lg:px-4 lg:py-12">
+                  {villa.facilities.map((facilitie, index) => (
                     <>
                       {index > 5 && (
                         <div key={`${index}-${facilitie.title}`}>
                           <div className="flex p-3">
-                            <p className="w-40 p-1 text-sm font-semibold leading-snug text-black/70 sm:w-60 sm:text-lg">
+                            <p className="w-32 p-1 text-sm font-semibold leading-snug text-black/70 sm:min-w-[30%] sm:text-lg">
                               {facilitie.title}
                             </p>
                             <ul
                               key={`${index}-${facilitie}`}
-                              className="ml-0 list-inside list-disc"
+                              className="ml-0 list-inside list-disc sm:min-w-[70%]"
                             >
                               {facilitie.details.map((details) => (
                                 <li
                                   key={`${index}-${details}`}
-                                  className="mx-4 w-40 p-1 text-justify text-sm font-normal leading-snug text-black/70 sm:w-60 sm:text-lg"
+                                  className="mx-4 p-1 text-justify text-sm font-normal leading-snug text-black/70 sm:text-lg"
                                 >
                                   {details}
                                 </li>
