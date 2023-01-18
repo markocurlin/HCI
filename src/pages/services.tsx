@@ -157,7 +157,7 @@ const Services = () => {
               ref={service.id === id ? ref : null}
               className="bg-zinc-100 pb-8 lg:p-8"
             >
-              <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 sm:px-2 md:max-w-screen-2xl md:items-center">
+              <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:px-2">
                 {service.id % 2 === 0 && (
                   <>
                     <div className="md:col-span-auto z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">

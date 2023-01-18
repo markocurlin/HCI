@@ -18,7 +18,7 @@ const Index = () => {
       <Layout
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
-        <div className=" h-130 w-full">
+        <div className="hero-img-gradient h-130 w-full">
           <Image
             src={heroImage}
             alt="Hero image of hotel"
@@ -26,22 +26,19 @@ const Index = () => {
             className="h-full w-full object-cover object-center"
             placeholder="blur"
           />
-          {/* }inset-x-0 top-0 
-          hero-img-gradient 
-          <div className="flex flex-col absolute inset-x-0 bottom-0 items-center z-20 p-6">
-            
-            <p className="py-0.5 text-5xl font-normal leading-snug text-white">
+          {/* }inset-x-0 top-0 h-auto sm:h-[53rem]
+          hero-img-gradient */}
+          <div className="absolute inset-x-0 bottom-0 z-20 flex flex-col items-center p-6">
+            <p className="py-0.5 text-xl font-normal leading-snug text-white sm:text-5xl">
               AN UNRIVALLED WELCOME
             </p>
-            
+
             <div className="flex py-0.5">
-              <p
-                className="py-0.5 text-3xl italic font-light leading-snug text-white"
-              >
+              <p className="py-0.5 text-lg font-light italic leading-snug text-white sm:text-3xl">
                 in the heart of Podstrana
               </p>
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">
@@ -64,6 +61,151 @@ const Index = () => {
           </div>
         </div>
 
+        <div className="bg-zinc-100 pb-8 sm:pb-20 md:pt-0 lg:px-8">
+          <div className="bg-zinc-100 pb-8 lg:p-8">
+            <div className="mx-auto grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:mt-16 lg:px-2">
+              <div className="md:col-span-auto z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                  <div className="absolute inset-0">
+                    <Image
+                      src={image1}
+                      alt="image1"
+                      className="h-full w-full object-cover"
+                      placeholder="blur"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                <div className="bg-white p-4 sm:p-12 md:px-8">
+                  <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
+                    <div className="container flex flex-col">
+                      <div className="container">
+                        <p className="text-xl font-semibold text-black lg:text-3xl">
+                          {t('A different perspective')}
+                        </p>
+                        <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
+                          {t(
+                            'Hotel Bozikovina is a family-run, award-winning design hotel with sustainability at its foundation. You will find us at a comfortable distance from the noise and rush of the old city centre. Close enough to discover the rich cultural heritage and its nearby natural amenities. A carefree retreat with a priceless view of the Adriatic Sea, just a few steps from a pebble beach.'
+                          )}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto mt-16 grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:mt-24 lg:px-2">
+              <div className="md:col-span-auto z-0 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+                <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                  <div className="absolute inset-0 h-full w-full object-cover">
+                    <Image
+                      src={image2}
+                      alt="image2"
+                      className="h-full w-full object-cover"
+                      placeholder="blur"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                <div className="bg-white p-4 sm:p-12 md:px-8">
+                  <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
+                    <div className="container flex flex-col">
+                      <div className="container">
+                        <p className="text-xl font-semibold text-black lg:text-3xl">
+                          {t('Workplace and beyond')}
+                        </p>
+                        <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
+                          {t(
+                            'Meaningful gatherings can only be held in an equally significant space. Following the same line and concept, we host an array of events, from private celebrations to business meetings. As in every supportive home, our professional staff is fully committed to your desired results, whatever the context.'
+                          )}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[50rem] sm:px-48">
+          <Carousel imageList={carouselImages} />
+        </div>
+
+        <div className="bg-zinc-100 pb-8 sm:pb-20 md:pt-0 lg:px-8">
+          <div className="bg-zinc-100 pb-8 lg:p-8">
+            <div className="mx-auto grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:px-2">
+              <div className="md:col-span-auto z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                  <div className="absolute inset-0">
+                    <Image
+                      src={image1}
+                      alt="image1"
+                      className="h-full w-full object-cover"
+                      placeholder="blur"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                <div className="bg-white p-4 sm:p-12 md:px-8">
+                  <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
+                    <div className="container flex flex-col">
+                      <div className="container">
+                        <p className="text-xl font-semibold text-black lg:text-3xl">
+                          {t('A different perspective')}
+                        </p>
+                        <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
+                          {t(
+                            'Hotel Bozikovina is a family-run, award-winning design hotel with sustainability at its foundation. You will find us at a comfortable distance from the noise and rush of the old city centre. Close enough to discover the rich cultural heritage and its nearby natural amenities. A carefree retreat with a priceless view of the Adriatic Sea, just a few steps from a pebble beach.'
+                          )}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto mt-16 grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:mt-24 lg:px-2">
+              <div className="md:col-span-auto z-0 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+                <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
+                  <div className="absolute inset-0 h-full w-full object-cover">
+                    <Image
+                      src={image2}
+                      alt="image2"
+                      className="h-full w-full object-cover"
+                      placeholder="blur"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                <div className="bg-white p-4 sm:p-12 md:px-8">
+                  <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
+                    <div className="container flex flex-col">
+                      <div className="container">
+                        <p className="text-xl font-semibold text-black lg:text-3xl">
+                          {t('Workplace and beyond')}
+                        </p>
+                        <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
+                          {t(
+                            'Meaningful gatherings can only be held in an equally significant space. Following the same line and concept, we host an array of events, from private celebrations to business meetings. As in every supportive home, our professional staff is fully committed to your desired results, whatever the context.'
+                          )}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* }
         <div className="flex h-auto w-full items-center justify-center bg-white">
           <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
             <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
@@ -125,7 +267,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-
+      
         <div className="h-130 w-full">
           <Carousel imageList={carouselImages} />
         </div>
@@ -191,7 +333,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-
+*/}
         <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
           <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
             <p className="text-xl font-semibold text-black sm:text-3xl">

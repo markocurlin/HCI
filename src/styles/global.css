@@ -101,6 +101,12 @@ li::marker {
   }
 }
 
+@media screen and ( max-width: 1366px) and ( min-height: 768px) {
+  .h-130 {
+    height: 45rem;
+  }
+}
+
 @media screen and ( max-height: 740px ) {
   .scroll-y {
     overflow-y: scroll
