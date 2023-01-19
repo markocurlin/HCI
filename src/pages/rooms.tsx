@@ -27,7 +27,8 @@ const Rooms = () => {
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
         <div className="bg-white">
-          <div className="container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-48">
+          {/* <div className="container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-16 2xl:pl-48"> */}
+          <div className="container mx-8 mt-16	w-1/4 sm:mx-16">
             <nav aria-label="Breadcrumb">
               <ol role="list" className="flex items-center space-x-2">
                 <li>

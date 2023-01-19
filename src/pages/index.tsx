@@ -3,8 +3,10 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
 import heroImage from '@/assets/home/heroImage.jpg';
-import image1 from '@/assets/home/image1.jpg';
-import image2 from '@/assets/home/image2.jpg';
+import image1 from '@/assets/home/homeimage-1.png';
+import image2 from '@/assets/home/homeimage-2.jpg';
+import image3 from '@/assets/home/homeimage-3.jpg';
+import image4 from '@/assets/home/homeimage-4.jpg';
 import Carousel from '@/components/Carousel';
 import { carouselImages, pageInfo } from '@/constants/home';
 import Layout from '@/layouts/Layout';
@@ -69,7 +71,7 @@ const Index = () => {
                   <div className="absolute inset-0">
                     <Image
                       src={image1}
-                      alt="image1"
+                      alt="Image 1 of hotel"
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -102,7 +104,7 @@ const Index = () => {
                   <div className="absolute inset-0 h-full w-full object-cover">
                     <Image
                       src={image2}
-                      alt="image2"
+                      alt="Image 2 of hotel"
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -131,7 +133,8 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[50rem] sm:px-48">
+        {/* <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[50rem] sm:px-48"> */}
+        <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[46rem] sm:px-48">
           <Carousel imageList={carouselImages} />
         </div>
 
@@ -142,8 +145,8 @@ const Index = () => {
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0">
                     <Image
-                      src={image1}
-                      alt="image1"
+                      src={image3}
+                      alt="Image 3 of hotel"
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -175,8 +178,8 @@ const Index = () => {
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0 h-full w-full object-cover">
                     <Image
-                      src={image2}
-                      alt="image2"
+                      src={image4}
+                      alt="Image 4 of hotel"
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
