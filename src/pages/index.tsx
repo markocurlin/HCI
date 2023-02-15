@@ -2,9 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
-import heroImage from '@/assets/home/heroImage.jpg';
-import image1 from '@/assets/home/image1.jpg';
-import image2 from '@/assets/home/image2.jpg';
+import image1 from '@/assets/home/carousel-image1.jpg';
+import image4 from '@/assets/home/carousel-image5.jpg';
+import image2 from '@/assets/home/superiorroom-2.png';
+import image3 from '@/assets/home/superiorroom-5.jpg';
+// import heroImage from '@/assets/home/heroImage.jpg';
+import heroImage from '@/assets/home/test.jpg';
 import Carousel from '@/components/Carousel';
 import { carouselImages, pageInfo } from '@/constants/home';
 import Layout from '@/layouts/Layout';
@@ -131,7 +134,7 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[50rem] sm:px-48">
+        <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[55rem] sm:px-48">
           <Carousel imageList={carouselImages} />
         </div>
 
@@ -142,8 +145,8 @@ const Index = () => {
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0">
                     <Image
-                      src={image1}
-                      alt="image1"
+                      src={image3}
+                      alt="image3"
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -156,11 +159,11 @@ const Index = () => {
                     <div className="container flex flex-col">
                       <div className="container">
                         <p className="text-xl font-semibold text-black lg:text-3xl">
-                          {t('A different perspective')}
+                          {t('Unique in every way')}
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'Hotel Bozikovina is a family-run, award-winning design hotel with sustainability at its foundation. You will find us at a comfortable distance from the noise and rush of the old city centre. Close enough to discover the rich cultural heritage and its nearby natural amenities. A carefree retreat with a priceless view of the Adriatic Sea, just a few steps from a pebble beach.'
+                            'Hotel Božikovina has been a trailblazer in green sustainable design hotels on this side of Adriatic, and since then many have followed this path. Hospitality and the environment are two closely related concepts. That is why, from the very beginning, we were determined to make decisions that would not comprise our shared future.'
                           )}
                         </p>
                       </div>
@@ -175,8 +178,8 @@ const Index = () => {
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0 h-full w-full object-cover">
                     <Image
-                      src={image2}
-                      alt="image2"
+                      src={image4}
+                      alt="image4"
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -189,11 +192,11 @@ const Index = () => {
                     <div className="container flex flex-col">
                       <div className="container">
                         <p className="text-xl font-semibold text-black lg:text-3xl">
-                          {t('Workplace and beyond')}
+                          {t('Be a Part of the Story')}
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'Meaningful gatherings can only be held in an equally significant space. Following the same line and concept, we host an array of events, from private celebrations to business meetings. As in every supportive home, our professional staff is fully committed to your desired results, whatever the context.'
+                            'From reception to the bar and ultimately to the iconic terrace, the story of Hotel Božikovina is unfolded before guests eyes. Walls are enhanced with framed photographs capturing the 1930s when the hotel started its journey and follows through to the modern luxurious art-deco style used today to continue this special story that Hotel Park has been telling for a century.'
                           )}
                         </p>
                       </div>

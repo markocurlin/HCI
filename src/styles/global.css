@@ -22,37 +22,35 @@ a:hover {
 }
 
 .bg-primary {
-  background-color: #3698CA;
-  /*background-color: #385170;*/
-  /*background-color: #385170; */
-  /*background-color: #FAFAD2;*/
   /*background-color: #3698CA;*/
+  background-color: #385170;
+  /*background-color: #FAFAD2;*/
 }
 
 .bg-secondary {
-  /*background-color: #142d4c;*/
-  background-color: #005792;
+  background-color: #142d4c;
+  /*background-color: #005792;*/
 }
 
 .text-hover-primary:hover {
-  color: #287da8;
+  color: #324d6e;
 }
 
 .bg-hover-secondary:hover {
-  background-color: #01548a;
-  /*background-color: #FAFAD2;*/
+  /*background-color: #01548a;*/
+  background-color: #0a203b;
 }
 
 .text-primary {
-  color: #3698CA;
+  color: #385170;
 }
 
 .text-secondary {
-  color: #01548a;
+  color: #385170;
 }
 
 li::marker {
-  color: #01548a;
+  color: #385170;
 }
 
 .h-97 {
@@ -126,15 +124,19 @@ li::marker {
 }
 
 :root {
-  --swiper-theme-color: #3698CA !important ;
+  /*--swiper-theme-color: #3698CA !important ;*/
+  --swiper-theme-color: #385170 !important ;
 }
 
 .swiper-button-prev:hover {
-  color: #287da8;
+  /*color: #287da8;*/
+  color: #385170;
 }
 
 .swiper-button-next:hover {
-  color: #287da8;
+  /*color: #287da8;*/
+  color: #385170;
+
 }
 
 .swiper-button-prev::after {
@@ -150,7 +152,7 @@ li::marker {
   border-radius: 100%;
   padding: 2rem;
   margin-right: 3rem;
-  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: drop-shadow(0 50px 50px rgb(0 0 0 / 0.15));
 }
 
 @media screen and ( max-width: 1025px ) {
