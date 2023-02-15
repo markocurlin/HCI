@@ -72,7 +72,7 @@ const Index = () => {
                   <div className="absolute inset-0">
                     <Image
                       src={image1}
-                      alt="image1"
+                      alt="Image 1 of hotel"
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -105,7 +105,7 @@ const Index = () => {
                   <div className="absolute inset-0 h-full w-full object-cover">
                     <Image
                       src={image2}
-                      alt="image2"
+                      alt="Image 2 of hotel"
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
