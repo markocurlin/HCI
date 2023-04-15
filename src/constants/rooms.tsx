@@ -1,18 +1,23 @@
 import deluxeroom1 from 'src/assets/rooms/deluxeroom-1.jpeg';
-import deluxeroom2 from 'src/assets/rooms/deluxeroom-2.jpg';
-import deluxeroom3 from 'src/assets/rooms/deluxeroom-3.jpg';
-import deluxeroom4 from 'src/assets/rooms/deluxeroom-4.jpg';
-import deluxeroom5 from 'src/assets/rooms/deluxeroom-5.jpg';
 import standardroom1 from 'src/assets/rooms/standardroom-1.jpg';
 import standardroom2 from 'src/assets/rooms/standardroom-2.jpeg';
 import standardroom3 from 'src/assets/rooms/standardroom-3.jpg';
 import standardroom4 from 'src/assets/rooms/standardroom-4.jpg';
 import standardroom5 from 'src/assets/rooms/standardroom-5.jpg';
 import superiorroom1 from 'src/assets/rooms/superiorroom-1.jpeg';
-import superiorroom2 from 'src/assets/rooms/superiorroom-2.png';
-import superiorroom3 from 'src/assets/rooms/superiorroom-3.jpg';
-import superiorroom4 from 'src/assets/rooms/superiorroom-4.jpg';
-import superiorroom5 from 'src/assets/rooms/superiorroom-5.jpg';
+import photo1 from 'src/assets/sobekamera/photo1.jpg';
+import photo2 from 'src/assets/sobekamera/photo2.jpg';
+import photo3 from 'src/assets/sobekamera/photo3.jpg';
+import photo4 from 'src/assets/sobekamera/photo4.jpg';
+import photo5 from 'src/assets/sobekamera/photo5.jpg';
+import photo6 from 'src/assets/sobekamera/photo6.jpg';
+import photo7 from 'src/assets/sobekamera/photo7.jpg';
+import photo8 from 'src/assets/sobekamera/photo8.jpg';
+import photomob1 from 'src/assets/sobemob/photo1.jpg';
+import photomob2 from 'src/assets/sobemob/photo2.jpg';
+import photomob3 from 'src/assets/sobemob/photo3.jpg';
+import photomob4 from 'src/assets/sobemob/photo4.jpg';
+import photomob5 from 'src/assets/sobemob/photo5.jpg';
 
 export const pageInfo = {
   title: '- Rooms',
@@ -43,6 +48,7 @@ export const rooms = [
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
     bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
     images: [
+      /*
       {
         id: 0,
         imageSrc: deluxeroom2,
@@ -61,6 +67,46 @@ export const rooms = [
       {
         id: 3,
         imageSrc: deluxeroom5,
+        imageAlt: 'Carousel image 4 of deluxe room',
+      }, */
+      {
+        id: 0,
+        imageSrc: photo1,
+        imageAlt: 'Carousel image 1 of deluxe room',
+      },
+      {
+        id: 1,
+        imageSrc: photo2,
+        imageAlt: 'Carousel image 2 of deluxe room',
+      },
+      {
+        id: 2,
+        imageSrc: photo3,
+        imageAlt: 'Carousel image 3 of deluxe room',
+      },
+      {
+        id: 3,
+        imageSrc: photo4,
+        imageAlt: 'Carousel image 4 of deluxe room',
+      },
+      {
+        id: 4,
+        imageSrc: photo5,
+        imageAlt: 'Carousel image 1 of deluxe room',
+      },
+      {
+        id: 5,
+        imageSrc: photo6,
+        imageAlt: 'Carousel image 2 of deluxe room',
+      },
+      {
+        id: 6,
+        imageSrc: photo7,
+        imageAlt: 'Carousel image 3 of deluxe room',
+      },
+      {
+        id: 7,
+        imageSrc: photo8,
         imageAlt: 'Carousel image 4 of deluxe room',
       },
     ],
@@ -86,6 +132,7 @@ export const rooms = [
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
     bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
     images: [
+      /*
       {
         id: 0,
         imageSrc: superiorroom2,
@@ -104,6 +151,31 @@ export const rooms = [
       {
         id: 3,
         imageSrc: superiorroom5,
+        imageAlt: 'Carousel image 4 of superior room',
+      }, */
+      {
+        id: 0,
+        imageSrc: photomob1,
+        imageAlt: 'Carousel image 1 of superior room',
+      },
+      {
+        id: 1,
+        imageSrc: photomob2,
+        imageAlt: 'Carousel image 2 of superior room',
+      },
+      {
+        id: 2,
+        imageSrc: photomob3,
+        imageAlt: 'Carousel image 3 of superior room',
+      },
+      {
+        id: 3,
+        imageSrc: photomob4,
+        imageAlt: 'Carousel image 4 of superior room',
+      },
+      {
+        id: 4,
+        imageSrc: photomob5,
         imageAlt: 'Carousel image 4 of superior room',
       },
     ],
