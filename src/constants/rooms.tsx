@@ -5,7 +5,6 @@ import standardroom3 from 'src/assets/rooms/standardroom-3.jpg';
 import standardroom4 from 'src/assets/rooms/standardroom-4.jpg';
 import standardroom5 from 'src/assets/rooms/standardroom-5.jpg';
 import superiorroom1 from 'src/assets/rooms/superiorroom-1.jpeg';
-/*
 import photo1 from 'src/assets/sobekamera/photo1.jpg';
 import photo2 from 'src/assets/sobekamera/photo2.jpg';
 import photo3 from 'src/assets/sobekamera/photo3.jpg';
@@ -13,7 +12,7 @@ import photo4 from 'src/assets/sobekamera/photo4.jpg';
 import photo5 from 'src/assets/sobekamera/photo5.jpg';
 import photo6 from 'src/assets/sobekamera/photo6.jpg';
 import photo7 from 'src/assets/sobekamera/photo7.jpg';
-import photo8 from 'src/assets/sobekamera/photo8.jpg'; */
+import photo8 from 'src/assets/sobekamera/photo8.jpg';
 import photomob1 from 'src/assets/sobemob/photo1.jpg';
 import photomob2 from 'src/assets/sobemob/photo2.jpg';
 import photomob3 from 'src/assets/sobemob/photo3.jpg';
@@ -69,7 +68,7 @@ export const rooms = [
         id: 3,
         imageSrc: deluxeroom5,
         imageAlt: 'Carousel image 4 of deluxe room',
-      },
+      }, */
       {
         id: 0,
         imageSrc: photo1,
@@ -109,7 +108,7 @@ export const rooms = [
         id: 7,
         imageSrc: photo8,
         imageAlt: 'Carousel image 4 of deluxe room',
-      }, */
+      },
     ],
   },
   {
