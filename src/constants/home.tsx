@@ -13,26 +13,26 @@ export const carouselImages = [
   {
     id: 0,
     imageSrc: carouselImage1,
-    imageAlt: 'Carousel image 1',
+    imageAlt: 'Carousel image of hotel 1',
   },
   {
     id: 1,
     imageSrc: carouselImage2,
-    imageAlt: 'Carousel image 2',
+    imageAlt: 'Carousel image of hotel 2',
   },
   {
     id: 2,
     imageSrc: carouselImage3,
-    imageAlt: 'Carousel image 3',
+    imageAlt: 'Carousel image of hotel 3',
   },
   {
     id: 3,
     imageSrc: carouselImage4,
-    imageAlt: 'Carousel image 4',
+    imageAlt: 'Carousel image of hotel 3',
   },
   {
     id: 4,
     imageSrc: carouselImage5,
-    imageAlt: 'Carousel image 5',
+    imageAlt: 'Carousel image of hotel 3',
   },
 ];

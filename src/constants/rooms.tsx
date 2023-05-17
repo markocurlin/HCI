@@ -1,24 +1,3 @@
-import deluxeroom1 from 'src/assets/rooms/deluxeroom-1.jpeg';
-import standardroom1 from 'src/assets/rooms/standardroom-1.jpg';
-import standardroom2 from 'src/assets/rooms/standardroom-2.jpeg';
-import standardroom3 from 'src/assets/rooms/standardroom-3.jpg';
-import standardroom4 from 'src/assets/rooms/standardroom-4.jpg';
-import standardroom5 from 'src/assets/rooms/standardroom-5.jpg';
-import superiorroom1 from 'src/assets/rooms/superiorroom-1.jpeg';
-import photo1 from 'src/assets/sobekamera/photo1.jpg';
-import photo2 from 'src/assets/sobekamera/photo2.jpg';
-import photo3 from 'src/assets/sobekamera/photo3.jpg';
-import photo4 from 'src/assets/sobekamera/photo4.jpg';
-import photo5 from 'src/assets/sobekamera/photo5.jpg';
-import photo6 from 'src/assets/sobekamera/photo6.jpg';
-import photo7 from 'src/assets/sobekamera/photo7.jpg';
-import photo8 from 'src/assets/sobekamera/photo8.jpg';
-import photomob1 from 'src/assets/sobemob/photo1.jpg';
-import photomob2 from 'src/assets/sobemob/photo2.jpg';
-import photomob3 from 'src/assets/sobemob/photo3.jpg';
-import photomob4 from 'src/assets/sobemob/photo4.jpg';
-import photomob5 from 'src/assets/sobemob/photo5.jpg';
-
 export const pageInfo = {
   title: '- Rooms',
   desription: 'This page is showcase of rooms',
@@ -27,10 +6,9 @@ export const pageInfo = {
 export const rooms = [
   {
     id: 0,
-    name: 'The Deluxe suite',
-    href: '#',
-    imageSrc: deluxeroom1,
-    imageAlt: 'The Deluxe suite',
+    name: 'Deluxe suite',
+    imageSrc: '',
+    imageAlt: 'Deluxe suite',
     description:
       'The Deluxe Suite provides a sophisticated blend of modern design and classic elegance that enhances the light, spacious atmosphere.  Provides leisure and business travelers with a luxurious retreat, where they can enjoy the atmosphere of this beautiful hotel.',
     amenities: [
@@ -48,77 +26,105 @@ export const rooms = [
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
     bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
     images: [
-      /*
       {
         id: 0,
-        imageSrc: deluxeroom2,
-        imageAlt: 'Carousel image 1 of deluxe room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1riw56CcwfTV0Ux3TgIgIfkvNvPDSqbce',
+        imageAlt: 'Carousel image 1 of The Deluxe Suite',
       },
       {
         id: 1,
-        imageSrc: deluxeroom3,
-        imageAlt: 'Carousel image 2 of deluxe room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1G5aGNoe7Fi9BxZ9X43BHDcyj_POBPBmJ',
+        imageAlt: 'Carousel image 2 of The Deluxe Suite',
       },
       {
         id: 2,
-        imageSrc: deluxeroom4,
-        imageAlt: 'Carousel image 3 of deluxe room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1iToWUXMiJblG6hUAWIZ1GwGGF0ty2H_t',
+        imageAlt: 'Carousel image 3 of The Deluxe Suite',
       },
       {
         id: 3,
-        imageSrc: deluxeroom5,
-        imageAlt: 'Carousel image 4 of deluxe room',
-      }, */
-      {
-        id: 0,
-        imageSrc: photo1,
-        imageAlt: 'Carousel image 1 of deluxe room',
-      },
-      {
-        id: 1,
-        imageSrc: photo2,
-        imageAlt: 'Carousel image 2 of deluxe room',
-      },
-      {
-        id: 2,
-        imageSrc: photo3,
-        imageAlt: 'Carousel image 3 of deluxe room',
-      },
-      {
-        id: 3,
-        imageSrc: photo4,
-        imageAlt: 'Carousel image 4 of deluxe room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=15o8K7jObFDtKB82lvpkGyS72xzQXTxJy',
+        imageAlt: 'Carousel image 4 of The Deluxe Suite',
       },
       {
         id: 4,
-        imageSrc: photo5,
-        imageAlt: 'Carousel image 1 of deluxe room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1CSAIrIMQIKIvszU4IlED7uIZuU8bT7nh',
+        imageAlt: 'Carousel image 5 of The Deluxe Suite',
       },
       {
         id: 5,
-        imageSrc: photo6,
-        imageAlt: 'Carousel image 2 of deluxe room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1KmPxzbNHgOmkGf4bqV2Dl7WPbHsNBQ1z',
+        imageAlt: 'Carousel image 6 of The Deluxe Suite',
       },
       {
         id: 6,
-        imageSrc: photo7,
-        imageAlt: 'Carousel image 3 of deluxe room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1S6kNUID3AnLRNKgIjHvmjnSQ_Joogu7u',
+        imageAlt: 'Carousel image 7 of The Deluxe Suite',
       },
       {
         id: 7,
-        imageSrc: photo8,
-        imageAlt: 'Carousel image 4 of deluxe room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1wmQk0PnG6Kl4RfJjujS03E37cPuDJs73',
+        imageAlt: 'Carousel image 8 of The Deluxe Suite',
+      },
+      {
+        id: 8,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1xP8oTg5pBA77k-r1Js-JdGV5YaD7_Pt0',
+        imageAlt: 'Carousel image 9 of The Deluxe Suite',
+      },
+      {
+        id: 9,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1Q5UmLTzLj0vtK3yTE5InLLmCIF1AtWod',
+        imageAlt: 'Carousel image 11 of The Deluxe Suite',
+      },
+      {
+        id: 10,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=165ZeczZoy2dr31VFTq94cXYdbubv8f-Y',
+        imageAlt: 'Carousel image 11 of The Deluxe Suite',
+      },
+      {
+        id: 11,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1iigb3NuW9KdmuA8msu6BXPxbWmz-Gckm',
+        imageAlt: 'Carousel image 12 of The Deluxe Suite',
+      },
+      {
+        id: 12,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1rKiR96beJ2Uu97FduvnLmxeDiHE75lTL',
+        imageAlt: 'Carousel image 13 of The Deluxe Suite',
+      },
+      {
+        id: 13,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1eLkshk5RJvbowS-8WrQ8OnSG7qfHdL5K',
+        imageAlt: 'Carousel image 14 of The Deluxe Suite',
+      },
+      {
+        id: 14,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=13IKleKOnCUjSNb7G6pASwYzvW9SKXAUK',
+        imageAlt: 'Carousel image 15 of The Deluxe Suite',
       },
     ],
   },
   {
     id: 1,
-    name: 'Superior double room',
-    href: '#',
-    imageSrc: superiorroom1,
-    imageAlt: 'Superior double room',
+    name: 'Deluxe Double Room',
+    imageSrc: '',
+    imageAlt: 'Deluxe Double Room',
     description:
-      'The Superior Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
+      'The Deluxe Double Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
     amenities: [
       'Complimentary wireless Internet',
       'Mini Bar',
@@ -132,59 +138,84 @@ export const rooms = [
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
     bedConfiguration: 'Two (2) Double Beds or One (1) King Bed',
     images: [
-      /*
       {
         id: 0,
-        imageSrc: superiorroom2,
-        imageAlt: 'Carousel image 1 of superior room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy',
+        imageAlt: 'Carousel image 1 of The Deluxe Double Room',
       },
       {
         id: 1,
-        imageSrc: superiorroom3,
-        imageAlt: 'Carousel image 2 of superior room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1D-Ihozulzhz52c_UERrhtRhum5jqrg-x',
+        imageAlt: 'Carousel image 2 of The Deluxe Double Room',
       },
       {
         id: 2,
-        imageSrc: superiorroom4,
-        imageAlt: 'Carousel image 3 of superior room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1nfoOS7HXvFqBg4yS3LswvFHXXTcvfMgr',
+        imageAlt: 'Carousel image 3 of The Deluxe Double Room',
       },
       {
         id: 3,
-        imageSrc: superiorroom5,
-        imageAlt: 'Carousel image 4 of superior room',
-      }, */
-      {
-        id: 0,
-        imageSrc: photomob1,
-        imageAlt: 'Carousel image 1 of superior room',
-      },
-      {
-        id: 1,
-        imageSrc: photomob2,
-        imageAlt: 'Carousel image 2 of superior room',
-      },
-      {
-        id: 2,
-        imageSrc: photomob3,
-        imageAlt: 'Carousel image 3 of superior room',
-      },
-      {
-        id: 3,
-        imageSrc: photomob4,
-        imageAlt: 'Carousel image 4 of superior room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1cUoquAZkfnlNlZRJv3tgKj7YY-x4ibYU',
+        imageAlt: 'Carousel image 4 of The Deluxe Double Room',
       },
       {
         id: 4,
-        imageSrc: photomob5,
-        imageAlt: 'Carousel image 4 of superior room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1omAGccmRlMAhvxKmni1r4tdeTQ8j6ZRG',
+        imageAlt: 'Carousel image 5 of The Deluxe Double Room',
+      },
+      {
+        id: 5,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1KHouFRgVHM8irI_xDeirJl75JUW02d3w',
+        imageAlt: 'Carousel image 6 of The Deluxe Double Room',
+      },
+      {
+        id: 6,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1nPl3YNs0pX_Zl0-wLoQyBRr0HapRd97O',
+        imageAlt: 'Carousel image 7 of The Deluxe Double Room',
+      },
+      {
+        id: 7,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1FoqIv7PvH7XLC4tWRfYWHK3njEw8Yf23',
+        imageAlt: 'Carousel image 8 of The Deluxe Double Room',
+      },
+      {
+        id: 8,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1fBedxPnAT0rDp6YANmYZjw71uU9cfH8I',
+        imageAlt: 'Carousel image 9 of The Deluxe Double Room',
+      },
+      {
+        id: 9,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1uVjInrEjweeLg54r1QOhmc0F5Xs-r4SI',
+        imageAlt: 'Carousel image 10 of The Deluxe Double Room',
+      },
+      {
+        id: 10,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1y_PkjHjRe7vD2EXsuhFrHkzMSwKaeH4P',
+        imageAlt: 'Carousel image 11 of The Deluxe Double Room',
+      },
+      {
+        id: 11,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1r-c72S0dgLZ8mCU9AklgZN4f1MPRPc5W',
+        imageAlt: 'Carousel image 12 of The Deluxe Double Room',
       },
     ],
   },
   {
     id: 2,
     name: 'Standard double room',
-    href: '#',
-    imageSrc: standardroom1,
+    imageSrc: '',
     imageAlt: 'Standard double room',
     description:
       'The Standard double room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
@@ -205,23 +236,75 @@ export const rooms = [
     images: [
       {
         id: 0,
-        imageSrc: standardroom2,
-        imageAlt: 'Carousel image 1 of standard room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1s3t0MySlsCaGKH2MZEbWoLS3402AI7QZ',
+        imageAlt: 'Carousel image 1 of Standard Double Room',
       },
       {
         id: 1,
-        imageSrc: standardroom3,
-        imageAlt: 'Carousel image 2 of standard room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1EI4l0hxQdSYY79g0jCY_GOCWI2kXMadB',
+        imageAlt: 'Carousel image 2 of Standard Double Room',
       },
       {
         id: 2,
-        imageSrc: standardroom4,
-        imageAlt: 'Carousel image 3 of standard room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1jbfUedUUNxC2UGmwEQPmszYhrXXRhplb',
+        imageAlt: 'Carousel image 3 of Standard Double Room',
       },
       {
         id: 3,
-        imageSrc: standardroom5,
-        imageAlt: 'Carousel image 4 of standard room',
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1R0LFD1soCv0iyVN3_Sn4dpnN5_VnXfhD',
+        imageAlt: 'Carousel image 4 of Standard Double Room',
+      },
+      {
+        id: 4,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1G_eVwXSEtfr0QDY1nsMFj0H2ar1j9GYb',
+        imageAlt: 'Carousel image 5 of Standard Double Room',
+      },
+      {
+        id: 5,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=15bGDYyvah-hSrN4qYgjy5khgt_y4_Fcy',
+        imageAlt: 'Carousel image 6 of Standard Double Room',
+      },
+      {
+        id: 6,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1IB9vK0hht7eTB7GbBzcDerJJEuX2zmwO',
+        imageAlt: 'Carousel image 7 of Standard Double Room',
+      },
+      {
+        id: 7,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=14JNLj_NRqmwiTOjAEyV2MTnYxpYlP4-C',
+        imageAlt: 'Carousel image 8 of Standard Double Room',
+      },
+      {
+        id: 8,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1pjgkOCIpuuLB0esBR1VbxLRIZID5tde9',
+        imageAlt: 'Carousel image 9 of Standard Double Room',
+      },
+      {
+        id: 9,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1AvxZ1m9VispCBxN6n-I9eJRe-06DQPdy',
+        imageAlt: 'Carousel image 10 of Standard Double Room',
+      },
+      {
+        id: 10,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1Lhctlp7HIg5VWGvZJT8tHn_fgpAPjn-1',
+        imageAlt: 'Carousel image 11 of Standard Double Room',
+      },
+      {
+        id: 11,
+        imageSrc:
+          'https://drive.google.com/uc?export=view&id=1oIoXPmWmZmCwf8j3kWc5xNJfmJyLzMIw',
+        imageAlt: 'Carousel image 12 of Standard Double Room',
       },
     ],
   },

@@ -2,8 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import room3 from 'src/assets/home/carousel-image1.jpg';
-import room2 from 'src/assets/home/carousel-image5.jpg';
 import room1 from 'src/assets/home/image1.jpg';
 
 import Carousel from '@/components/Carousel';
@@ -113,14 +111,18 @@ const Rooms = () => {
               <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
                 <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
                   <Image
-                    src={room2}
-                    alt="Superior double room"
+                    src="https://drive.google.com/uc?export=view&id=1KHouFRgVHM8irI_xDeirJl75JUW02d3w"
+                    alt="Deluxe double room"
                     className="h-full w-full object-cover"
+                    fill={true}
+                    sizes="100vw, 100vh"
+                    quality={100}
                     placeholder="blur"
+                    blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
                   />
                   <div className="absolute bottom-0 left-0 z-20 p-6">
                     <p className="py-0.5 text-lg font-semibold leading-snug text-white">
-                      Superior double room
+                      Deluxe double room
                     </p>
                     <div className="flex py-0.5">
                       <p
@@ -134,10 +136,14 @@ const Rooms = () => {
                 </div>
                 <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
                   <Image
-                    src={room3}
+                    src="https://drive.google.com/uc?export=view&id=1jbfUedUUNxC2UGmwEQPmszYhrXXRhplb"
                     alt="Standard double room"
                     className="h-full w-full object-cover"
+                    fill={true}
+                    sizes="100vw, 100vh"
+                    quality={100}
                     placeholder="blur"
+                    blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
                   />
                   <div className="absolute bottom-0 left-0 z-20 p-6">
                     <p className="py-0.5 text-lg font-semibold leading-snug text-white">

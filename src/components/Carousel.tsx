@@ -29,9 +29,12 @@ const Carousel = ({ imageList }: any) => {
             <Image
               className="h-full w-full object-cover"
               src={image.imageSrc}
-              sizes="100vw, 100vh"
               alt={image.imageAlt}
+              fill={true}
+              sizes="100vw, 100vh"
+              quality={100}
               placeholder="blur"
+              blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
             />
           </SwiperSlide>
         ))}
