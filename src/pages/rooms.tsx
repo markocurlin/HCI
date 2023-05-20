@@ -2,10 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import room1 from 'src/assets/home/image1.jpg';
 
 import Carousel from '@/components/Carousel';
-import { pageInfo, rooms } from '@/constants/rooms';
+import { pageInfo, rooms, roomsShowcase } from '@/constants/rooms';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 
@@ -63,22 +62,20 @@ const Rooms = () => {
             </nav>
           </div>
 
-          <div className="mt-4 flex flex-col items-center justify-center py-6 lg:mt-2 lg:mb-20 lg:flex-row">
+          <div className="mt-4 flex flex-col items-center justify-center pt-6 pb-0 md:pb-6 lg:mt-2 lg:mb-20 lg:flex-row">
             <div className="mx-8 mt-6 flex flex-col justify-center sm:px-10 lg:px-8">
               <div className="sm:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                  Rooms & suites
+                  {roomsShowcase.title}
                 </h1>
                 <p className="text-md mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
-                  We d love to surprise you, but there s so much about our
-                  luxury rooms and suites we just have to share. From the bold,
-                  innovative design and Italian marble bathrooms.
+                  {roomsShowcase.description}
                 </p>
               </div>
 
               <div>
                 <Link
-                  href="#"
+                  href="/contact/#book"
                   className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                 >
                   LEARN MORE
@@ -89,14 +86,14 @@ const Rooms = () => {
             <div className="mx-8 mt-6 max-w-2xl sm:px-1 lg:grid lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
               <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:block lg:h-auto">
                 <Image
-                  src={room1}
-                  alt="The Deluxe suite"
+                  src={roomsShowcase.rooms[0]!.imageSrc}
+                  alt={roomsShowcase.rooms[0]!.imageAlt}
                   className="h-full w-full object-cover"
                   placeholder="blur"
                 />
                 <div className="absolute bottom-0 left-0 z-20 p-6">
                   <p className="py-0.5 text-lg font-semibold leading-snug text-white">
-                    The Deluxe suite
+                    {roomsShowcase.rooms[0]!.title}
                   </p>
                   <div className="flex py-0.5">
                     <p
@@ -111,18 +108,18 @@ const Rooms = () => {
               <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
                 <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
                   <Image
-                    src="https://drive.google.com/uc?export=view&id=1KHouFRgVHM8irI_xDeirJl75JUW02d3w"
-                    alt="Deluxe double room"
+                    src={roomsShowcase.rooms[1]!.imageSrc}
+                    alt={roomsShowcase.rooms[1]!.imageAlt}
                     className="h-full w-full object-cover"
-                    fill={true}
-                    sizes="100vw, 100vh"
+                    // fill={true}
+                    // sizes="100vw, 100vh"
                     quality={100}
                     placeholder="blur"
-                    blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
+                    // blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
                   />
                   <div className="absolute bottom-0 left-0 z-20 p-6">
                     <p className="py-0.5 text-lg font-semibold leading-snug text-white">
-                      Deluxe double room
+                      {roomsShowcase.rooms[1]!.title}
                     </p>
                     <div className="flex py-0.5">
                       <p
@@ -136,22 +133,22 @@ const Rooms = () => {
                 </div>
                 <div className="img-gradient my-12 h-96 overflow-hidden lg:my-0 lg:h-auto">
                   <Image
-                    src="https://drive.google.com/uc?export=view&id=1jbfUedUUNxC2UGmwEQPmszYhrXXRhplb"
-                    alt="Standard double room"
+                    src={roomsShowcase.rooms[2]!.imageSrc}
+                    alt={roomsShowcase.rooms[2]!.imageAlt}
                     className="h-full w-full object-cover"
-                    fill={true}
-                    sizes="100vw, 100vh"
+                    // fill={true}
+                    // sizes="100vw, 100vh"
                     quality={100}
                     placeholder="blur"
-                    blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
+                    // blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
                   />
                   <div className="absolute bottom-0 left-0 z-20 p-6">
                     <p className="py-0.5 text-lg font-semibold leading-snug text-white">
-                      Standard double room
+                      {roomsShowcase.rooms[2]!.title}
                     </p>
                     <div className="flex py-0.5">
                       <p
-                        onClick={() => setId(2)}
+                        onClick={() => setId(roomsShowcase.rooms[2]!.id)}
                         className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
                       >
                         Discover now

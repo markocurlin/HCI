@@ -56,7 +56,7 @@ const Villas = () => {
                     src={villa.imageSrc}
                     alt={villa.imageAlt}
                     className="h-full w-full object-cover"
-                    fill={true}
+                    // fill={true}
                     sizes="100vw, 100vh"
                     quality={100}
                     placeholder="blur"

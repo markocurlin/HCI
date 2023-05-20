@@ -1,3 +1,22 @@
+import vilaRoyal11 from '../assets/Villa Royal 1/VillaRoyal1.jpg';
+import vilaRoyal12 from '../assets/Villa Royal 1/VillaRoyal2.jpg';
+import vilaRoyal13 from '../assets/Villa Royal 1/VillaRoyal3.jpg';
+import vilaRoyal14 from '../assets/Villa Royal 1/VillaRoyal4.jpg';
+import vilaRoyal15 from '../assets/Villa Royal 1/VillaRoyal5.jpg';
+import vilaRoyal16 from '../assets/Villa Royal 1/VillaRoyal6.jpg';
+import vilaRoyal17 from '../assets/Villa Royal 1/VillaRoyal7.jpg';
+import vilaRoyal18 from '../assets/Villa Royal 1/VillaRoyal8.jpg';
+import vilaRoyal19 from '../assets/Villa Royal 1/VillaRoyal9.jpg';
+import vilaRoyal110 from '../assets/Villa Royal 1/VillaRoyal10.jpg';
+import villaRoyal21 from '../assets/Villa Royal 2/VillaRoyal1.jpg';
+import villaRoyal22 from '../assets/Villa Royal 2/VillaRoyal2.jpg';
+import villaRoyal23 from '../assets/Villa Royal 2/VillaRoyal3.jpg';
+import villaRoyal24 from '../assets/Villa Royal 2/VillaRoyal4.jpg';
+import villaRoyal25 from '../assets/Villa Royal 2/VillaRoyal5.jpg';
+import villaRoyal26 from '../assets/Villa Royal 2/VillaRoyal6.jpg';
+import villaRoyal27 from '../assets/Villa Royal 2/VillaRoyal7.jpg';
+import villaRoyal28 from '../assets/Villa Royal 2/VillaRoyal8.jpg';
+
 export const pageInfo = {
   title: '- Villas',
   desription: 'This page is showcase of Luxury villas',
@@ -7,63 +26,63 @@ export const villas = [
   {
     id: 0,
     name: 'Villa Royal 1',
-    imageSrc:
-      'https://drive.google.com/uc?export=view&id=1itiImqRNPgpuKKEead-IEcuBD7T1VUsN',
+    imageSrc: vilaRoyal11,
+    // 'https://drive.google.com/uc?export=view&id=1itiImqRNPgpuKKEead-IEcuBD7T1VUsN',
     imageAlt: 'Image of Villa Royal 1',
     images: [
       {
         id: 0,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1EIXghcBbJ1ZlKDMyXxmMF2tsFJpRJG_i',
+        imageSrc: vilaRoyal12,
+        // 'https://drive.google.com/uc?export=view&id=1EIXghcBbJ1ZlKDMyXxmMF2tsFJpRJG_i',
         imageAlt: 'Carousel image 1 of Villa Royal 1',
       },
       {
         id: 1,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=19IFRlqprpKwQFy7fY3rx1u_pN0wT3L7r',
-        imageAlt: 'Carousel image 1 of Villa Royal 1',
+        imageSrc: vilaRoyal13,
+        // 'https://drive.google.com/uc?export=view&id=19IFRlqprpKwQFy7fY3rx1u_pN0wT3L7r',
+        imageAlt: 'Carousel image 2 of Villa Royal 1',
       },
       {
         id: 2,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1CmV4EgM0ALoMVRDchrxmh0-Xj4OkQ-IX',
-        imageAlt: 'Carousel image 1 of Villa Royal 1',
+        imageSrc: vilaRoyal14,
+        // 'https://drive.google.com/uc?export=view&id=1CmV4EgM0ALoMVRDchrxmh0-Xj4OkQ-IX',
+        imageAlt: 'Carousel image 3 of Villa Royal 1',
       },
       {
         id: 3,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=18uxi-5yb1_s1wqfbXwTUibkgywOCOgkS',
-        imageAlt: 'Carousel image 1 of Villa Royal 1',
+        imageSrc: vilaRoyal15,
+        // 'https://drive.google.com/uc?export=view&id=18uxi-5yb1_s1wqfbXwTUibkgywOCOgkS',
+        imageAlt: 'Carousel image 4 of Villa Royal 1',
       },
       {
         id: 4,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1lX9UT8VC2l_FzfmQfUdf5f0q_qFVV31N',
-        imageAlt: 'Carousel image 1 of Villa Royal 1',
+        imageSrc: vilaRoyal16,
+        // 'https://drive.google.com/uc?export=view&id=1lX9UT8VC2l_FzfmQfUdf5f0q_qFVV31N',
+        imageAlt: 'Carousel image 5 of Villa Royal 1',
       },
       {
         id: 5,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1qkYPFtg_QlsrrGoO_ko9W4vVHadaI9I-',
-        imageAlt: 'Carousel image 1 of Villa Royal 1',
+        imageSrc: vilaRoyal17,
+        // 'https://drive.google.com/uc?export=view&id=1qkYPFtg_QlsrrGoO_ko9W4vVHadaI9I-',
+        imageAlt: 'Carousel image 6 of Villa Royal 1',
       },
       {
         id: 6,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=14EzBUnS2cLQOfq7Ksh0f5_ApWjNCC6Ci',
-        imageAlt: 'Carousel image 1 of Villa Royal 1',
+        imageSrc: vilaRoyal18,
+        // 'https://drive.google.com/uc?export=view&id=14EzBUnS2cLQOfq7Ksh0f5_ApWjNCC6Ci',
+        imageAlt: 'Carousel image 7 of Villa Royal 1',
       },
       {
         id: 7,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=16wiQHw-qUuy1bhVe0zkjex1aF_TkZP8O',
-        imageAlt: 'Carousel image 1 of Villa Royal 1',
+        imageSrc: vilaRoyal19,
+        // 'https://drive.google.com/uc?export=view&id=16wiQHw-qUuy1bhVe0zkjex1aF_TkZP8O',
+        imageAlt: 'Carousel image 8 of Villa Royal 1',
       },
       {
         id: 8,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1MaO8XbRZKBIeGGPOWMOacWHf4jz9-FrQ',
-        imageAlt: 'Carousel image 1 of Villa Royal 1',
+        imageSrc: vilaRoyal110,
+        // 'https://drive.google.com/uc?export=view&id=1MaO8XbRZKBIeGGPOWMOacWHf4jz9-FrQ',
+        imageAlt: 'Carousel image 9 of Villa Royal 1',
       },
     ],
     facilities: [
@@ -157,50 +176,50 @@ export const villas = [
   {
     id: 1,
     name: 'Villa Royal 2',
-    imageSrc:
-      'https://drive.google.com/uc?export=view&id=1Yrz3gOlw_Tcv0twYfKaBDRkRvDZLe0SA',
+    imageSrc: villaRoyal21,
+    // 'https://drive.google.com/uc?export=view&id=1Yrz3gOlw_Tcv0twYfKaBDRkRvDZLe0SA',
     imageAlt: 'Image of Villa Royal 2',
     images: [
       {
         id: 0,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1eIgwvaFKmmiUvQ02D5v0U4TTGkGWtY7-',
+        imageSrc: villaRoyal22,
+        // 'https://drive.google.com/uc?export=view&id=1eIgwvaFKmmiUvQ02D5v0U4TTGkGWtY7-',
         imageAlt: 'Carousel image 1 of Villa Royal 2',
       },
       {
         id: 1,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=100w-uEDAYAFQA-xTgPj6IH8V5HfaPPPe',
+        imageSrc: villaRoyal23,
+        // 'https://drive.google.com/uc?export=view&id=100w-uEDAYAFQA-xTgPj6IH8V5HfaPPPe',
         imageAlt: 'Carousel image 2 of Villa Royal 2',
       },
       {
         id: 2,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1EbRZ8f2K-6wQG9ymsi_rQG35AY8o1mNc',
+        imageSrc: villaRoyal24,
+        // 'https://drive.google.com/uc?export=view&id=1EbRZ8f2K-6wQG9ymsi_rQG35AY8o1mNc',
         imageAlt: 'Carousel image 3 of Villa Royal 2',
       },
       {
         id: 3,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1_6o8zGoxB75O4qvCbVVO3tois0_jqQHC',
+        imageSrc: villaRoyal25,
+        // 'https://drive.google.com/uc?export=view&id=1_6o8zGoxB75O4qvCbVVO3tois0_jqQHC',
         imageAlt: 'Carousel image 4 of Villa Royal 2',
       },
       {
         id: 4,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1IOelRauFoRdBMxcWpovR-oOFnS27PEKv',
+        imageSrc: villaRoyal26,
+        // 'https://drive.google.com/uc?export=view&id=1IOelRauFoRdBMxcWpovR-oOFnS27PEKv',
         imageAlt: 'Carousel image 5 of Villa Royal 2',
       },
       {
         id: 5,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1DdyvOHL92kIhfJ0iyJRmrEIWQ-6vrCMs',
+        imageSrc: villaRoyal27,
+        // 'https://drive.google.com/uc?export=view&id=1DdyvOHL92kIhfJ0iyJRmrEIWQ-6vrCMs',
         imageAlt: 'Carousel image 6 of Villa Royal 2',
       },
       {
         id: 6,
-        imageSrc:
-          'https://drive.google.com/uc?export=view&id=1zPcLac09c2gzDvtiGnDEFBbhWe42kZd2',
+        imageSrc: villaRoyal28,
+        // 'https://drive.google.com/uc?export=view&id=1zPcLac09c2gzDvtiGnDEFBbhWe42kZd2',
         imageAlt: 'Carousel image 7 of Villa Royal 2',
       },
     ],

@@ -141,7 +141,6 @@ li::marker {
 
 .swiper-button-prev::after {
   scale: 0.80;
-  border-radius: 100%;
   padding: 2rem;
   margin-left: 3rem;
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
@@ -149,8 +148,7 @@ li::marker {
 
 .swiper-button-next::after {
   scale: 0.80;
-  border-radius: 100%;
-  padding: 2rem;
+  padding: 0.5rem;
   margin-right: 3rem;
   filter: drop-shadow(0 50px 50px rgb(0 0 0 / 0.15));
 }
