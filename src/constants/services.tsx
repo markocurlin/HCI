@@ -1,4 +1,4 @@
-import barImage from '@/assets/Services/bar.jpg';
+/* import barImage from '@/assets/Services/bar.jpg';
 import dining1 from '@/assets/Services/Breakfast_1.jpg';
 import dining2 from '@/assets/Services/Breakfast_2.jpg';
 import dining3 from '@/assets/Services/Breakfast_3.jpg';
@@ -134,3 +134,6 @@ export const services = [
       'Elevator deliver guests to their rooms quietly, efficiently, and comfortably.',
   },
 ];
+*/
+
+export const aaa = 1123;
