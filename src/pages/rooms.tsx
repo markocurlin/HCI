@@ -62,7 +62,7 @@ const Rooms = () => {
             </nav>
           </div>
 
-          <div className="mt-4 flex flex-col items-center justify-center pt-6 pb-0 md:pb-6 lg:mt-2 lg:mb-20 lg:flex-row">
+          <div className="mt-4 flex flex-col items-center justify-center py-0 md:py-6 lg:mt-2 lg:mb-20 lg:flex-row">
             <div className="mx-8 mt-6 flex flex-col justify-center sm:px-10 lg:px-8">
               <div className="sm:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">

@@ -1,21 +1,21 @@
-import vilaRoyal11 from '../assets/Villa Royal 1/VillaRoyal1.jpg';
-import vilaRoyal12 from '../assets/Villa Royal 1/VillaRoyal2.jpg';
-import vilaRoyal13 from '../assets/Villa Royal 1/VillaRoyal3.jpg';
-import vilaRoyal14 from '../assets/Villa Royal 1/VillaRoyal4.jpg';
-import vilaRoyal15 from '../assets/Villa Royal 1/VillaRoyal5.jpg';
-import vilaRoyal16 from '../assets/Villa Royal 1/VillaRoyal6.jpg';
-import vilaRoyal17 from '../assets/Villa Royal 1/VillaRoyal7.jpg';
-import vilaRoyal18 from '../assets/Villa Royal 1/VillaRoyal8.jpg';
-import vilaRoyal19 from '../assets/Villa Royal 1/VillaRoyal9.jpg';
-import vilaRoyal110 from '../assets/Villa Royal 1/VillaRoyal10.jpg';
-import villaRoyal21 from '../assets/Villa Royal 2/VillaRoyal1.jpg';
-import villaRoyal22 from '../assets/Villa Royal 2/VillaRoyal2.jpg';
-import villaRoyal23 from '../assets/Villa Royal 2/VillaRoyal3.jpg';
-import villaRoyal24 from '../assets/Villa Royal 2/VillaRoyal4.jpg';
-import villaRoyal25 from '../assets/Villa Royal 2/VillaRoyal5.jpg';
-import villaRoyal26 from '../assets/Villa Royal 2/VillaRoyal6.jpg';
-import villaRoyal27 from '../assets/Villa Royal 2/VillaRoyal7.jpg';
-import villaRoyal28 from '../assets/Villa Royal 2/VillaRoyal8.jpg';
+import villaRoyal11 from '../assets/Villa Royal 1/VillaRoyal1_1.jpg';
+import villaRoyal12 from '../assets/Villa Royal 1/VillaRoyal1_2.jpg';
+import villaRoyal13 from '../assets/Villa Royal 1/VillaRoyal1_3.jpg';
+import villaRoyal14 from '../assets/Villa Royal 1/VillaRoyal1_4.jpg';
+import villaRoyal15 from '../assets/Villa Royal 1/VillaRoyal1_5.jpg';
+import villaRoyal16 from '../assets/Villa Royal 1/VillaRoyal1_6.jpg';
+import villaRoyal17 from '../assets/Villa Royal 1/VillaRoyal1_7.jpg';
+import villaRoyal18 from '../assets/Villa Royal 1/VillaRoyal1_8.jpg';
+import villaRoyal19 from '../assets/Villa Royal 1/VillaRoyal1_9.jpg';
+import villaRoyal110 from '../assets/Villa Royal 1/VillaRoyal1_10.jpg';
+import villaRoyal21 from '../assets/Villa Royal 2/VillaRoyal2_1.jpg';
+import villaRoyal22 from '../assets/Villa Royal 2/VillaRoyal2_2.jpg';
+import villaRoyal23 from '../assets/Villa Royal 2/VillaRoyal2_3.jpg';
+import villaRoyal24 from '../assets/Villa Royal 2/VillaRoyal2_4.jpg';
+import villaRoyal25 from '../assets/Villa Royal 2/VillaRoyal2_5.jpg';
+import villaRoyal26 from '../assets/Villa Royal 2/VillaRoyal2_6.jpg';
+import villaRoyal27 from '../assets/Villa Royal 2/VillaRoyal2_7.jpg';
+import villaRoyal28 from '../assets/Villa Royal 2/VillaRoyal2_8.jpg';
 
 export const pageInfo = {
   title: '- Villas',
@@ -26,61 +26,61 @@ export const villas = [
   {
     id: 0,
     name: 'Villa Royal 1',
-    imageSrc: vilaRoyal11,
+    imageSrc: villaRoyal11,
     // 'https://drive.google.com/uc?export=view&id=1itiImqRNPgpuKKEead-IEcuBD7T1VUsN',
     imageAlt: 'Image of Villa Royal 1',
     images: [
       {
         id: 0,
-        imageSrc: vilaRoyal12,
+        imageSrc: villaRoyal12,
         // 'https://drive.google.com/uc?export=view&id=1EIXghcBbJ1ZlKDMyXxmMF2tsFJpRJG_i',
         imageAlt: 'Carousel image 1 of Villa Royal 1',
       },
       {
         id: 1,
-        imageSrc: vilaRoyal13,
+        imageSrc: villaRoyal13,
         // 'https://drive.google.com/uc?export=view&id=19IFRlqprpKwQFy7fY3rx1u_pN0wT3L7r',
         imageAlt: 'Carousel image 2 of Villa Royal 1',
       },
       {
         id: 2,
-        imageSrc: vilaRoyal14,
+        imageSrc: villaRoyal14,
         // 'https://drive.google.com/uc?export=view&id=1CmV4EgM0ALoMVRDchrxmh0-Xj4OkQ-IX',
         imageAlt: 'Carousel image 3 of Villa Royal 1',
       },
       {
         id: 3,
-        imageSrc: vilaRoyal15,
+        imageSrc: villaRoyal15,
         // 'https://drive.google.com/uc?export=view&id=18uxi-5yb1_s1wqfbXwTUibkgywOCOgkS',
         imageAlt: 'Carousel image 4 of Villa Royal 1',
       },
       {
         id: 4,
-        imageSrc: vilaRoyal16,
+        imageSrc: villaRoyal16,
         // 'https://drive.google.com/uc?export=view&id=1lX9UT8VC2l_FzfmQfUdf5f0q_qFVV31N',
         imageAlt: 'Carousel image 5 of Villa Royal 1',
       },
       {
         id: 5,
-        imageSrc: vilaRoyal17,
+        imageSrc: villaRoyal17,
         // 'https://drive.google.com/uc?export=view&id=1qkYPFtg_QlsrrGoO_ko9W4vVHadaI9I-',
         imageAlt: 'Carousel image 6 of Villa Royal 1',
       },
       {
         id: 6,
-        imageSrc: vilaRoyal18,
+        imageSrc: villaRoyal18,
         // 'https://drive.google.com/uc?export=view&id=14EzBUnS2cLQOfq7Ksh0f5_ApWjNCC6Ci',
         imageAlt: 'Carousel image 7 of Villa Royal 1',
       },
       {
         id: 7,
-        imageSrc: vilaRoyal19,
+        imageSrc: villaRoyal19,
         // 'https://drive.google.com/uc?export=view&id=16wiQHw-qUuy1bhVe0zkjex1aF_TkZP8O',
         imageAlt: 'Carousel image 8 of Villa Royal 1',
       },
       {
         id: 8,
-        imageSrc: vilaRoyal110,
+        imageSrc: villaRoyal110,
         // 'https://drive.google.com/uc?export=view&id=1MaO8XbRZKBIeGGPOWMOacWHf4jz9-FrQ',
         imageAlt: 'Carousel image 9 of Villa Royal 1',
       },
@@ -97,30 +97,15 @@ export const villas = [
       },
       {
         title: 'OUTDOORS',
-        details: [
-          'Private pool: 40 m2',
-          // 'Sun loungers: 6',
-          'Garden',
-          // 'Panoramic views',
-          'Private parking',
-          // 'Pool towels',
-        ],
+        details: ['Private pool: 40 m2', 'Garden', 'Private parking'],
       },
       {
         title: 'SUITABILITY',
-        details: [
-          // 'Ground floor bedroom',
-          'Children',
-          'Pets considered',
-        ],
+        details: ['Children', 'Pets considered'],
       },
       {
         title: 'COOLING & HEATING',
-        details: [
-          'Fully air-conditioned',
-          'Heating with A/C units',
-          // 'Air-condition units no: 4',
-        ],
+        details: ['Fully air-conditioned', 'Heating with A/C units'],
       },
       {
         title: 'LAUNDRY',
@@ -139,7 +124,6 @@ export const villas = [
           'Dishwasher',
           'BBQ - charcoal',
           'Indoor dining area for: 8',
-          // 'Outdoor dining area for: 6',
           'Espresso coffee machine',
           'Kettle',
         ],
@@ -150,14 +134,7 @@ export const villas = [
       },
       {
         title: 'BEDROOMS',
-        details: [
-          'Three bedrooms',
-          // 'Bedroom #1: number of double beds: 1',
-          // 'Bedroom #2: number of double beds: 1',
-          // 'Bedroom #3: number of single beds: 2',
-          'Baby cot: 1',
-          'Sofa bed: 1',
-        ],
+        details: ['Three bedrooms', 'Baby cot: 1', 'Sofa bed: 1'],
       },
     ],
     distances: [
@@ -235,30 +212,15 @@ export const villas = [
       },
       {
         title: 'OUTDOORS',
-        details: [
-          'Private pool: 40 m2',
-          // 'Sun loungers: 6',
-          'Garden',
-          // 'Panoramic views',
-          'Private parking',
-          // 'Pool towels',
-        ],
+        details: ['Private pool: 40 m2', 'Garden', 'Private parking'],
       },
       {
         title: 'SUITABILITY',
-        details: [
-          // 'Ground floor bedroom',
-          'Children',
-          'Pets considered',
-        ],
+        details: ['Children', 'Pets considered'],
       },
       {
         title: 'COOLING & HEATING',
-        details: [
-          'Fully air-conditioned',
-          'Heating with A/C units',
-          // 'Air-condition units no: 4',
-        ],
+        details: ['Fully air-conditioned', 'Heating with A/C units'],
       },
       {
         title: 'LAUNDRY',
@@ -277,7 +239,6 @@ export const villas = [
           'Dishwasher',
           'BBQ - charcoal',
           'Indoor dining area for: 8',
-          // 'Outdoor dining area for: 6',
           'Espresso coffee machine',
           'Kettle',
         ],
@@ -288,14 +249,7 @@ export const villas = [
       },
       {
         title: 'BEDROOMS',
-        details: [
-          'Three bedrooms',
-          // 'Bedroom #1: number of double beds: 1',
-          // 'Bedroom #2: number of double beds: 1',
-          // 'Bedroom #3: number of single beds: 2',
-          'Baby cot: 1',
-          'Sofa bed: 1',
-        ],
+        details: ['Three bedrooms', 'Baby cot: 1', 'Sofa bed: 1'],
       },
     ],
     distances: [

@@ -74,7 +74,6 @@ export const rooms = [
   {
     id: 0,
     name: 'Deluxe suite',
-    imageAlt: 'Deluxe suite',
     description:
       'The Deluxe Suite provides a sophisticated blend of modern design and classic elegance that enhances the light, spacious atmosphere.  Provides leisure and business travelers with a luxurious retreat, where they can enjoy the atmosphere of this beautiful hotel.',
     amenities: [
@@ -185,8 +184,6 @@ export const rooms = [
   {
     id: 1,
     name: 'Deluxe Double Room',
-    imageSrc: '',
-    imageAlt: 'Deluxe Double Room',
     description:
       'The Deluxe Double Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
     amenities: [
@@ -279,8 +276,6 @@ export const rooms = [
   {
     id: 2,
     name: 'Standard double room',
-    imageSrc: '',
-    imageAlt: 'Standard double room',
     description:
       'The Standard double room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
     amenities: [
