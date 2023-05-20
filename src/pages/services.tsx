@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Carousel from '@/components/Carousel';
 import { pageInfo, services } from '@/constants/services';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
@@ -25,7 +26,45 @@ const Services = () => {
         }
       >
         <div className="bg-white">
-          <div className="mt-4 flex flex-col items-center justify-center py-6 lg:mt-16 lg:mb-20 lg:flex-row">
+          <div className="container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-16 2xl:pl-48">
+            <nav aria-label="Breadcrumb">
+              <ol role="list" className="flex items-center space-x-2">
+                <li>
+                  <div className="flex items-center">
+                    <Link
+                      href="/"
+                      className="mr-2 text-xl font-medium text-gray-900"
+                    >
+                      Home
+                    </Link>
+                    <svg
+                      width="20"
+                      height="24"
+                      viewBox="0 0 16 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className="h-7 w-6 text-gray-300"
+                    >
+                      <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+                    </svg>
+                  </div>
+                </li>
+
+                <li className="text-xl">
+                  <Link
+                    href="/services"
+                    aria-current="page"
+                    className="font-medium text-gray-500 hover:text-gray-600"
+                  >
+                    Services
+                  </Link>
+                </li>
+              </ol>
+            </nav>
+          </div>
+
+          <div className="mt-4 flex flex-col items-center justify-center py-0 md:py-6 lg:mt-2 lg:mb-20 lg:flex-row">
             <div className="mx-8 mt-6 flex flex-col justify-center sm:px-10 lg:px-8">
               <div className="sm:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -166,12 +205,16 @@ const Services = () => {
                           key={`${service.id}-image`}
                           className="absolute inset-0"
                         >
-                          <Image
-                            src={service.imageSrc}
-                            alt={service.imageAlt}
-                            className="h-full w-full object-cover"
-                            placeholder="blur"
-                          />
+                          {service.images.length > 0 ? (
+                            <Carousel imageList={service.images} />
+                          ) : (
+                            <Image
+                              src={service.imageSrc}
+                              alt={service.imageAlt}
+                              className="h-full w-full object-cover"
+                              placeholder="blur"
+                            />
+                          )}
                         </div>
                       </div>
                     </div>
@@ -210,12 +253,16 @@ const Services = () => {
                           key={`${service.id}-image`}
                           className="absolute inset-0 h-full w-full object-cover"
                         >
-                          <Image
-                            src={service.imageSrc}
-                            alt={service.imageAlt}
-                            className="h-full w-full object-cover"
-                            placeholder="blur"
-                          />
+                          {service.images.length > 0 ? (
+                            <Carousel imageList={service.images} />
+                          ) : (
+                            <Image
+                              src={service.imageSrc}
+                              alt={service.imageAlt}
+                              className="h-full w-full object-cover"
+                              placeholder="blur"
+                            />
+                          )}
                         </div>
                       </div>
                     </div>
