@@ -17,7 +17,7 @@ import HotelImage from 'src/assets/Home/HotelImage.jpg';
 import Image1 from 'src/assets/Home/Image_1.jpg';
 import Image2 from 'src/assets/Home/Image_2.jpg';
 import Image3 from 'src/assets/Home/Image_3.jpg';
-import Image4 from 'src/assets/Home/Image_4.jpg';
+import Image4 from 'src/assets/Home/Image_5.jpg';
 
 export const pageInfo = {
   title: '',
