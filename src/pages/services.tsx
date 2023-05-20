@@ -97,7 +97,7 @@ const Services = () => {
                       >
                         <Image
                           src={service.imageSrc}
-                          alt={service.imageAlt}
+                          alt={service.imageAlt!}
                           className="h-full w-full object-cover"
                           placeholder="blur"
                         />
@@ -130,7 +130,7 @@ const Services = () => {
                       >
                         <Image
                           src={service.imageSrc}
-                          alt={service.imageAlt}
+                          alt={service.imageAlt!}
                           className="h-full w-full object-cover"
                           placeholder="blur"
                         />
@@ -163,7 +163,7 @@ const Services = () => {
                       >
                         <Image
                           src={service.imageSrc}
-                          alt={service.imageAlt}
+                          alt={service.imageAlt!}
                           className="h-full w-full object-cover"
                           placeholder="blur"
                         />
@@ -210,7 +210,7 @@ const Services = () => {
                           ) : (
                             <Image
                               src={service.imageSrc}
-                              alt={service.imageAlt}
+                              alt={service.imageAlt!}
                               className="h-full w-full object-cover"
                               placeholder="blur"
                             />
@@ -258,7 +258,7 @@ const Services = () => {
                           ) : (
                             <Image
                               src={service.imageSrc}
-                              alt={service.imageAlt}
+                              alt={service.imageAlt!}
                               className="h-full w-full object-cover"
                               placeholder="blur"
                             />
