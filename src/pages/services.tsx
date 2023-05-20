@@ -1,17 +1,17 @@
-// import Image from 'next/image';
-// import Link from 'next/link';
+import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-// import Carousel from '@/components/Carousel';
-// import { pageInfo, services } from '@/constants/services';
-// import Layout from '@/layouts/Layout';
-// import { Meta } from '@/layouts/Meta';
+import Carousel from '@/components/Carousel';
+import { pageInfo, services } from '@/constants/services';
+import Layout from '@/layouts/Layout';
+import { Meta } from '@/layouts/Meta';
 
 const Services = () => {
   const [id, setId] = useState(10);
   const ref = useRef<null | HTMLDivElement>(null);
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -19,8 +19,6 @@ const Services = () => {
   }, [id]);
 
   return (
-    <></>
-    /*
     <>
       <Layout
         meta={
@@ -300,7 +298,6 @@ const Services = () => {
         </div>
       </Layout>
     </>
-    */
   );
 };
 
