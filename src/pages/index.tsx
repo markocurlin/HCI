@@ -132,11 +132,7 @@ const Index = () => {
         <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[55rem] sm:px-48">
           <Carousel imageList={home.carouselImages} />
         </div>
-        
-
-        <div className="bg-zinc-100 pb-20 w-full h-[20rem] md:h-[40rem] 2xl:h-[55rem] sm:px-48">
-          <Carousel imageList={home.carouselImages} />
-        </div> */}
+        */}
 
         <div className="h-3xl h-[20rem] bg-zinc-100 p-0 pb-20 md:h-[48rem] lg:px-[4.5rem] xl:px-[4.5rem] 2xl:h-[58rem]">
           <Carousel imageList={home.carouselImages} />
