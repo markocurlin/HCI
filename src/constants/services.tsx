@@ -7,11 +7,12 @@ import massageImage from '@/assets/Services/massage.jpg';
 import poolImage from '@/assets/Services/pool.jpg';
 import tourImage from '@/assets/Services/tour.jpg';
 import transferImage from '@/assets/Services/transfer.jpg';
+/*
 import sauna1 from '@/assets/Services/Wellness_1.jpg';
 import sauna2 from '@/assets/Services/Wellness_2.jpg';
 import sauna3 from '@/assets/Services/Wellness_3.jpg';
 import sauna4 from '@/assets/Services/Wellness_4.jpg';
-import sauna5 from '@/assets/Services/Wellness_5.jpg';
+import sauna5 from '@/assets/Services/Wellness_5.jpg'; */
 
 export const aaa = 3;
 
@@ -76,9 +77,11 @@ export const services = [
   {
     id: 4,
     title: 'Sauna',
-    imageSrc: sauna2,
+    imageSrc: massageImage,
+    // imageSrc: sauna2,
     imageAlt: 'Image of sauna',
     images: [
+      /*
       {
         id: 0,
         imageSrc: sauna1,
@@ -104,6 +107,7 @@ export const services = [
         imageSrc: sauna5,
         imageAlt: 'Carousel image 5 of sauna',
       },
+      */
     ],
     description:
       'Release your physical and mental tension with our steam sauna or traditional Finnish sauna. Speed up your circulation with a cold rain shower or detox your whole self with curative halotherapy.',
