@@ -95,10 +95,10 @@ const Villas = () => {
                     alt={villa.imageAlt}
                     className="h-full w-full object-cover"
                     // fill={true}
-                    sizes="100vw, 100vh"
+                    // sizes="100vw, 100vh"
                     quality={100}
                     placeholder="blur"
-                    blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
+                    // blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
                   />
                   <div className="absolute bottom-0 left-0 z-20 p-6">
                     <p className="py-0.5 text-lg font-semibold leading-snug text-white">
