@@ -2,14 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
-import image1 from '@/assets/home/carousel-image1.jpg';
-import image4 from '@/assets/home/carousel-image5.jpg';
-import image2 from '@/assets/home/superiorroom-2.png';
-import image3 from '@/assets/home/superiorroom-5.jpg';
-// import heroImage from '@/assets/home/heroImage.jpg';
-import heroImage from '@/assets/home/test.jpg';
 import Carousel from '@/components/Carousel';
-import { carouselImages, pageInfo } from '@/constants/home';
+import { home, pageInfo } from '@/constants/home';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
 
@@ -23,8 +17,8 @@ const Index = () => {
       >
         <div className="hero-img-gradient h-130 w-full">
           <Image
-            src={heroImage}
-            alt="Hero image of hotel"
+            src={home.images[0]?.imageSrc!}
+            alt={home.images[0]?.imageAlt!}
             sizes="100vw, 100vh"
             className="h-full w-full object-cover object-center"
             placeholder="blur"
@@ -56,7 +50,7 @@ const Index = () => {
             </p>
 
             <Link
-              href="#"
+              href="/contact/#book"
               className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
               {t('LEARN MORE')}
@@ -71,8 +65,8 @@ const Index = () => {
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0">
                     <Image
-                      src={image1}
-                      alt="Image 1 of hotel"
+                      src={home.images[1]?.imageSrc!}
+                      alt={home.images[1]?.imageAlt!}
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -104,8 +98,8 @@ const Index = () => {
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0 h-full w-full object-cover">
                     <Image
-                      src={image2}
-                      alt="Image 2 of hotel"
+                      src={home.images[2]?.imageSrc!}
+                      alt={home.images[2]?.imageAlt!}
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -134,8 +128,18 @@ const Index = () => {
           </div>
         </div>
 
+        {/*
         <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[55rem] sm:px-48">
-          <Carousel imageList={carouselImages} />
+          <Carousel imageList={home.carouselImages} />
+        </div>
+        
+
+        <div className="bg-zinc-100 pb-20 w-full h-[20rem] md:h-[40rem] 2xl:h-[55rem] sm:px-48">
+          <Carousel imageList={home.carouselImages} />
+        </div> */}
+
+        <div className="h-3xl h-[20rem] bg-zinc-100 p-0 pb-20 md:h-[48rem] lg:px-[4.5rem] xl:px-[4.5rem] 2xl:h-[58rem]">
+          <Carousel imageList={home.carouselImages} />
         </div>
 
         <div className="bg-zinc-100 pb-8 sm:pb-20 md:pt-0 lg:px-8">
@@ -145,8 +149,8 @@ const Index = () => {
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0">
                     <Image
-                      src={image3}
-                      alt="image3"
+                      src={home.images[3]?.imageSrc!}
+                      alt={home.images[3]?.imageAlt!}
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -178,8 +182,8 @@ const Index = () => {
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0 h-full w-full object-cover">
                     <Image
-                      src={image4}
-                      alt="image4"
+                      src={home.images[4]?.imageSrc!}
+                      alt={home.images[4]?.imageAlt!}
                       className="h-full w-full object-cover"
                       placeholder="blur"
                     />
@@ -208,135 +212,6 @@ const Index = () => {
           </div>
         </div>
 
-        {/* }
-        <div className="flex h-auto w-full items-center justify-center bg-white">
-          <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
-              <p className="text-xl font-semibold text-black sm:text-3xl">
-                {t('A different perspective')}
-              </p>
-
-              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
-                {t(
-                  'Hotel Bozikovina is a family-run, award-winning design hotel with sustainability at its foundation. You will find us at a comfortable distance from the noise and rush of the old city centre. Close enough to discover the rich cultural heritage and its nearby natural amenities. A carefree retreat with a priceless view of the Adriatic Sea, just a few steps from a pebble beach.'
-                )}
-              </p>
-            </div>
-
-            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
-              <Image
-                src={image1}
-                alt="image1"
-                width={540}
-                height={764}
-                placeholder="blur"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
-          <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
-              <Image
-                src={image2}
-                alt="image2"
-                width={540}
-                height={764}
-                placeholder="blur"
-              />
-            </div>
-
-            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
-              <p className="text-xl font-semibold text-black sm:text-3xl">
-                {t('Workplace and beyond')}
-              </p>
-
-              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
-                {t(
-                  'Meaningful gatherings can only be held in an equally significant space. Following the same line and concept, we host an array of events, from private celebrations to business meetings. As in every supportive home, our professional staff is fully committed to your desired results, whatever the context.'
-                )}
-              </p>
-            </div>
-
-            <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
-              <Image
-                src={image2}
-                alt="image2"
-                width={540}
-                height={764}
-                placeholder="blur"
-              />
-            </div>
-          </div>
-        </div>
-      
-        <div className="h-130 w-full">
-          <Carousel imageList={carouselImages} />
-        </div>
-
-        <div className="flex h-auto w-full items-center justify-center bg-white">
-          <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pl-12">
-              <p className="text-xl font-semibold text-black sm:text-3xl">
-                {t('A different perspective')}
-              </p>
-
-              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
-                {t(
-                  'Hotel Bozikovina is a family-run, award-winning design hotel with sustainability at its foundation. You will find us at a comfortable distance from the noise and rush of the old city centre. Close enough to discover the rich cultural heritage and its nearby natural amenities. A carefree retreat with a priceless view of the Adriatic Sea, just a few steps from a pebble beach.'
-                )}
-              </p>
-            </div>
-
-            <div className="flex items-center justify-center px-8 py-12 lg:p-24 lg:pr-8 xl:pr-12">
-              <Image
-                src={image1}
-                alt="image1"
-                width={540}
-                height={764}
-                placeholder="blur"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex h-auto w-full items-center justify-center bg-zinc-50">
-          <div className="container lg:flex lg:items-center lg:justify-center lg:space-x-8">
-            <div className="hidden items-center justify-center px-8 py-12 lg:flex lg:p-24 lg:pl-8 xl:pl-12">
-              <Image
-                src={image2}
-                alt="image2"
-                width={540}
-                height={764}
-                placeholder="blur"
-              />
-            </div>
-
-            <div className="px-8 pt-12 sm:px-12 md:px-28 lg:w-5/12 lg:p-7 lg:pr-12 xl:pl-12">
-              <p className="text-xl font-semibold text-black sm:text-3xl">
-                {t('Workplace and beyond')}
-              </p>
-
-              <p className="w-custom mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
-                {t(
-                  'Meaningful gatherings can only be held in an equally significant space. Following the same line and concept, we host an array of events, from private celebrations to business meetings. As in every supportive home, our professional staff is fully committed to your desired results, whatever the context.'
-                )}
-              </p>
-            </div>
-
-            <div className="flex items-center justify-center px-8 py-12 lg:hidden lg:p-24 lg:pl-8 xl:pl-12">
-              <Image
-                src={image2}
-                alt="image2"
-                width={540}
-                height={764}
-                placeholder="blur"
-              />
-            </div>
-          </div>
-        </div>
-*/}
         <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
           <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
             <p className="text-xl font-semibold text-black sm:text-3xl">
@@ -349,7 +224,7 @@ const Index = () => {
             </p>
 
             <Link
-              href="#"
+              href="/contact/#book"
               className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
               {t('LEARN MORE')}

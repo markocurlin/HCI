@@ -7,10 +7,11 @@ import { useRouter } from 'next/router';
 import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import image from '@/assets/imagebg.jpg';
 import logo from '@/assets/logowhite.png';
 import { navLinks, socialMedia } from '@/constants/navigation';
 
+// import image from '@/assets/imagebg.jpg';
+import image from '../assets/The Deluxe Double Room/DeluxeDoubleRoom_6.jpg';
 import { availableLanguages } from '../i18n';
 
 function classNames(...classes: any) {

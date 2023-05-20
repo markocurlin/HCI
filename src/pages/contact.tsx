@@ -4,9 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 // import { useRef, useState } from 'react';
-import room3 from 'src/assets/home/carousel-image1.jpg';
-import room2 from 'src/assets/home/carousel-image5.jpg';
-import room1 from 'src/assets/home/image1.jpg';
+import room3 from 'src/assets/Home/Image_1.jpg';
+import room2 from 'src/assets/Home/Image_2.jpg';
+import room1 from 'src/assets/Home/Image_3.jpg';
 
 // import heroImage from '@/assets/podstrana.jpg';
 // import Form from '@/components/Form';
