@@ -13,6 +13,8 @@ import sauna3 from '@/assets/Services/Wellness_3.jpg';
 import sauna4 from '@/assets/Services/Wellness_4.jpg';
 import sauna5 from '@/assets/Services/Wellness_5.jpg';
 
+export const aaa = 3;
+
 export const pageInfo = {
   title: '- Services',
   description: 'This page is showcase of services',
