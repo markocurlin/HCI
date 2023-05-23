@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
 import Carousel from '@/components/Carousel';
+import ScrollToTop from '@/components/ScrollToTop';
 import { home, pageInfo } from '@/constants/home';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
@@ -15,6 +16,7 @@ const Index = () => {
       <Layout
         meta={<Meta title={pageInfo.title} description={pageInfo.desription} />}
       >
+        <ScrollToTop />
         <div className="hero-img-gradient h-130 w-full">
           <Image
             src={home.images[0]?.imageSrc!}
