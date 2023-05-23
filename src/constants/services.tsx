@@ -75,6 +75,7 @@ export const services = [
     id: 4,
     title: 'Sauna',
     imageSrc: sauna2,
+    imageAlt: 'Image of sauna',
     images: [
       {
         id: 0,

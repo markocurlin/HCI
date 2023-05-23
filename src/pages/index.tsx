@@ -47,7 +47,7 @@ const Index = () => {
             </p>
             <p className="mt-2 text-justify text-sm leading-snug text-white/70 sm:text-lg">
               {t(
-                'Luxury Hotel Božikovina is warm and friendly hotel located in Podstrana just 7km from city of Split. This is a modern, relaxed luxury - Dalmatian style hotel, built in 2002 and at the highest European standards renovated in 2022. Thanks to its enchanting heritage, Podstrana is evolving into an elite cultural site, and its main attractions are a beautiful location with crystal clear sea, mild climate and beautiful pebble beaches.'
+                'Luxury Hotel Božikovina is warm and friendly hotel located in Podstrana just 7km from city of Split. This is a modern, relaxed luxury - Dalmatian style hotel, built in 2002 and at the highest European standards renovated in 2023. Thanks to its enchanting heritage, Podstrana is evolving into an elite cultural site, and its main attractions are a beautiful location with crystal clear sea, mild climate and beautiful pebble beaches.'
               )}
             </p>
 
@@ -81,7 +81,7 @@ const Index = () => {
                     <div className="container flex flex-col">
                       <div className="container">
                         <p className="text-xl font-semibold text-black lg:text-3xl">
-                          {t('A different perspective')}
+                          {t('Tranquil Seaside Haven')}
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
@@ -114,11 +114,11 @@ const Index = () => {
                     <div className="container flex flex-col">
                       <div className="container">
                         <p className="text-xl font-semibold text-black lg:text-3xl">
-                          {t('Workplace and beyond')}
+                          {t('Stylish Comforts')}
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'Meaningful gatherings can only be held in an equally significant space. Following the same line and concept, we host an array of events, from private celebrations to business meetings. As in every supportive home, our professional staff is fully committed to your desired results, whatever the context.'
+                            'Indulge in our stylish and thoughtfully designed accommodations, where modern aesthetics meet comfort. Each room and suite is meticulously appointed with upscale amenities, plush bedding, and contemporary furnishings to provide a haven of relaxation. Whether you choose a spacious suite or a cozy room, your comfort and satisfaction are our top priorities.'
                           )}
                         </p>
                       </div>
@@ -161,11 +161,11 @@ const Index = () => {
                     <div className="container flex flex-col">
                       <div className="container">
                         <p className="text-xl font-semibold text-black lg:text-3xl">
-                          {t('Unique in every way')}
+                          {t('Culinary Delights')}
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'Hotel Božikovina has been a trailblazer in green sustainable design hotels on this side of Adriatic, and since then many have followed this path. Hospitality and the environment are two closely related concepts. That is why, from the very beginning, we were determined to make decisions that would not comprise our shared future.'
+                            'Savor a culinary journey at our renowned restaurants, where talented chefs create culinary masterpieces to delight even the most discerning palates. From authentic local delicacies to international flavors, our diverse dining options offer something for every taste. Immerse yourself in an elegant ambiance, complemented by impeccable service, as you indulge in exquisite dishes paired with fine wines and craft cocktails. Experience gastronomic delights that will leave a lasting impression.'
                           )}
                         </p>
                       </div>
@@ -194,11 +194,11 @@ const Index = () => {
                     <div className="container flex flex-col">
                       <div className="container">
                         <p className="text-xl font-semibold text-black lg:text-3xl">
-                          {t('Be a Part of the Story')}
+                          {t('Serene Wellness Retreat')}
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'From reception to the bar and ultimately to the iconic terrace, the story of Hotel Božikovina is unfolded before guests eyes. Walls are enhanced with framed photographs capturing the 1930s when the hotel started its journey and follows through to the modern luxurious art-deco style used today to continue this special story that Hotel Park has been telling for a century.'
+                            'Enhance your well-being and rejuvenate your senses at our state-of-the-art fitness center and luxurious spa. Stay active with the latest exercise equipment and expert trainers, or pamper yourself with a range of spa treatments and therapies designed to promote relaxation and balance. Unwind by the sparkling pool, bask in the sun-drenched terrace, or take advantage of our comprehensive wellness facilities. At our hotel, we prioritize your well-being, ensuring you leave feeling refreshed, revitalized, and renewed.'
                           )}
                         </p>
                       </div>
@@ -217,7 +217,7 @@ const Index = () => {
             </p>
             <p className="mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
               {t(
-                'Luxury Hotel Božikovina is warm and friendly hotel located in Podstrana just 7km from city of Split. This is a modern, relaxed luxury - Dalmatian style hotel, built in 2002 and at the highest European standards renovated in 2022. Thanks to its enchanting heritage, Podstrana is evolving into an elite cultural site, and its main attractions are a beautiful location with crystal clear sea, mild climate and beautiful pebble beaches.'
+                "Escape to our exquisite hotel, where luxury and unparalleled hospitality await. Indulge in elegantly appointed accommodations, exceptional dining options, and a tranquil spa. Our dedicated staff provides impeccable service, ensuring your every need is met. Discover a haven of tranquility and sophistication, creating cherished memories with us. Whether you're seeking a romantic getaway, a memorable family vacation, or a successful business trip, our hotel offers an unrivaled experience that will leave you refreshed and rejuvenated."
               )}
             </p>
 

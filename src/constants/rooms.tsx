@@ -47,25 +47,25 @@ export const pageInfo = {
 export const roomsShowcase = {
   title: 'Suites and rooms',
   description:
-    'We d love to surprise you, but there s so much about our luxury rooms and suites we just have to share. From the bold, innovative design and Italian marble bathrooms.',
+    'Experience elegance and comfort in our luxurious suites and rooms. From spacious accommodations with breathtaking views to cozy rooms exuding charm, each space is designed for relaxation. Indulge in premium amenities and personalized service for a memorable stay.',
   rooms: [
     {
       id: 0,
-      title: 'Deluxe suite',
+      title: 'Deluxe Suite',
       imageSrc: deluxeSuite16,
       imageAlt: 'Image of Deluxe suite',
     },
     {
       id: 1,
-      title: 'Deluxe double room',
+      title: 'Deluxe Double Room',
       imageSrc: deluxeDoubleRoom6,
       imageAlt: 'Image of Deluxe double room',
     },
     {
       id: 2,
-      title: 'Standard double room',
+      title: 'Standard Room',
       imageSrc: standardDoubleRoom3,
-      imageAlt: 'Image of Standard double room',
+      imageAlt: 'Image of Standard room',
     },
   ],
 };
@@ -75,7 +75,7 @@ export const rooms = [
     id: 0,
     name: 'Deluxe suite',
     description:
-      'The Deluxe Suite provides a sophisticated blend of modern design and classic elegance that enhances the light, spacious atmosphere.  Provides leisure and business travelers with a luxurious retreat, where they can enjoy the atmosphere of this beautiful hotel.',
+      'The Deluxe Suite provides a sophisticated blend of modern design and classic elegance that enhances the light, spacious atmosphere. The intimate atmosphere, together with the attentive, impeccable service of our staff, ensures that our guests will enjoy their experience in our hotel.',
     amenities: [
       'Complimentary wireless Internet',
       'Mini Bar',
@@ -185,7 +185,7 @@ export const rooms = [
     id: 1,
     name: 'Deluxe Double Room',
     description:
-      'The Deluxe Double Room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
+      'This bright and spacious rooms has been decorated and furnished individually to make your stay unique. The Deluxe Double Room comes with a king size bed and is equipped with smart flat-screen TV with air-condition, safe box and free wireless internet access to make sure that your stay is comfortable in every way.',
     amenities: [
       'Complimentary wireless Internet',
       'Mini Bar',
@@ -275,9 +275,9 @@ export const rooms = [
   },
   {
     id: 2,
-    name: 'Standard double room',
+    name: 'Standard room',
     description:
-      'The Standard double room is the perfect combination of comfort and sophisticated luxury, inviting you to take your time and relax. Our Superior room is perfect for travelers who want a chic and fresh room to recharge and relax.',
+      'Standard Rooms are comfortably and modern furnished with a queen sized bed, a writing desk and flat-screen TV and free wireless internet access to make sure that your stay is comfortable in every way. A Standard Room can accommodate two guests.',
     amenities: [
       'Complimentary wireless Internet',
       'Mini Bar',
@@ -295,73 +295,73 @@ export const rooms = [
         id: 0,
         imageSrc: standardDoubleRoom1,
         // 'https://drive.google.com/uc?export=view&id=1s3t0MySlsCaGKH2MZEbWoLS3402AI7QZ',
-        imageAlt: 'Carousel image 1 of Standard Double Room',
+        imageAlt: 'Carousel image 1 of Standard Room',
       },
       {
         id: 1,
         imageSrc: standardDoubleRoom2,
         // 'https://drive.google.com/uc?export=view&id=1EI4l0hxQdSYY79g0jCY_GOCWI2kXMadB',
-        imageAlt: 'Carousel image 2 of Standard Double Room',
+        imageAlt: 'Carousel image 2 of Standard Room',
       },
       {
         id: 2,
         imageSrc: standardDoubleRoom3,
         // 'https://drive.google.com/uc?export=view&id=1jbfUedUUNxC2UGmwEQPmszYhrXXRhplb',
-        imageAlt: 'Carousel image 3 of Standard Double Room',
+        imageAlt: 'Carousel image 3 of Standard Room',
       },
       {
         id: 3,
         imageSrc: standardDoubleRoom4,
         // 'https://drive.google.com/uc?export=view&id=1R0LFD1soCv0iyVN3_Sn4dpnN5_VnXfhD',
-        imageAlt: 'Carousel image 4 of Standard Double Room',
+        imageAlt: 'Carousel image 4 of Standard Room',
       },
       {
         id: 4,
         imageSrc: standardDoubleRoom5,
         // 'https://drive.google.com/uc?export=view&id=1G_eVwXSEtfr0QDY1nsMFj0H2ar1j9GYb',
-        imageAlt: 'Carousel image 5 of Standard Double Room',
+        imageAlt: 'Carousel image 5 of Standard Room',
       },
       {
         id: 5,
         imageSrc: standardDoubleRoom6,
         // 'https://drive.google.com/uc?export=view&id=15bGDYyvah-hSrN4qYgjy5khgt_y4_Fcy',
-        imageAlt: 'Carousel image 6 of Standard Double Room',
+        imageAlt: 'Carousel image 6 of Standard Room',
       },
       {
         id: 6,
         imageSrc: standardDoubleRoom7,
         // 'https://drive.google.com/uc?export=view&id=1IB9vK0hht7eTB7GbBzcDerJJEuX2zmwO',
-        imageAlt: 'Carousel image 7 of Standard Double Room',
+        imageAlt: 'Carousel image 7 of Standard Room',
       },
       {
         id: 7,
         imageSrc: standardDoubleRoom8,
         // 'https://drive.google.com/uc?export=view&id=14JNLj_NRqmwiTOjAEyV2MTnYxpYlP4-C',
-        imageAlt: 'Carousel image 8 of Standard Double Room',
+        imageAlt: 'Carousel image 8 of Standard Room',
       },
       {
         id: 8,
         imageSrc: standardDoubleRoom9,
         // 'https://drive.google.com/uc?export=view&id=1pjgkOCIpuuLB0esBR1VbxLRIZID5tde9',
-        imageAlt: 'Carousel image 9 of Standard Double Room',
+        imageAlt: 'Carousel image 9 of Standard Room',
       },
       {
         id: 9,
         imageSrc: standardDoubleRoom10,
         // 'https://drive.google.com/uc?export=view&id=1AvxZ1m9VispCBxN6n-I9eJRe-06DQPdy',
-        imageAlt: 'Carousel image 10 of Standard Double Room',
+        imageAlt: 'Carousel image 10 of Standard Room',
       },
       {
         id: 10,
         imageSrc: standardDoubleRoom11,
         // 'https://drive.google.com/uc?export=view&id=1Lhctlp7HIg5VWGvZJT8tHn_fgpAPjn-1',
-        imageAlt: 'Carousel image 11 of Standard Double Room',
+        imageAlt: 'Carousel image 11 of Standard Room',
       },
       {
         id: 11,
         imageSrc: standardDoubleRoom12,
         // 'https://drive.google.com/uc?export=view&id=1oIoXPmWmZmCwf8j3kWc5xNJfmJyLzMIw',
-        imageAlt: 'Carousel image 12 of Standard Double Room',
+        imageAlt: 'Carousel image 12 of Standard Room',
       },
     ],
   },

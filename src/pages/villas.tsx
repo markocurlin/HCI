@@ -71,9 +71,12 @@ const Villas = () => {
                   Villas
                 </h1>
                 <p className="text-md mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
-                  We d love to surprise you, but there s so much about our
-                  luxury rooms and suites we just have to share. From the bold,
-                  innovative design and Italian marble bathrooms.
+                  Experience ultimate luxury and privacy in our exceptional
+                  hotel villas. Meticulously designed with opulent living
+                  spaces, stunning views, and a private outdoor oasis, each
+                  villa offers a sanctuary of tranquility. Indulge in
+                  personalized service and unforgettable moments, creating
+                  cherished memories that will last a lifetime.
                 </p>
               </div>
 
