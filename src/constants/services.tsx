@@ -7,11 +7,11 @@ import massageImage from '@/assets/Services/massage.jpg';
 import poolImage from '@/assets/Services/pool.jpg';
 import tourImage from '@/assets/Services/tour.jpg';
 import transferImage from '@/assets/Services/transfer.jpg';
-import sauna1 from '@/assets/Services/Wellness_1.jpg';
-import sauna2 from '@/assets/Services/Wellness_2.jpg';
-import sauna3 from '@/assets/Services/Wellness_3.jpg';
-import sauna4 from '@/assets/Services/Wellness_4.jpg';
-import sauna5 from '@/assets/Services/Wellness_5.jpg';
+// import sauna1 from '@/assets/Services/Wellness_1.JPG';
+// import sauna2 from '@/assets/Services/Wellness_2.JPG';
+// import sauna3 from '@/assets/Services/Wellness_3.JPG';
+// import sauna4 from '@/assets/Services/Wellness_4.JPG';
+// import sauna5 from '@/assets/Services/Wellness_5.JPG';
 
 export const pageInfo = {
   title: '- Services',
@@ -69,36 +69,36 @@ export const services = [
     imageAlt: 'Image of massage',
     images: [],
     description:
-      'Our selection of massages, manicures, pedicures, and therapies are designed to make you look and feel your best. Don’t miss our Nuvola zero-gravity dry floatation bed to fully release any tension for a stress-free holiday.',
+      'Indulge in a blissful escape and pamper your senses with our exquisite range of massage services at our hotel spa. Our dedicated team of skilled therapists are here to transport you to a realm of relaxation and rejuvenation. Discover the perfect massage experience that suits your needs, whether you desire a Half Body Massage, Relaxing Massage, Deep Tissue & Sport Massage, or Aromatherapy Massage.',
   },
   {
     id: 4,
     title: 'Sauna',
-    imageSrc: sauna2,
+    imageSrc: massageImage,
     images: [
       {
         id: 0,
-        imageSrc: sauna1,
+        imageSrc: massageImage,
         imageAlt: 'Carousel image 1 of sauna',
       },
       {
         id: 1,
-        imageSrc: sauna2,
+        imageSrc: massageImage,
         imageAlt: 'Carousel image 2 of sauna',
       },
       {
         id: 2,
-        imageSrc: sauna3,
+        imageSrc: massageImage,
         imageAlt: 'Carousel image 3 of sauna',
       },
       {
         id: 3,
-        imageSrc: sauna4,
+        imageSrc: massageImage,
         imageAlt: 'Carousel image 4 of sauna',
       },
       {
         id: 4,
-        imageSrc: sauna5,
+        imageSrc: massageImage,
         imageAlt: 'Carousel image 5 of sauna',
       },
     ],

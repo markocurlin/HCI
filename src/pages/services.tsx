@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Carousel from '@/components/Carousel';
+import ScrollToTop from '@/components/ScrollToTop';
 import { pageInfo, services } from '@/constants/services';
 import Layout from '@/layouts/Layout';
 import { Meta } from '@/layouts/Meta';
@@ -25,6 +26,7 @@ const Services = () => {
           <Meta title={pageInfo.title} description={pageInfo.description} />
         }
       >
+        <ScrollToTop />
         <div className="bg-white">
           <div className="container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-16 2xl:pl-48">
             <nav aria-label="Breadcrumb">
