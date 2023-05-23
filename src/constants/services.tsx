@@ -42,7 +42,7 @@ export const services = [
       },
     ],
     description:
-      'Restaurant Méditerranée pays homage to Mediterranean cuisine and local flavors, bringing the culinary traditions of Dalmatia into a new era. Whether you want the Adriatic catch of the day, premium meat delicacies, or a taste of the region, your Restaurant Méditerranée dining experience promises an adventure through Dalmatia, enhanced by an extensive wine list and creative desserts.',
+      'Experience culinary excellence at our exquisite restaurant, where flavors harmonize and impeccable service shines. Indulge in a fusion of global influences and local traditions, crafted with the finest ingredients. Immerse yourself in an inviting ambiance adorned with elegant decor, creating the perfect setting for memorable dining moments.',
   },
   {
     id: 1,
@@ -51,7 +51,7 @@ export const services = [
     imageAlt: 'Image of bar',
     images: [],
     description:
-      'Have a cup of coffee in the mornings, spend the afternoons sipping cocktails, and round off your days with a glass of wine. Whether you are a local or a guest of the hotel, Bar Split brings people together with artfully crafted hot and cold beverages.',
+      'Unwind and socialize at our stylish bar, where every drink is a masterpiece. Enjoy the inviting ambiance, expertly crafted cocktails, and unforgettable moments. Cheers to a night of elegance, cherished memories, and the perfect blend of flavors that will leave you wanting more.',
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ export const services = [
     imageAlt: 'Image of pool',
     images: [],
     description:
-      'Take a break from swimming and freshen up with a variety of flavorful smoothies, freshly squeezed juices, and lush cocktails depending on the time of the day.',
+      "Nestled amidst lush surroundings and boasting breathtaking views, our pool is a haven of tranquility. The glistening waters beckon you to take a refreshing dip and escape the cares of the day. Whether you're seeking a moment of solitude or a delightful gathering with loved ones, our pool provides the perfect setting for unforgettable moments.",
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ export const services = [
       },
     ],
     description:
-      'Release your physical and mental tension with our steam sauna or traditional Finnish sauna. Speed up your circulation with a cold rain shower or detox your whole self with curative halotherapy.',
+      'Escape to a tranquil sanctuary within our hotel as you step into our inviting sauna. Experience customizable heat, allowing you to tailor the intensity to your preferences. Indulge in the detoxifying benefits, as the warmth promotes cleansing and revitalization. Soothe tired muscles and find relaxation within the serene ambiance. Let the sauna become your oasis of tranquility, where stress melts away and rejuvenation takes hold.',
   },
   {
     id: 5,
