@@ -28,7 +28,7 @@ const Services = () => {
       >
         <ScrollToTop />
         <div className="bg-white">
-          <div className="container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-16 2xl:pl-48">
+          <div className="p-fix container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-16 2xl:pl-48">
             <nav aria-label="Breadcrumb">
               <ol role="list" className="flex items-center space-x-2">
                 <li>
@@ -67,15 +67,18 @@ const Services = () => {
           </div>
 
           <div className="mt-4 flex flex-col items-center justify-center py-0 md:py-6 lg:mt-2 lg:mb-20 lg:flex-row">
-            <div className="mx-8 mt-6 flex flex-col justify-center sm:px-10 lg:px-8">
+            <div className="mx-8 mt-6 flex flex-col justify-center lg:px-8">
               <div className="sm:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                   Services
                 </h1>
                 <p className="text-md mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
-                  We d love to surprise you, but there s so much about our
-                  luxury rooms and suites we just have to share. From the bold,
-                  innovative design and Italian marble bathrooms.
+                  Indulge in a world of luxury and impeccable hospitality with
+                  our exceptional hotel services. From elegant accommodations to
+                  delectable dining options, rejuvenating spa treatments, and
+                  seamless concierge service, every aspect of your stay is
+                  crafted to exceed expectations. Experience unforgettable
+                  moments and impeccable care throughout your journey with us.
                 </p>
               </div>
 
@@ -88,7 +91,7 @@ const Services = () => {
                 </Link>
               </div>
             </div>
-            <div className="mx-8 mt-6 max-w-2xl sm:px-1 lg:grid lg:max-w-4xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+            <div className="mx-8 mt-6 max-w-2xl sm:px-1 lg:grid lg:max-w-4xl lg:grid-cols-3 lg:gap-x-8 lg:px-10">
               <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
                 {services.map((service) => (
                   <>

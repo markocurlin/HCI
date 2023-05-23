@@ -26,7 +26,7 @@ const Villas = () => {
       >
         <ScrollToTop />
         <div className="bg-white">
-          <div className="container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-16 2xl:pl-48">
+          <div className="p-fix container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-16 2xl:pl-48">
             <nav aria-label="Breadcrumb">
               <ol role="list" className="flex items-center space-x-2">
                 <li>
@@ -65,7 +65,7 @@ const Villas = () => {
           </div>
 
           <div className="mt-4 flex flex-col items-center justify-center py-0 md:py-6 lg:mt-2 lg:mb-20 lg:flex-row">
-            <div className="mx-8 mt-6 flex flex-col justify-center sm:px-10 lg:px-8">
+            <div className="mx-8 mt-6 flex flex-col justify-center lg:px-8">
               <div className="sm:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                   Villas

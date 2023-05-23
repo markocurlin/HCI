@@ -7,11 +7,11 @@ import massageImage from '@/assets/Services/massage.jpg';
 import poolImage from '@/assets/Services/pool.jpg';
 import tourImage from '@/assets/Services/tour.jpg';
 import transferImage from '@/assets/Services/transfer.jpg';
-// import sauna1 from '@/assets/Services/Wellness_1.JPG';
-// import sauna2 from '@/assets/Services/Wellness_2.JPG';
-// import sauna3 from '@/assets/Services/Wellness_3.JPG';
-// import sauna4 from '@/assets/Services/Wellness_4.JPG';
-// import sauna5 from '@/assets/Services/Wellness_5.JPG';
+import sauna1 from '@/assets/Services/Wellness_1.jpg';
+import sauna2 from '@/assets/Services/Wellness_2.jpg';
+import sauna3 from '@/assets/Services/Wellness_3.jpg';
+import sauna4 from '@/assets/Services/Wellness_4.jpg';
+import sauna5 from '@/assets/Services/Wellness_5.jpg';
 
 export const pageInfo = {
   title: '- Services',
@@ -74,31 +74,31 @@ export const services = [
   {
     id: 4,
     title: 'Sauna',
-    imageSrc: massageImage,
+    imageSrc: sauna2,
     images: [
       {
         id: 0,
-        imageSrc: massageImage,
+        imageSrc: sauna1,
         imageAlt: 'Carousel image 1 of sauna',
       },
       {
         id: 1,
-        imageSrc: massageImage,
+        imageSrc: sauna2,
         imageAlt: 'Carousel image 2 of sauna',
       },
       {
         id: 2,
-        imageSrc: massageImage,
+        imageSrc: sauna3,
         imageAlt: 'Carousel image 3 of sauna',
       },
       {
         id: 3,
-        imageSrc: massageImage,
+        imageSrc: sauna4,
         imageAlt: 'Carousel image 4 of sauna',
       },
       {
         id: 4,
-        imageSrc: massageImage,
+        imageSrc: sauna5,
         imageAlt: 'Carousel image 5 of sauna',
       },
     ],
@@ -112,7 +112,7 @@ export const services = [
     imageAlt: 'Image of private airport shuttle',
     images: [],
     description:
-      'Door to door service, avoid waiting time at the airport or extra taxi cost from the bus stop to your accommodation. Upon arrival at the airport you will be greeted by your driver with a sign showing your name.',
+      "Experience seamless travel with our private airport shuttle service. Relax in style as our professional drivers whisk you to your destination in luxurious vehicles. Enjoy a stress-free and personalized journey, starting your stay with ease. Whether you're traveling for business or leisure, our dedicated team ensures a smooth and convenient experience, making your arrival and departure a breeze.",
   },
   {
     id: 6,
@@ -121,7 +121,7 @@ export const services = [
     imageAlt: 'Image of private tour shuttle',
     images: [],
     description:
-      'Our private tours provide the greatest flexibility, comfort and convenience. You will be traveling with air-conditioned vehicles and experienced drivers.',
+      'Explore our captivating destination with our private tour shuttle service. Discover hidden gems and iconic landmarks with knowledgeable guides. Travel in comfort aboard our private shuttles, tailored to your itinerary. Immerse yourself in the culture, history, and natural beauty, creating unforgettable moments throughout your exploration.',
   },
   {
     id: 7,
@@ -130,6 +130,6 @@ export const services = [
     imageAlt: 'Image of elevator',
     images: [],
     description:
-      'Elevator deliver guests to their rooms quietly, efficiently, and comfortably.',
+      'Enjoy effortless vertical transportation with our reliable elevator service. From your arrival to departure, our state-of-the-art elevators ensure a smooth and comfortable ride. Access all areas of our hotel with convenience and ease, enhancing your overall experience with us.',
   },
 ];
