@@ -25,16 +25,14 @@ const Index = () => {
             className="h-full w-full object-cover object-center"
             placeholder="blur"
           />
-          {/* }inset-x-0 top-0 h-auto sm:h-[53rem]
-          hero-img-gradient */}
           <div className="absolute inset-x-0 bottom-0 z-20 flex flex-col items-center p-6">
             <p className="py-0.5 text-xl font-normal leading-snug text-white sm:text-5xl">
-              AN UNRIVALLED WELCOME
+              {t('AN UNRIVALLED WELCOME')}
             </p>
 
             <div className="flex py-0.5">
               <p className="py-0.5 text-lg font-light italic leading-snug text-white sm:text-3xl">
-                in the heart of Podstrana
+                {t('in the heart of Podstrana')}
               </p>
             </div>
           </div>
@@ -52,7 +50,7 @@ const Index = () => {
             </p>
 
             <Link
-              href="/contact/#book"
+              href="/contact"
               className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
               {t('LEARN MORE')}
@@ -129,12 +127,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-
-        {/*
-        <div className="h-auto w-full bg-zinc-100 pb-20 sm:h-[55rem] sm:px-48">
-          <Carousel imageList={home.carouselImages} />
-        </div>
-        */}
 
         <div className="h-3xl h-[20rem] bg-zinc-100 p-0 pb-20 md:h-[48rem] lg:px-[4.5rem] xl:px-[4.5rem] 2xl:h-[58rem]">
           <Carousel imageList={home.carouselImages} />
@@ -222,7 +214,7 @@ const Index = () => {
             </p>
 
             <Link
-              href="/contact/#book"
+              href="/contact"
               className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
               {t('LEARN MORE')}

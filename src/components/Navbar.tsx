@@ -102,7 +102,7 @@ const Navbar = () => {
           <div className="flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
             <div className="hidden md:block">
               <Link
-                href="/contact/#book"
+                href="/contact"
                 className="bg-secondary bg-hover-secondary mx-5 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
               >
                 {t('BOOK NOW')}
@@ -181,13 +181,6 @@ const Navbar = () => {
         <Dialog as="div" className="relative z-40" onClose={setIsOpen}>
           <Transition.Child
             as={Fragment}
-            /*
-            enter="ease-in-out duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="ease-in-out duration-300"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0" */
             enter="transform transition ease-in-out duration-300 sm:duration-300"
             enterFrom="-translate-x-full"
             enterTo="translate-x-0"
@@ -277,7 +270,7 @@ const Navbar = () => {
 
                           <div className="mt-16 px-3 py-2">
                             <Link
-                              href="/contact/#book"
+                              href="/contact"
                               className="bg-secondary bg-hover-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                             >
                               {t('BOOK NOW')}
@@ -298,112 +291,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-/*
-<Transition.Root show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-40" onClose={setIsOpen}>
-          <Transition.Child
-            as={Fragment}
-          
-            enter="transform transition ease-in-out duration-300 sm:duration-300"
-            enterFrom="-translate-x-full"
-            enterTo="translate-x-0"
-            leave="transform transition ease-in-out duration-300 sm:duration-300"
-            leaveFrom="translate-x-0"
-            leaveTo="-translate-x-full"
-          >
-            <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity">
-              <Image
-                src={image}
-                alt="Hero image of hotel"
-                className="h-full w-full object-cover object-center"
-                placeholder="blur"
-              />
-            </div>
-          </Transition.Child>
-
-          <div className="fixed inset-0 overflow-hidden">
-            <div className="absolute inset-0 overflow-hidden">
-              <div className="pointer-events-none fixed inset-y-0 left-0 flex max-w-full">
-                <Transition.Child
-                  as={Fragment}
-                  enter="transform transition ease-in-out duration-300 sm:duration-300"
-                  enterFrom="-translate-x-full"
-                  enterTo="translate-x-0"
-                  leave="transform transition ease-in-out duration-300 sm:duration-300"
-                  leaveFrom="translate-x-0"
-                  leaveTo="-translate-x-full"
-                >
-                  <Dialog.Panel className="pointer-events-auto relative w-screen max-w-lg">
-                    <div className="absolute z-40 -ml-4 h-14 w-full bg-white sm:h-20">
-                      <div className="z-50 w-auto px-8 py-3 sm:py-7 lg:px-24">
-                        <button
-                          onClick={() => setIsOpen(!isOpen)}
-                          className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none"
-                        >
-                          <span className="sr-only">Open main menu</span>
-                          <XMarkIcon
-                            className="block h-6 w-6 text-black"
-                            aria-hidden="true"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                    <div className="scroll-y flex h-full flex-col bg-white py-6 shadow-xl">
-                      <div className="mt-32 mb-16 px-4 lg:px-20">
-                        <div className="flex flex-col items-center sm:items-start">
-                          {navLinks.map((link, index) => {
-                            return (
-                              <ul key={index}>
-                                <Link href={link.path}>
-                                  <li
-                                    key={index}
-                                    className={classNames(
-                                      currentPage === link.path
-                                        ? 'text-black font-medium'
-                                        : 'text-black/60 hover:text-gray-900',
-                                      'px-3 py-2 text-2xl sm:text-3xl font-normal'
-                                    )}
-                                  >
-                                    {t(`${link.name}`)}
-                                  </li>
-                                </Link>
-                              </ul>
-                            );
-                          })}
-                          <div className="mt-16 flex flex-col items-center sm:items-start">
-                            {socialMedia.map((media, index) => {
-                              return (
-                                <ul key={index}>
-                                  <Link href={media.href} target="_blank">
-                                    <li
-                                      key={index}
-                                      className="px-3 py-2 text-lg font-normal text-black/60 hover:text-gray-900 sm:text-xl"
-                                    >
-                                      {media.name}
-                                    </li>
-                                  </Link>
-                                </ul>
-                              );
-                            })}
-                          </div>
-
-                          <div className="mt-16 px-3 py-2">
-                            <Link
-                              href="/contact/#book"
-                              className="bg-secondary bg-hover-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
-                            >
-                              {t('BOOK NOW')}
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Dialog.Panel>
-                </Transition.Child>
-              </div>
-            </div>
-          </div>
-        </Dialog>
-      </Transition.Root>
-*/

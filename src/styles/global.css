@@ -4,11 +4,6 @@ a {
   @apply text-blue-700;
 }
 
-/*
-a:hover {
-  @apply border-b-2 border-blue-700;
-}*/
-
 @tailwind components;
 
 @tailwind utilities;
@@ -22,14 +17,11 @@ a:hover {
 }
 
 .bg-primary {
-  /*background-color: #3698CA;*/
   background-color: #385170;
-  /*background-color: #FAFAD2;*/
 }
 
 .bg-secondary {
   background-color: #142d4c;
-  /*background-color: #005792;*/
 }
 
 .text-hover-primary:hover {
@@ -37,7 +29,6 @@ a:hover {
 }
 
 .bg-hover-secondary:hover {
-  /*background-color: #01548a;*/
   background-color: #0a203b;
 }
 
@@ -89,7 +80,7 @@ li::marker {
   overflow-y: hidden;
 }
 
-@media screen and ( max-width: 1024px ){
+@media screen and ( max-width: 1024px ) {
   .h-130 {
     height: auto;
   }
@@ -128,14 +119,12 @@ li::marker {
     padding-left: 12rem !important;
     padding-right: 12rem !important;
   }
-}
 
-/*
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  .p-fix {
-    padding-left: 4.5rem !important;
+  .h-4xl {
+    padding-left: 11.5rem !important;
+    padding-right: 11.5rem !important;
   }
-}*/
+}
 
 @media screen and (min-width: 1530px) and (max-width: 1664px) {
   .p-fix {
@@ -144,17 +133,14 @@ li::marker {
 }
 
 :root {
-  /*--swiper-theme-color: #3698CA !important ;*/
   --swiper-theme-color: #385170 !important ;
 }
 
 .swiper-button-prev:hover {
-  /*color: #287da8;*/
   color: #385170;
 }
 
 .swiper-button-next:hover {
-  /*color: #287da8;*/
   color: #385170;
 
 }
@@ -258,7 +244,7 @@ li::marker {
 
 .scroll-button {
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.4s, visibility 0.4s;
 }
 
 .show {

@@ -30,7 +30,7 @@ const Carousel = ({ imageList }: any) => {
               className="h-full w-full object-cover"
               src={image.imageSrc}
               alt={image.imageAlt}
-              fill={true}
+              // fill={true}
               // sizes="100vw, 100vh"
               quality={100}
               placeholder="blur"

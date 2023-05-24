@@ -73,7 +73,7 @@ export const roomsShowcase = {
 export const rooms = [
   {
     id: 0,
-    name: 'Deluxe suite',
+    name: 'Deluxe Suite',
     description:
       'The Deluxe Suite provides a sophisticated blend of modern design and classic elegance that enhances the light, spacious atmosphere. The intimate atmosphere, together with the attentive, impeccable service of our staff, ensures that our guests will enjoy their experience in our hotel.',
     amenities: [
@@ -275,7 +275,7 @@ export const rooms = [
   },
   {
     id: 2,
-    name: 'Standard room',
+    name: 'Standard Room',
     description:
       'Standard Rooms are comfortably and modern furnished with a queen sized bed, a writing desk and flat-screen TV and free wireless internet access to make sure that your stay is comfortable in every way. A Standard Room can accommodate two guests.',
     amenities: [

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Breadcrumb from '@/components/Breadcrumb';
 import Carousel from '@/components/Carousel';
 import ScrollToTop from '@/components/ScrollToTop';
 import { pageInfo, villas } from '@/constants/villas';
@@ -27,65 +28,28 @@ const Villas = () => {
         <ScrollToTop />
         <div className="bg-white">
           <div className="p-fix container mt-16 pl-8 md:pl-16 lg:pl-16 xl:pl-16 2xl:pl-48">
-            <nav aria-label="Breadcrumb">
-              <ol role="list" className="flex items-center space-x-2">
-                <li>
-                  <div className="flex items-center">
-                    <Link
-                      href="/"
-                      className="mr-2 text-xl font-medium text-gray-900"
-                    >
-                      Home
-                    </Link>
-                    <svg
-                      width="20"
-                      height="24"
-                      viewBox="0 0 16 20"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      className="h-7 w-6 text-gray-300"
-                    >
-                      <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
-                    </svg>
-                  </div>
-                </li>
-
-                <li className="text-xl">
-                  <Link
-                    href="/villas"
-                    aria-current="page"
-                    className="font-medium text-gray-500 hover:text-gray-600"
-                  >
-                    Villas
-                  </Link>
-                </li>
-              </ol>
-            </nav>
+            <Breadcrumb title={t('Villas')} />
           </div>
 
           <div className="mt-4 flex flex-col items-center justify-center py-0 md:py-6 lg:mt-2 lg:mb-20 lg:flex-row">
             <div className="mx-8 mt-6 flex flex-col justify-center lg:px-8">
               <div className="sm:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                  Villas
+                  {t('Villas')}
                 </h1>
                 <p className="text-md mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
-                  Experience ultimate luxury and privacy in our exceptional
-                  hotel villas. Meticulously designed with opulent living
-                  spaces, stunning views, and a private outdoor oasis, each
-                  villa offers a sanctuary of tranquility. Indulge in
-                  personalized service and unforgettable moments, creating
-                  cherished memories that will last a lifetime.
+                  {t(
+                    'Experience ultimate luxury and privacy in our exceptional hotel villas. Meticulously designed with opulent living spaces, stunning views, and a private outdoor oasis, each villa offers a sanctuary of tranquility. Indulge in personalized service and unforgettable moments, creating cherished memories that will last a lifetime.'
+                  )}
                 </p>
               </div>
 
               <div>
                 <Link
-                  href="/contact/#book"
+                  href="/contact"
                   className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                 >
-                  LEARN MORE
+                  {t('LEARN MORE')}
                 </Link>
               </div>
             </div>
@@ -93,17 +57,14 @@ const Villas = () => {
               {villas.map((villa) => (
                 <div
                   key={villa.id}
-                  className="img-gradient my-12  h-auto overflow-hidden lg:my-0 lg:block"
+                  className="img-gradient my-12 overflow-hidden sm:h-[38rem] lg:my-0 lg:block"
                 >
                   <Image
                     src={villa.imageSrc}
                     alt={villa.imageAlt}
                     className="h-full w-full object-cover"
-                    // fill={true}
-                    // sizes="100vw, 100vh"
                     quality={100}
                     placeholder="blur"
-                    // blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"
                   />
                   <div className="absolute bottom-0 left-0 z-20 p-6">
                     <p className="py-0.5 text-lg font-semibold leading-snug text-white">
@@ -114,7 +75,7 @@ const Villas = () => {
                         onClick={() => setId(villa.id)}
                         className="link-underline link-underline-white py-0.5 text-base font-light leading-snug text-white"
                       >
-                        Discover now
+                        {t('Discover now')}
                       </p>
                     </div>
                   </div>
@@ -150,15 +111,15 @@ const Villas = () => {
                           <div className="container flex flex-col">
                             <div className="container">
                               <p className="text-xl font-semibold text-black lg:text-3xl">
-                                {t(`${villa.name}`)}
+                                {t(villa.name)}
                               </p>
                               <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base lg:pr-24 xl:pr-32">
-                                {t(`${villa.description1}`)}
+                                {t(villa.description1)}
                               </p>
                             </div>
                             <div>
                               <Link
-                                href="/contact/#book"
+                                href="/contact"
                                 className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                               >
                                 {t('BOOK NOW')}
@@ -189,15 +150,15 @@ const Villas = () => {
                           <div className="container flex flex-col">
                             <div className="container">
                               <p className="text-xl font-semibold text-black lg:text-3xl">
-                                {t(`${villa.name}`)}
+                                {t(villa.name)}
                               </p>
                               <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
-                                {t(`${villa.description1}`)}
+                                {t(villa.description1)}
                               </p>
                             </div>
                             <div>
                               <Link
-                                href="/contact/#book"
+                                href="/contact"
                                 className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                               >
                                 {t('BOOK NOW')}
@@ -219,7 +180,7 @@ const Villas = () => {
                         <div>
                           <div className="flex px-3 py-3.5">
                             <p className="mr-2 w-32 p-1 text-sm font-semibold leading-snug text-black/70 sm:min-w-[40%] sm:text-lg">
-                              {facilitie.title}
+                              {t(facilitie.title)}
                             </p>
                             <ul
                               key={`${villa.name}-${facilitie.title}`}
@@ -230,7 +191,7 @@ const Villas = () => {
                                   key={`${villa.name}-${facilitie.title}-${details}`}
                                   className="mx-4 p-1 text-sm font-normal leading-snug text-black/70 sm:text-lg"
                                 >
-                                  {details}
+                                  {t(details)}
                                 </li>
                               ))}
                             </ul>
@@ -248,7 +209,7 @@ const Villas = () => {
                         <div>
                           <div className="flex p-3">
                             <p className="mr-2 w-32 p-1 text-sm font-semibold leading-snug text-black/70 sm:min-w-[40%] sm:text-lg">
-                              {facilitie.title}
+                              {t(facilitie.title)}
                             </p>
                             <ul
                               key={`${villa.name}-${facilitie.title}`}
@@ -259,7 +220,7 @@ const Villas = () => {
                                   key={`${villa.name}-${facilitie.title}-${details}`}
                                   className="mx-4 p-1 text-sm font-normal leading-snug text-black/70 sm:text-lg"
                                 >
-                                  {details}
+                                  {t(details)}
                                 </li>
                               ))}
                             </ul>

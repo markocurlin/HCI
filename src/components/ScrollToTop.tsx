@@ -25,7 +25,7 @@ const ScrollToTop = () => {
     <>
       <div
         onClick={handleButton}
-        className={`bg-secondary scroll-button fixed bottom-5 right-5 z-50 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full sm:bottom-10 sm:right-10 ${
+        className={`bg-secondary scroll-button fixed bottom-5 right-5 z-20 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full sm:bottom-10 sm:right-10 ${
           showButton ? 'show' : 'hide'
         }`}
       >

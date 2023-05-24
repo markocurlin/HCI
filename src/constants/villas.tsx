@@ -1,4 +1,3 @@
-import villaRoyal11 from '../assets/Villa Royal 1/VillaRoyal1_1.jpg';
 import villaRoyal12 from '../assets/Villa Royal 1/VillaRoyal1_2.jpg';
 import villaRoyal13 from '../assets/Villa Royal 1/VillaRoyal1_3.jpg';
 import villaRoyal14 from '../assets/Villa Royal 1/VillaRoyal1_4.jpg';
@@ -8,7 +7,6 @@ import villaRoyal17 from '../assets/Villa Royal 1/VillaRoyal1_7.jpg';
 import villaRoyal18 from '../assets/Villa Royal 1/VillaRoyal1_8.jpg';
 import villaRoyal19 from '../assets/Villa Royal 1/VillaRoyal1_9.jpg';
 import villaRoyal110 from '../assets/Villa Royal 1/VillaRoyal1_10.jpg';
-import villaRoyal21 from '../assets/Villa Royal 2/VillaRoyal2_1.jpg';
 import villaRoyal22 from '../assets/Villa Royal 2/VillaRoyal2_2.jpg';
 import villaRoyal23 from '../assets/Villa Royal 2/VillaRoyal2_3.jpg';
 import villaRoyal24 from '../assets/Villa Royal 2/VillaRoyal2_4.jpg';
@@ -26,7 +24,7 @@ export const villas = [
   {
     id: 0,
     name: 'Villa Royal 1',
-    imageSrc: villaRoyal11,
+    imageSrc: villaRoyal14,
     // 'https://drive.google.com/uc?export=view&id=1itiImqRNPgpuKKEead-IEcuBD7T1VUsN',
     imageAlt: 'Image of Villa Royal 1',
     images: [
@@ -153,7 +151,7 @@ export const villas = [
   {
     id: 1,
     name: 'Villa Royal 2',
-    imageSrc: villaRoyal21,
+    imageSrc: villaRoyal22,
     // 'https://drive.google.com/uc?export=view&id=1Yrz3gOlw_Tcv0twYfKaBDRkRvDZLe0SA',
     imageAlt: 'Image of Villa Royal 2',
     images: [
