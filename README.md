@@ -18,7 +18,6 @@ Developer experience first:
 - ✅ Strict Mode for TypeScript and React 18
 - 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals, Tailwind CSS and Airbnb configuration)
 - 💖 Code Formatter with [Prettier](https://prettier.io)
-- 🦊 Husky for Git Hooks
 - 🚫 Lint-staged for running linters on Git staged files
 - 🚓 Lint git commit with Commitlint
 - 📓 Write standard compliant commit messages with Commitizen
@@ -85,7 +84,6 @@ Open http://localhost:3000 with your favorite browser to see your project.
 ├── README.md                       # README file
 ├── __mocks__                       # Mocks for testing
 ├── .github                         # GitHub folder
-├── .husky                          # Husky configuration
 ├── .vscode                         # VSCode configuration
 ├── public                          # Public assets folder
 ├── src
