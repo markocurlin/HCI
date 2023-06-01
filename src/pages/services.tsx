@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Breadcrumb from '@/components/Breadcrumb';
-import Carousel from '@/components/Carousel';
 import ScrollToTop from '@/components/ScrollToTop';
 import { pageInfo, services } from '@/constants/services';
 import Layout from '@/layouts/Layout';
@@ -174,16 +173,12 @@ const Services = () => {
                           key={`${service.id}-image`}
                           className="absolute inset-0"
                         >
-                          {service.images.length > 0 ? (
-                            <Carousel imageList={service.images} />
-                          ) : (
-                            <Image
-                              src={service.imageSrc}
-                              alt={service.imageAlt!}
-                              className="h-full w-full object-cover"
-                              placeholder="blur"
-                            />
-                          )}
+                          <Image
+                            src={service.imageSrc}
+                            alt={service.imageAlt!}
+                            className="h-full w-full object-cover"
+                            placeholder="blur"
+                          />
                         </div>
                       </div>
                     </div>
@@ -222,16 +217,12 @@ const Services = () => {
                           key={`${service.id}-image`}
                           className="absolute inset-0 h-full w-full object-cover"
                         >
-                          {service.images.length > 0 ? (
-                            <Carousel imageList={service.images} />
-                          ) : (
-                            <Image
-                              src={service.imageSrc}
-                              alt={service.imageAlt!}
-                              className="h-full w-full object-cover"
-                              placeholder="blur"
-                            />
-                          )}
+                          <Image
+                            src={service.imageSrc}
+                            alt={service.imageAlt!}
+                            className="h-full w-full object-cover"
+                            placeholder="blur"
+                          />
                         </div>
                       </div>
                     </div>

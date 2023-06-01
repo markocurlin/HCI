@@ -27,8 +27,13 @@ const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('En');
   const { t, i18n } = useTranslation();
 
+  const handleBeforeUnload = () => {
+    i18n.changeLanguage('En');
+  };
+
   useEffect(() => {
     i18n.changeLanguage(selectedLanguage);
+    window.addEventListener('beforeunload', handleBeforeUnload);
   }, [selectedLanguage]);
 
   const handleScroll = useCallback(() => {
@@ -270,6 +275,10 @@ const Navbar = () => {
 
                           <div className="mt-16 px-3 py-2">
                             <Link
+                              onClick={() => {
+                                if (currentPage === '/contact')
+                                  setIsOpen(false);
+                              }}
                               href="/contact"
                               className="bg-secondary bg-hover-secondary inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                             >
