@@ -123,7 +123,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="h-4xl h-[20rem] p-0 pb-24 md:h-[48rem] lg:px-[4rem] xl:px-[4rem] 2xl:h-[58rem]">
+        <div className="hidden lg:block h-4xl h-[20rem] p-0 pb-24 md:h-[48rem] lg:px-[4rem] xl:px-[4rem] 2xl:h-[58rem]">
           <Carousel imageList={carouselImages} />
         </div>
       </Layout>
