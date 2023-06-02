@@ -61,7 +61,7 @@ const Index = () => {
         <div className="bg-zinc-100 pb-8 sm:pb-20 md:pt-0 lg:px-8">
           <div className="bg-zinc-100 pb-8 lg:p-8">
             <div className="mx-auto grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:mt-16 lg:px-2">
-              <div className="md:col-span-auto z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+              <div className="z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0">
                     <Image
@@ -73,7 +73,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+              <div className="relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
                 <div className="bg-white p-4 sm:p-12 md:px-8">
                   <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                     <div className="container flex flex-col">
@@ -94,7 +94,7 @@ const Index = () => {
             </div>
 
             <div className="mx-auto mt-16 grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:mt-24 lg:px-2">
-              <div className="md:col-span-auto z-0 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+              <div className="z-0 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0 h-full w-full object-cover">
                     <Image
@@ -106,7 +106,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+              <div className="relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
                 <div className="bg-white p-4 sm:p-12 md:px-8">
                   <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                     <div className="container flex flex-col">
@@ -135,7 +135,7 @@ const Index = () => {
         <div className="bg-zinc-100 pb-8 sm:pb-20 md:pt-0 lg:px-8">
           <div className="bg-zinc-100 pb-8 lg:p-8">
             <div className="mx-auto grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:px-2">
-              <div className="md:col-span-auto z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+              <div className="z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0">
                     <Image
@@ -147,7 +147,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+              <div className="relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
                 <div className="bg-white p-4 sm:p-12 md:px-8">
                   <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                     <div className="container flex flex-col">
@@ -168,7 +168,7 @@ const Index = () => {
             </div>
 
             <div className="mx-auto mt-16 grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:mt-24 lg:px-2">
-              <div className="md:col-span-auto z-0 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+              <div className="z-0 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
                 <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                   <div className="absolute inset-0 h-full w-full object-cover">
                     <Image
@@ -180,7 +180,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+              <div className="relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
                 <div className="bg-white p-4 sm:p-12 md:px-8">
                   <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                     <div className="container flex flex-col">

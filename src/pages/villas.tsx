@@ -37,7 +37,7 @@ const Villas = () => {
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                   {t('Villas')}
                 </h1>
-                <p className="text-md mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
+                <p className="mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
                   {t(
                     'Experience ultimate luxury and privacy in our exceptional hotel villas. Meticulously designed with opulent living spaces, stunning views, and a private outdoor oasis, each villa offers a sanctuary of tranquility. Indulge in personalized service and unforgettable moments, creating cherished memories that will last a lifetime.'
                   )}
@@ -95,7 +95,7 @@ const Villas = () => {
               <div className="mx-auto mt-8 grid w-full max-w-screen-md grid-cols-12 md:mt-0 md:max-w-screen-2xl md:items-center lg:mt-16">
                 {villa.id % 2 === 0 && (
                   <>
-                    <div className="md:col-span-auto z-0 col-span-12 lg:z-20 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                    <div className="z-0 col-span-12 lg:z-20 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
                       <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                         <div
                           key={`${villa.id}-carousel`}
@@ -105,7 +105,7 @@ const Villas = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                    <div className="relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
                       <div className="bg-white p-4 sm:p-12 md:px-8">
                         <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                           <div className="container flex flex-col">
@@ -134,7 +134,7 @@ const Villas = () => {
 
                 {villa.id % 2 !== 0 && (
                   <>
-                    <div className="md:col-span-auto z-0 col-span-12 lg:z-20 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+                    <div className="z-0 col-span-12 lg:z-20 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
                       <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                         <div
                           key={`${villa.id}-carousel`}
@@ -144,7 +144,7 @@ const Villas = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                    <div className="relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
                       <div className="bg-white p-4 sm:p-12 md:px-8">
                         <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 lg:pl-24 xl:py-24 xl:pl-32">
                           <div className="container flex flex-col">

@@ -38,7 +38,7 @@ const Services = () => {
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                   {t('Services')}
                 </h1>
-                <p className="text-md mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
+                <p className="mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
                   {t(
                     'Indulge in a world of luxury and impeccable hospitality with our exceptional hotel services. From elegant accommodations to delectable dining options, rejuvenating spa treatments, and seamless concierge service, every aspect of your stay is crafted to exceed expectations. Experience unforgettable moments and impeccable care throughout your journey with us.'
                   )}
@@ -167,7 +167,7 @@ const Services = () => {
               <div className="mx-auto mt-8 grid w-full max-w-screen-sm grid-cols-12 md:max-w-screen-2xl md:items-center lg:px-2">
                 {service.id % 2 === 0 && (
                   <>
-                    <div className="md:col-span-auto z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
+                    <div className="z-0 col-span-12 lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-1">
                       <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                         <div
                           key={`${service.id}-image`}
@@ -182,7 +182,7 @@ const Services = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                    <div className="relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
                       <div className="bg-white p-4 sm:p-12 md:px-8">
                         <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                           <div className="container flex flex-col">
@@ -211,7 +211,7 @@ const Services = () => {
 
                 {service.id % 2 !== 0 && (
                   <>
-                    <div className="md:col-span-auto z-0 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
+                    <div className="z-0 col-span-12 lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-1">
                       <div className="image-padding relative block h-0 w-full overflow-hidden bg-gray-300">
                         <div
                           key={`${service.id}-image`}
@@ -226,7 +226,7 @@ const Services = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="md:col-span-auto relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
+                    <div className="relative z-10 col-span-12 -mt-8 px-10 md:px-24 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 lg:mt-0 lg:px-0">
                       <div className="bg-white p-4 sm:p-12 md:px-8">
                         <div className="mx-auto max-w-xl py-8 px-4 sm:px-6 lg:max-w-2xl lg:px-2 xl:py-24">
                           <div className="container flex flex-col">
