@@ -31,7 +31,7 @@ const Carousel = ({ imageList }: any) => {
               src={image.imageSrc}
               alt={image.imageAlt}
               // fill={true}
-              // sizes="100vw, 100vh"
+              sizes="100vw, 100vh"
               quality={100}
               placeholder="blur"
               // blurDataURL="https://drive.google.com/uc?export=view&id=1N3ZvyFfciBXAHWefS85a_0f_HEAZOYUy"

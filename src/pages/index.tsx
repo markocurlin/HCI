@@ -53,7 +53,7 @@ const Index = () => {
               href="/contact"
               className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
-              {t('LEARN MORE')}
+              {t('LEARN MOREa')}
             </Link>
           </div>
         </div>
@@ -128,7 +128,7 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="hidden md:block h-3xl h-[20rem] bg-zinc-100 p-0 pb-20 md:h-[48rem] lg:px-[4.5rem] xl:px-[4.5rem] 2xl:h-[58rem]">
+        <div className="h-3xl hidden h-[20rem] bg-zinc-100 p-0 pb-20 md:block md:h-[48rem] lg:px-[4.5rem] xl:px-[4.5rem] 2xl:h-[58rem]">
           <Carousel imageList={home.carouselImages} />
         </div>
 
@@ -212,12 +212,11 @@ const Index = () => {
                 "Escape to our exquisite hotel, where luxury and unparalleled hospitality await. Indulge in elegantly appointed accommodations, exceptional dining options, and a tranquil spa. Our dedicated staff provides impeccable service, ensuring your every need is met. Discover a haven of tranquility and sophistication, creating cherished memories with us. Whether you're seeking a romantic getaway, a memorable family vacation, or a successful business trip, our hotel offers an unrivaled experience that will leave you refreshed and rejuvenated."
               )}
             </p>
-
             <Link
               href="/contact"
-              className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
+              className="bg-secondary bg-hover-secondary mx-5 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
             >
-              {t('LEARN MORE')}
+              {t('LEARN MOREa')}
             </Link>
           </div>
         </div>

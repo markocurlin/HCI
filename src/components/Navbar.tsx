@@ -10,7 +10,6 @@ import { useTranslation } from 'react-i18next';
 import logo from '@/assets/logowhite.png';
 import { navLinks, socialMedia } from '@/constants/navigation';
 
-// import image from '@/assets/imagebg.jpg';
 import image from '../assets/The Deluxe Double Room/DeluxeDoubleRoom_6.jpg';
 import { availableLanguages } from '../i18n';
 
@@ -97,8 +96,9 @@ const Navbar = () => {
               <Image
                 className="h-12 w-auto object-cover object-center sm:h-20"
                 src={logo}
-                sizes="100vw, 100vh"
                 alt="Hotel Božikovina logo"
+                sizes="100vw, 100vh"
+                quality={100}
                 placeholder="blur"
               />
             </Link>
