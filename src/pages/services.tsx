@@ -40,7 +40,7 @@ const Services = () => {
                 </h1>
                 <p className="mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
                   {t(
-                    'Indulge in a world of luxury and impeccable hospitality with our exceptional hotel services. From elegant accommodations to delectable dining options, rejuvenating spa treatments, and seamless concierge service, every aspect of your stay is crafted to exceed expectations. Experience unforgettable moments and impeccable care throughout your journey with us.'
+                    "Luxury Hotel Božikovina offers exclusive services and benefits for the comfort of its guests. The hotel's family-friendly and home-like accommodation concept also provide many advantages such as a near by supermarket, a bakery, a restaurant within a walking distance."
                   )}
                 </p>
               </div>
@@ -50,7 +50,7 @@ const Services = () => {
                   href="/contact"
                   className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                 >
-                  {t('LEARN MORE')}
+                  {t('CONTACT US')}
                 </Link>
               </div>
             </div>
@@ -237,6 +237,41 @@ const Services = () => {
                               <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                                 {t(service.description)}
                               </p>
+
+                              {service.title === 'Pool Bar' && (
+                                <p className="mt-2 text-justify text-sm italic leading-snug text-black/70 sm:text-base">
+                                  {t(service.aditionalDescription!)}
+                                </p>
+                              )}
+
+                              {service.title === 'Massage' && (
+                                <div className="mt-2">
+                                  {service.massageList!.map(
+                                    (massage, index) => (
+                                      <div
+                                        key={`massage-${index}`}
+                                        className="grid grid-cols-2"
+                                      >
+                                        <p className="col-span-1 text-left text-sm leading-snug text-black/70 sm:text-base">
+                                          {massage.title}
+                                        </p>
+                                        <div className="col-span-1 grid grid-cols-1 flex-row sm:grid-cols-2 sm:flex-col">
+                                          {massage.price!.map(
+                                            (price, priceIndex) => (
+                                              <p
+                                                key={`price-${priceIndex}`}
+                                                className="pr-4 text-center text-sm italic leading-snug text-black/70 sm:text-justify sm:text-base"
+                                              >
+                                                {price}
+                                              </p>
+                                            )
+                                          )}
+                                        </div>
+                                      </div>
+                                    )
+                                  )}
+                                </div>
+                              )}
                             </div>
                             <div>
                               <Link

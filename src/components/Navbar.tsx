@@ -231,7 +231,7 @@ const Navbar = () => {
                       </div>
                     </div>
                     <div className="scroll-y flex h-full flex-col bg-white py-6 shadow-xl">
-                      <div className="mt-32 mb-16 px-4 lg:px-20">
+                      <div className="m-auto px-4 sm:mx-0 sm:mt-32 sm:mb-16 lg:px-20">
                         <div className="flex flex-col items-center sm:items-start">
                           {navLinks.map((link, index) => {
                             return (

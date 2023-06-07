@@ -26,13 +26,13 @@ const Index = () => {
             placeholder="blur"
           />
           <div className="absolute inset-x-0 bottom-0 z-20 flex flex-col items-center p-6">
-            <p className="py-0.5 text-xl font-normal leading-snug text-white sm:text-5xl">
-              {t('AN UNRIVALLED WELCOME')}
+            <p className="py-0.5 text-center text-xl font-normal leading-snug text-white sm:text-5xl">
+              {t('STAY ONCE')}
             </p>
 
             <div className="flex py-0.5">
-              <p className="py-0.5 text-lg font-light italic leading-snug text-white sm:text-3xl">
-                {t('in the heart of Podstrana')}
+              <p className="py-0.5 text-center text-lg font-light italic leading-snug text-white sm:text-3xl">
+                {t('carry memories forever')}
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Index = () => {
         <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">
           <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
             <p className="text-xl font-semibold text-white sm:text-3xl">
-              {t('Welcome to Luxury Hotel Božikovina')}
+              {t('Pure pebels beaches, blue waters, and stuning views.')}
             </p>
             <p className="mt-2 text-justify text-sm leading-snug text-white/70 sm:text-lg">
               {t(

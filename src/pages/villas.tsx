@@ -49,7 +49,7 @@ const Villas = () => {
                   href="/contact"
                   className="bg-secondary bg-hover-secondary mt-6 inline-flex items-center justify-center whitespace-nowrap border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
                 >
-                  {t('LEARN MORE')}
+                  {t('CONTACT US')}
                 </Link>
               </div>
             </div>
