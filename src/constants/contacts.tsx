@@ -55,7 +55,7 @@ export const contacts = [
   {
     id: 2,
     title: 'Email',
-    text: 'bbozikovina@gmail.com',
+    text: 'hotel-bozikovina@outlook.com',
   },
 ];
 
