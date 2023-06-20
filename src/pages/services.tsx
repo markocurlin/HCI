@@ -40,7 +40,7 @@ const Services = () => {
                 </h1>
                 <p className="mt-4 text-justify leading-snug tracking-tight text-black/70 sm:text-xl">
                   {t(
-                    "Luxury Hotel Božikovina offers exclusive services and benefits for the comfort of its guests. The hotel's family-friendly and home-like accommodation concept also provide many advantages such as a near by supermarket, a bakery, a restaurant within a walking distance."
+                    "Beach Hotel Božikovina offers exclusive services and benefits for the comfort of its guests. The hotel's family-friendly and home-like accommodation concept also provide many advantages such as a near by supermarket, a bakery, a restaurant within a walking distance."
                   )}
                 </p>
               </div>
@@ -193,6 +193,12 @@ const Services = () => {
                               <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                                 {t(service.description)}
                               </p>
+
+                              {service.title === 'Pool' && (
+                                <p className="mt-2 text-justify text-sm italic leading-snug text-black/70 sm:text-base">
+                                  {t(service.aditionalDescription!)}
+                                </p>
+                              )}
                             </div>
                             <div>
                               <Link
@@ -238,12 +244,6 @@ const Services = () => {
                                 {t(service.description)}
                               </p>
 
-                              {service.title === 'Pool Bar' && (
-                                <p className="mt-2 text-justify text-sm italic leading-snug text-black/70 sm:text-base">
-                                  {t(service.aditionalDescription!)}
-                                </p>
-                              )}
-
                               {service.title === 'Massage' && (
                                 <div className="mt-2">
                                   {service.massageList!.map(
@@ -253,7 +253,7 @@ const Services = () => {
                                         className="grid grid-cols-2"
                                       >
                                         <p className="col-span-1 text-left text-sm leading-snug text-black/70 sm:text-base">
-                                          {massage.title}
+                                          {t(massage.title)}
                                         </p>
                                         <div className="col-span-1 grid grid-cols-1 flex-row sm:grid-cols-2 sm:flex-col">
                                           {massage.price!.map(

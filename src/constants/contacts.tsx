@@ -50,7 +50,7 @@ export const contacts = [
   {
     id: 1,
     title: 'Phone number',
-    text: '(+385) 21 335165',
+    text: '(+385) 995832855',
   },
   {
     id: 2,

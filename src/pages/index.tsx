@@ -39,13 +39,13 @@ const Index = () => {
         </div>
 
         <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">
-          <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
-            <p className="text-xl font-semibold text-white sm:text-3xl">
-              {t('Pure pebels beaches, blue waters, and stuning views.')}
+          <div className="container px-8 text-center sm:px-12 md:px-32 xl:w-3/5">
+            <p className="text-xl font-semibold text-white sm:text-2xl">
+              {t('Pure pebels beaches, blue waters, and stuning views')}
             </p>
             <p className="mt-2 text-justify text-sm leading-snug text-white/70 sm:text-lg">
               {t(
-                'Luxury Hotel Božikovina is warm and friendly hotel located in Podstrana just 7km from city of Split. This is a modern, relaxed luxury - Dalmatian style hotel, built in 2002 and at the highest European standards renovated in 2023. Thanks to its enchanting heritage, Podstrana is evolving into an elite cultural site, and its main attractions are a beautiful location with crystal clear sea, mild climate and beautiful pebble beaches.'
+                'Beach Hotel Božikovina is warm and friendly hotel located in Podstrana just 7km from city of Split. This is a modern, relaxed luxury - Dalmatian style hotel, built in 2002 and at the highest European standards renovated in 2023.'
               )}
             </p>
 
@@ -83,7 +83,7 @@ const Index = () => {
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'Hotel Bozikovina is a family-run, award-winning design hotel with sustainability at its foundation. You will find us at a comfortable distance from the noise and rush of the old city centre. Close enough to discover the rich cultural heritage and its nearby natural amenities. A carefree retreat with a priceless view of the Adriatic Sea, just a few steps from a pebble beach.'
+                            'Hotel Bozikovina is a family-run, award-winning design hotel with sustainability at its foundation. You will find us at a comfortable distance from the noise and rush of the old city centre. A carefree retreat with a priceless view of the Adriatic Sea, just a few steps from a pebble beach.'
                           )}
                         </p>
                       </div>
@@ -116,7 +116,7 @@ const Index = () => {
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'Indulge in our stylish and thoughtfully designed accommodations, where modern aesthetics meet comfort. Each room and suite is meticulously appointed with upscale amenities, plush bedding, and contemporary furnishings to provide a haven of relaxation. Whether you choose a spacious suite or a cozy room, your comfort and satisfaction are our top priorities.'
+                            'Indulge in our stylish and thoughtfully designed accommodations, where modern aesthetics meet comfort. Each room and suite is meticulously appointed with upscale amenities, plush bedding, and contemporary furnishings to provide a haven of relaxation.'
                           )}
                         </p>
                       </div>
@@ -157,7 +157,7 @@ const Index = () => {
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'Savor a culinary journey at our renowned restaurants, where talented chefs create culinary masterpieces to delight even the most discerning palates. From authentic local delicacies to international flavors, our diverse dining options offer something for every taste. Immerse yourself in an elegant ambiance, complemented by impeccable service, as you indulge in exquisite dishes paired with fine wines and craft cocktails. Experience gastronomic delights that will leave a lasting impression.'
+                            'Savor a culinary journey at our renowned restaurant. Immerse yourself in an elegant ambiance, complemented by impeccable service, as you indulge in exquisite dishes paired with fine wines and craft cocktails. Experience gastronomic delights that will leave a lasting impression.'
                           )}
                         </p>
                       </div>
@@ -190,7 +190,7 @@ const Index = () => {
                         </p>
                         <p className="mt-2 text-justify text-sm leading-snug text-black/70 sm:text-base">
                           {t(
-                            'Enhance your well-being and rejuvenate your senses at our state-of-the-art fitness center and luxurious spa. Stay active with the latest exercise equipment and expert trainers, or pamper yourself with a range of spa treatments and therapies designed to promote relaxation and balance. Unwind by the sparkling pool, bask in the sun-drenched terrace, or take advantage of our comprehensive wellness facilities. At our hotel, we prioritize your well-being, ensuring you leave feeling refreshed, revitalized, and renewed.'
+                            'Unwind by the sparkling pool, bask in the sun-drenched terrace, or take advantage of our comprehensive wellness facilities. At our hotel, we prioritize your well-being, ensuring you leave feeling refreshed, revitalized, and renewed.'
                           )}
                         </p>
                       </div>
@@ -203,13 +203,13 @@ const Index = () => {
         </div>
 
         <div className="flex h-auto w-full items-center justify-center bg-white py-12 sm:py-20 xl:px-20">
-          <div className="container px-8 text-center sm:px-12 md:px-28 xl:w-3/5">
+          <div className="container px-8 text-center sm:px-12 md:px-32 xl:w-3/5">
             <p className="text-xl font-semibold text-black sm:text-3xl">
               {t('Your unforgettable adventure awaits')}
             </p>
             <p className="mt-2 text-justify text-sm leading-snug text-black/60 sm:text-lg">
               {t(
-                "Escape to our exquisite hotel, where luxury and unparalleled hospitality await. Indulge in elegantly appointed accommodations, exceptional dining options, and a tranquil spa. Our dedicated staff provides impeccable service, ensuring your every need is met. Discover a haven of tranquility and sophistication, creating cherished memories with us. Whether you're seeking a romantic getaway, a memorable family vacation, or a successful business trip, our hotel offers an unrivaled experience that will leave you refreshed and rejuvenated."
+                "Escape to our exquisite hotel, where luxury and unparalleled hospitality await. Our dedicated staff provides impeccable service, ensuring your every need is met. Whether you're seeking a romantic getaway, a memorable family vacation, or a successful business trip, our hotel offers an unrivaled experience that will leave you refreshed and rejuvenated."
               )}
             </p>
             <Link
