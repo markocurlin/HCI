@@ -82,7 +82,7 @@ export const rooms = [
       'Complimentary bottle of water',
       'Air conditioning',
       'Flat-screen TV with cable',
-      'Welcome fruit basket',
+      'Work desk and chair',
       'In-room coffee and tea',
     ],
     maxOccupancy: '2 adults, 2 Children (11 years old and below)',
@@ -253,7 +253,7 @@ export const rooms = [
       'Complimentary bottle of water',
       'Air conditioning',
       'Flat-screen TV with cable',
-      'Welcome fruit basket',
+      'Work desk and chair',
       'In-room coffee and tea',
     ],
     images: [

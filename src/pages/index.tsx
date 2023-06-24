@@ -41,7 +41,7 @@ const Index = () => {
         <div className="bg-primary flex h-auto w-full items-center justify-center py-12 sm:py-20 xl:px-20">
           <div className="container px-8 text-center sm:px-12 md:px-32 xl:w-3/5">
             <p className="text-xl font-semibold text-white sm:text-2xl">
-              {t('Pure pebels beaches, blue waters, and stuning views')}
+              {t('Pure pebbels beaches, blue waters, and stunning views')}
             </p>
             <p className="mt-2 text-justify text-sm leading-snug text-white/70 sm:text-lg">
               {t(
